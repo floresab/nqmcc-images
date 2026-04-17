@@ -1,0 +1,11 @@
+#!/bin/bash
+
+nQMCC="../.."
+image_dir="."
+runner="mpirun -np 1"
+exe=$(nQMCC)/build/bin/esample
+input=$(image_dir)/input/test.in
+output=$(image_dir)/output/test.out
+
+
+$(runner) $(exe) < $(input) 2> /dev/null > $(out)
