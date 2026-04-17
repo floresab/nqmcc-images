@@ -1,0 +1,84 @@
+ ************************************************************************
+  DATE: 17-Apr-26
+  TIME: 02:30:52
+ ************************************************************************
+  nuclear Quantum Monte Carlo with Continuum : 1.05.1
+ ************************************************************************
+  COMPILER: GCC version 15.1.0
+  OPTIONS: -cpp -I /home/floresab/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/qmc/nQMCC/external/nqmcc-fft/build/mod -I /usr/local/include -I /usr/local/lib -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D docc=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+ ************************************************************************
+                      CALCULATION TYPE
+    ----------------------------------------------------
+                     DEUTERON
+                     BASIS: charge
+    ----------------------------------------------------
+ ************************************************************************
+ CONTROL INPUTS
+ ************************************************************************
+ charge                                                      BASIS
+ constants/fbn84.const                                       CONSTANTS_FILE
+ pots/av14.2bp              pots/none.3bp                    2B_POT_FILE, 3B_POT_FILE
+ 0  0                                                        LKE LEMP
+ 0  dummy.calc                                               CALC_FILE_FORMAT CALC_FILE
+ T                                                           BRA_EQ_KET
+ deuteron                                                    BRA-TYPE
+ 0  dummy                                                    R/W : WALK_FILE
+     25265137                                                RNG SEED
+        0         0         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
+        0         0                                          BURN_IN NUM_MOVES_BETWEEN
+ 2.0000                                                      PARTICLE_DX
+ F    0.00    0.00                                           SAMPLE_L2 RSAM PSAM
+     5120       128         0                                NPTS ONE_OVER_DX FD_FACTOR
+   0.00    0.00    0.00                                      SS_LIMIT SP_LIMIT SD_LIMIT (in fm)
+   0.00                                                      BOX RADIUS (in fm)
+       0.1000       20.0000                                  BIN_WIDTH BIN_MAXR
+ scratch/                                                    SCRATCH_DIRECTORY
+ ************************************************************************
+ NO CALCULATION PARAMETERS
+ ************************************************************************
+ CONSTANTS
+ ************************************************************************
+   3.14159265                 PI
+   0.57721566                 EULERS_CONSTANT
+ ************************************************************************
+ PHYSICAL CONSTANTS
+ ************************************************************************
+ 197.33000000                 HBARC
+ 938.90000000                 PROTON MASS
+ 938.90000000                 NEUTRON MASS
+   0.51099900                 ELECTRON MASS
+   0.00000000                 NUCLEON MASS DIFFERENCE
+ 138.03000000                 NEUTRAL PION MASS
+ 138.03000000                 CHARGED PION MASS
+   0.08100000                 PION NUCLEON COUPLING CONSTANT
+   0.00729735                 HYPER FINE STRUCTURE CONSTANT (ALPHA)
+   2.79284740                 PROTON MAGNETIC MOMENT
+  -1.91304270                 NEUTRON MAGNETIC MOMENT
+   5.58569478                 PROTON G-FACTOR
+  -3.82608560                 NEUTRON G-FACTOR
+   0.81200000                 GD ROOT MEAN SQUARE RADIUS
+   0.01890000                 NEUTRON FORM FACTOR SLOPE
+   1.29000000                 g_A
+  92.40000000                 PION DECAY AMPLITUDE
+ ************************************************************************
+ COMPUTED CONSTANTS
+ ************************************************************************
+ 138.03000000                 PION MASS
+  41.47313761                 HBAR**2 / (2 * MU)
+  41.47313761                 H2MAVG
+   0.00000000                 H2MCSB
+   2.73650324                 h_A
+ ************************************************************************
+         Two-Body Potential: Argonne v14
+         EM Potential: NONE
+ ****** DID NOT CONVERGE -- DEUTERON ******
+ ************************************************************************
+         COMPUTED DEUTERON PROPTERTIES
+ ************************************************************************
+ BINDING ENERGY (MeV):    2.2248682241526727     
+ ETA:    2.6516081020349313E-002
+ D-STATE:    6.0817950231096637E-002
+ QUADRUPOLE MOMENT:   0.28596529954086247     
+ MAGNETIC MOMENT (mu0):   0.84515628498679496     
+ DEUTERON RADIUS (fm):    1.9817073496891684     
+ ************************************************************************

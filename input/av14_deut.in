@@ -1,0 +1,18 @@
+'charge'                                     basis
+'constants/fbn84.const'                        constants_file
+'pots/av14.2bp'  'pots/none.3bp'         2b_file 3b_file
+0  0                                         ke  lemp
+0 'dummy.calc'                               calc_type calc_file
+.true.                                       bra_eq_ket
+'deuteron'                                   Wavefunction_type
+0 'dummy'
+25265137                                     rng_seed
+0  0  0                                      num_blocks block_size walkers_per_node
+0  0                                         burn_in num_moves_between
+2.                                           particle_dx
+.false.  0.  0.                              sample_L2 rsam psam
+5120  128  0                                 npts one_over_dx fd_factor
+0. 0. 0.                                     ss_limit sp_limit sd_limit
+0.                                           rscat
+0.1  20.0                                    bin_width  maxr
+'scratch/'                                   scratch_dir

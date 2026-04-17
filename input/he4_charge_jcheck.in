@@ -1,19 +1,19 @@
-'isospin'                                    basis
+'charge'                                     basis
 'constants/fbn95.const'                      constants_file
 'pots/av18.2bp'  'pots/uix.3bp'              2b_file 3b_file
 1  1                                         ke  lemp
 0 'dummy.calc'                               calc_type calc_file
 .true.                                       bra_eq_ket
 'variational'                                Wavefunction_type
-'nuclei/params/h3.params'                    param_file
-'external/nqmcc-images/input/decks/h3.dk'   deck_file
-0  'kal/h3.spin' 'kal/h3.isospin'            read_write_spin_phi  spin_file isospin_file
-0  'kal/h3.ylm'  'kal/h3.phi'                read_write_ylm_phi  ylm_file  phi_file
-0  'configs/h3_av18_uix.config'              read_write_config  config_file
-0  'walks/h3_av18_uix.walk'                  read_write_walk  walk_file
+'nuclei/params/he4.params'                   param_file
+'external/nqmcc-images/input/decks/he4.dk'   deck_file
+0  'kal/he4.spin' 'kal/he4.isospin'          read_write_spin_phi  spin_file isospin_file
+0  'kal/he4.ylm'  'kal/he4.phi'              read_write_ylm_phi  ylm_file  phi_file
+0  'configs/he4_av18_uix.config'             read_write_config  config_file
+0  'walks/he4_av18_uix.walk'                 read_write_walk  walk_file
 25265137                                     rng_seed
 4  25000  0                                  num_blocks block_size walkers_per_node
-1000   10                                    burn_in num_moves_between
+200   10                                     burn_in num_moves_between
 1.4                                          particle_dx
 .false.  1.6  0.01                           sample_L2 rsam psam
 5120  128  32                                npts one_over_dx fd_factor
@@ -21,3 +21,4 @@
 40.                                          rscat
 0.1  20.0                                    bin_width  maxr
 'scratch/'                                   scratch_dir
+

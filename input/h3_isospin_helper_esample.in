@@ -6,7 +6,7 @@
 .true.                                       bra_eq_ket
 'variational'                                Wavefunction_type
 'nuclei/params/h3.params'                    param_file
-'nuclei/decks/H/3/h3.dk'                     deck_file
+'external/nqmcc-images/input/decks/h3.dk'   deck_file
 0  'kal/h3.spin' 'kal/h3.isospin'            read_write_spin_phi  spin_file isospin_file
 0  'kal/h3.ylm'  'kal/h3.phi'                read_write_ylm_phi  ylm_file  phi_file
 0  'configs/h3_av18_uix.config'              read_write_config  config_file

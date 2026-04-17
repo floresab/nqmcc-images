@@ -1,0 +1,28 @@
+'Helium-4+n 1/2+ (scattering)'                                                  Name
+   1    0.5    0.5    0.5    -0.5                                               PI J MJ T MT
+   2     0     6     1                                                          lwf lsc l3bc lcut
+ 13.12330  10.38276  29.14216  13.83946                                         esep
+ 0.02741  -0.00857                                                              eta
+ 0.000  0.000                                                                   zeta
+ 1.00331  0.56734  1.01865  0.85492  1.00  1.00  1.00  1.00                     fscal
+ 1.00421  1.98262  1.91865  2.04727  1.93031  1.98699  2.00  2.00               ac
+ 0.39086  0.77190  0.40226  0.48548  0.71016  0.73355  0.24  0.24               aa
+ 0.59840  1.07493  2.71177  2.53713  3.45486  3.45677  0.40  0.40               ar
+ 0.98647  1.00954  0.97909  0.98488  0.84174  0.80517  1.00  1.00               alpha
+ 0.99611  0.98353  0.99711  0.96811  1.05647  1.11085  1.00  1.00               beta
+ 80.0  -120.  3.00  -12.0  2.00  -1.00  0.  0.                                  gamma
+ 14.0  8.00   0.00                                                              uur uua uuw
+ 0    0     0    0    0    0    0                                               lfsp0 e_or_v lscat lmu1 Lmu2 LL lnodes
+ 0.00  0.00  0.00  0.00  0.00  0.00                                             wse wsv wsr wsa wbr wba 
+ 0.00  0.00  0.00  0.00  0.55  0.80                                             delt epsl thet upsl rscal uscal
+ 0.55  0.20                                                                     qps1 qps2 
+ 0.18  0.90                                                                     qsss1 qsss2
+ 0.00  0.00                                                                     qssp1 qssp2
+1S[0]
+ 0.   0.   0.   0.  0.                                                          L_core S_core J_core T_core Tz_core
+ 0.   0.5  0.5  0.5 -0.5                                                        L_sdsh S_sdsh J_sdsh T_sdsh Tz_sdsh
+ 1.00
+ 1  0.00  0.96489  3.52478  1.01035  0.96615  2.98471  0.00  0.00               spu spv spr spa spb spc spk spl
+ 1    1     1    4    1    0    1                                               lfsp e_or_v lscat lmu1 lmu2 LL lnodes
+ -0.1300                                                                        bscat
+ 2.4510  -40.0  2.88816  0.03440  0.00  0.00                                    wse wsv wsr wsa wbr wba
