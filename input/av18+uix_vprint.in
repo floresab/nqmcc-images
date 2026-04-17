@@ -5,12 +5,12 @@
 0 'dummy.calc'                               calc_type calc_file
 .true.                                       bra_eq_ket
 'variational'                                Wavefunction_type
-'nuclei/params/be8.params'                   param_file
-'nuclei/decks/Be/8/be8_0p.dk'                deck_file
-0  'kal/be8.spin' 'kal/be8.isospin'          read_write_spin_phi  spin_file isospin_file
-0  'kal/be8.ylm'  'kal/be8.phi'              read_write_ylm_phi  ylm_file  phi_file
-0  'configs/be8_av18_uix.config'             read_write_config  config_file
-0  'walks/be8_av18_uix.walk'                 read_write_walk  walk_file
+'dummy.params'                               param_file
+'dummy.dk'                                   deck_file
+0  'dummy.spin' 'dummy.isospin'              read_write_spin_phi  spin_file isospin_file
+0  'dummy.ylm'  'dummy.phi'                  read_write_ylm_phi  ylm_file  phi_file
+0  'dummy.config'                            read_write_config  config_file
+0  'dummy.walk'                              read_write_walk  walk_file
 25265137                                     rng_seed
 2  16  0                                     num_blocks block_size walkers_per_node
 100   10                                     burn_in num_moves_between

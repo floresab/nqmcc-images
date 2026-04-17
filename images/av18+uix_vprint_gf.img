@@ -1,6 +1,6 @@
  ************************************************************************
-  DATE: 16-Apr-26
-  TIME: 23:46:27
+  DATE: 17-Apr-26
+  TIME: 00:37:15
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.05.1
  ************************************************************************
@@ -22,12 +22,12 @@
  0  dummy.calc                                               CALC_FILE_FORMAT CALC_FILE
  T                                                           BRA_EQ_KET
  variational                                                 BRA-TYPE
- nuclei/params/be8.params                                    PARAM_FILE
- nuclei/decks/Be/8/be8_0p.dk                                 DECK_FILE
- 0  kal/be8.spin               kal/be8.isospin               R/W : SPIN_FILE ISOSPIN_FILE
- 0  kal/be8.ylm                kal/be8.phi                   R/W : YLM_FILE PHI_FILE
- 0  configs/be8_av18_uix.config                              R/W : CONFIG_FILE
- 0  walks/be8_av18_uix.walk                                  R/W : WALK_FILE
+ dummy.params                                                PARAM_FILE
+ dummy.dk                                                    DECK_FILE
+ 0  dummy.spin                 dummy.isospin                 R/W : SPIN_FILE ISOSPIN_FILE
+ 0  dummy.ylm                  dummy.phi                     R/W : YLM_FILE PHI_FILE
+ 0  dummy.config                                             R/W : CONFIG_FILE
+ 0  dummy.walk                                               R/W : WALK_FILE
      25265137                                                RNG SEED
         2        16         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
