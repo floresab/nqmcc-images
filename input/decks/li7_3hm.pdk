@@ -1,0 +1,8 @@
+'Lithium-6+n 3/2- (product)'                   Name
+ 0.5    -0.5                                   T MT
+'[Li(1+)]x[n(p1/2)]'
+  -1    1.5    1.5    1.  0.5                  PI J MJ L_sps J_sps
+'[Li(1+)]x[n(p3/2)]'
+  -1    1.5    1.5    1.  1.5                  PI J MJ L_sps J_sps
+'[Li(1+)]x[n(f5/2)]'
+  -1    1.5    1.5    3.  2.5                  PI J MJ L_sps J_sps

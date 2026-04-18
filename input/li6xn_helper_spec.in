@@ -1,0 +1,31 @@
+'charge'                                     basis
+'constants/fbn95.const'                      constants_file
+'pots/av18.2bp'  'pots/uix.3bp'              2b_file 3b_file
+1  1                                         ke  lemp
+0 'dummy.calc'                               calc_type calc_file
+.false.                                      bra_eq_ket
+'product'                                    wavefunction_type
+'nuclei/params/li6xn.params'                 product_param_file
+'external/nqmcc-images/input/decks/li7_3hm.pdk'              product_deck_file
+'nuclei/params/li6.params'                   param_file
+'external/nqmcc-images/input/decks/li6.dk'   deck_file
+0  'kal/li6xn.spin' 'kal/li6xn.isospin'      read_write_spin_phi  spin_file isospin_file (r/w broken for products)
+0  'kal/li6xn.ylm'  'kal/li6xn.phi'          read_write_ylm_phi  ylm_file  phi_file
+0  'configs/li6xn.config'                    read_write_config  config_file
+'variational'                                wavefunction_type
+'nuclei/params/li7.params'                   param_file
+'external/nqmcc-images/input/decks/li7_3hm.dk'               deck_file
+0  'kal/li7.spin' 'kal/li7.isospin'          read_write_spin_phi  spin_file isospin_file
+0  'kal/li7.ylm'  'kal/li7.phi'              read_write_ylm_phi  ylm_file  phi_file
+0  'configs/li7.config'                      read_write_config  config_file
+0  'dummy.walk'                              read_write_walk  walk_file
+27265137                                     rng_seed
+2  20  1                                  num_blocks block_size walkers_per_node
+10   10                                    burn_in num_moves_between
+1.2                                          particle_dx
+.false.  1.6  0.01                           sample_L2 rsam psam
+5120  128  32                                npts one_over_dx fd_factor
+40. 40. 40.                                  ss_limit sp_limit sd_limit
+40.                                          rscat
+0.1  20.0                                    bin_width  maxr
+'scratch/'                                   scratch_dir
