@@ -2,7 +2,7 @@
 'constants/fbn95.const'                      constants_file
 'pots/av18.2bp'  'pots/uix.3bp'              2b_file 3b_file
 1  1                                         ke  lemp
-0 'dummy.calc'                               calc_type calc_file
+4 'external/nqmcc-images/input/calc/spec.calc' calc_type calc_file
 .false.                                      bra_eq_ket
 'product'                                    wavefunction_type
 'nuclei/params/he4n.params'                  product_param_file

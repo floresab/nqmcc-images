@@ -1,0 +1,4 @@
+1  1  5                                      opt_method  num_opt_walks  num_opt_evaluations
+.false.  1.5  1.5                            limit_charge_radii  nr_limit  pr_limit
+'nuc.opt'                                    optimization_input
+'nuc-opt.dk'                                 optimized_deck

@@ -2,7 +2,7 @@
 'constants/fbn95.const'                      constants_file
 'pots/av18.2bp'  'pots/uix.3bp'              2b_file 3b_file
 1  1                                         ke  lemp
-4 'external/nqmcc-images/input/calc/spec.calc'                               calc_type calc_file
+5 'external/nqmcc-images/input/calc/anc.calc' calc_type calc_file
 .false.                                      bra_eq_ket
 'product'                                    wavefunction_type
 'nuclei/params/he4n.params'                  product_param_file
@@ -20,8 +20,8 @@
 0  'configs/he5_0p_av18_uix.config'          read_write_config  config_file
 0  'dummy.walk'                              read_write_walk  walk_file
 25265137                                     rng_seed
-2  200  0                                    num_blocks block_size walkers_per_node
-1000   10                                    burn_in num_moves_between
+2  5  0                                    num_blocks block_size walkers_per_node
+5   10                                    burn_in num_moves_between
 1.4                                          particle_dx
 .false.  1.6  0.01                           sample_L2 rsam psam
 5120  128  32                                npts one_over_dx fd_factor

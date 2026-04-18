@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 17-Apr-26
-  TIME: 21:00:10
+  TIME: 21:19:56
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.05.1
  ************************************************************************
@@ -22,7 +22,7 @@
  constants/fbn95.const                                       CONSTANTS_FILE
  pots/av18.2bp              pots/uix.3bp                     2B_POT_FILE, 3B_POT_FILE
  1  1                                                        LKE LEMP
- 0  dummy.calc                                               CALC_FILE_FORMAT CALC_FILE
+ 4  external/nqmcc-images/input/calc/spec.calc               CALC_FILE_FORMAT CALC_FILE
  F                                                           BRA_EQ_KET
  product                                                     BRA-TYPE
  nuclei/params/li6xn.params                                  PRODUCT-PARAM_FILE
@@ -50,7 +50,9 @@
        0.1000       20.0000                                  BIN_WIDTH BIN_MAXR
  scratch/                                                    SCRATCH_DIRECTORY
  ************************************************************************
- NO CALCULATION PARAMETERS
+ CALCULATION PARAMETERS
+ ************************************************************************
+  0    0.0000E+00    0.0000E+00    0.1000E+01    0.0000E+00  LASTP_SAMPLE_TYPE LPS_A LPS_B NORM NORM_ERR
  ************************************************************************
  BROADCASTING CONTROL
  ************************************************************************
@@ -661,11 +663,11 @@
  J Jz   2.50000000      0.500000000    
  <L Lz S Sz | J Jz> =  -0.65465367070797698     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1112
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1120
  ************************************************************************
  ACCEPTANCE PROBABILITY:    70.00%
  ************************************************************************
- BURN IN TIME (s):         0.0110
+ BURN IN TIME (s):         0.0113
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -2554,6 +2556,6 @@
   [Li(1+)]x[n(f5/2)]:    0.2340E-02  (0.1051E-02)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.89898299999999998     
- TIME PER SAMPLE (s):    0.2247457500000000E-01
+ TOTAL CALCULATION TIME (s):   0.89618900000000001     
+ TIME PER SAMPLE (s):    0.2240472500000000E-01
  ************************************************************************

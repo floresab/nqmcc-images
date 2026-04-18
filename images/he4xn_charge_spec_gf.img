@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 17-Apr-26
-  TIME: 12:39:20
+  TIME: 21:19:54
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.05.1
  ************************************************************************
@@ -22,7 +22,7 @@
  constants/fbn95.const                                       CONSTANTS_FILE
  pots/av18.2bp              pots/uix.3bp                     2B_POT_FILE, 3B_POT_FILE
  1  1                                                        LKE LEMP
- 0  dummy.calc                                               CALC_FILE_FORMAT CALC_FILE
+ 4  external/nqmcc-images/input/calc/spec.calc               CALC_FILE_FORMAT CALC_FILE
  F                                                           BRA_EQ_KET
  product                                                     BRA-TYPE
  nuclei/params/he4n.params                                   PRODUCT-PARAM_FILE
@@ -50,7 +50,9 @@
        0.1000        9.0000                                  BIN_WIDTH BIN_MAXR
  scratch/                                                    SCRATCH_DIRECTORY
  ************************************************************************
- NO CALCULATION PARAMETERS
+ CALCULATION PARAMETERS
+ ************************************************************************
+  0    0.0000E+00    0.0000E+00    0.1000E+01    0.0000E+00  LASTP_SAMPLE_TYPE LPS_A LPS_B NORM NORM_ERR
  ************************************************************************
  BROADCASTING CONTROL
  ************************************************************************
@@ -474,11 +476,11 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =    1.0000000000000002     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0261
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0269
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.10%
  ************************************************************************
- BURN IN TIME (s):         0.0339
+ BURN IN TIME (s):         0.0347
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -819,6 +821,6 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
   [He4]x[n(s1/2)]:    0.4069E-03  (0.4229E-04)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.27270499999999998     
- TIME PER SAMPLE (s):    0.6817625000000000E-03
+ TOTAL CALCULATION TIME (s):   0.28813100000000003     
+ TIME PER SAMPLE (s):    0.7203275000000001E-03
  ************************************************************************
