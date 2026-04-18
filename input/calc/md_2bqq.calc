@@ -1,0 +1,5 @@
+3                                            lmd
+250  25.                                     nx xmax
+250  25.                                     nxx xxmax
+101  0.   10.                                nq qmin qmax
+101  0.   10.                                nqq qqmin qqmax
