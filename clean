@@ -11,6 +11,6 @@ rm ./*.dk
 rm ./*.grp
 rm ./*.nortab
 rm ./*.config
-rm ./*.rho
+rm ./*.rhodat
 rm ./*.walk
 rm ./fort.*

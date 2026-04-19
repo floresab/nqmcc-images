@@ -1,0 +1,13 @@
+'constants/nv19.const'               # constants_file
+'pots/nv8p_Ia.2bp' .false. 160       # 2b_file doem llmax
+'external/nqmcc-images/nv8p_005.rhodat'                    # output file
+.005                                 # delta tau
+2 32                                  # nr npts_in_one_fermi
+2048 8                                # nv dv_factor
+30 -2                                 # nx xmin
+30 -2                                 # nz zmin
+3.80                                  # dxdz scale
+26                                    # max spline dimension
+6                                    # precision
+'scratch/'                            # scratch directory
+.true.                                # debug
