@@ -1,0 +1,63 @@
+ ************************************************************************
+  DATE: 19-Apr-26
+  TIME: 01:30:05
+ ************************************************************************
+  nuclear Quantum Monte Carlo with Continuum : 1.05.1
+ ************************************************************************
+  COMPILER: GCC version 15.1.0
+  OPTIONS: -cpp -I /home/floresab/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/qmc/nQMCC/external/nqmcc-fft/build/mod -I /usr/local/include -I /usr/local/lib -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D docc=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+ ************************************************************************
+                      CALCULATION TYPE
+    ----------------------------------------------------
+                     SCATTER-PHIGEN
+                     BASIS: charge
+    ----------------------------------------------------
+ ************************************************************************
+ CONTROL INPUTS
+ ************************************************************************
+ charge                                                      BASIS
+ constants/fbn95.const                                       CONSTANTS_FILE
+ pots/av18.2bp              pots/uix.3bp                     2B_POT_FILE, 3B_POT_FILE
+ 1  1                                                        LKE LEMP
+ 0  dummy.calc                                               CALC_FILE_FORMAT CALC_FILE
+ T                                                           BRA_EQ_KET
+ variational                                                 BRA-TYPE
+ nuclei/params/li6.params                                    PARAM_FILE
+ external/nqmcc-images/input/decks/li6.dk                    DECK_FILE
+ 0  external/nqmcc-images/li6  external/nqmcc-images/li6     R/W : SPIN_FILE ISOSPIN_FILE
+ 0  external/nqmcc-images/li6  external/nqmcc-images/li6     R/W : YLM_FILE PHI_FILE
+ 0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
+ 0  walks/li6_av18_uix.walk                                  R/W : WALK_FILE
+     25265137                                                RNG SEED
+        5      1600         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
+      100        10                                          BURN_IN NUM_MOVES_BETWEEN
+ 1.2000                                                      PARTICLE_DX
+ F    1.60    0.01                                           SAMPLE_L2 RSAM PSAM
+     5120       128        32                                NPTS ONE_OVER_DX FD_FACTOR
+  40.00   40.00   40.00                                      SS_LIMIT SP_LIMIT SD_LIMIT (in fm)
+  40.00                                                      BOX RADIUS (in fm)
+       0.1000       20.0000                                  BIN_WIDTH BIN_MAXR
+ scratch/                                                    SCRATCH_DIRECTORY
+ ************************************************************************
+ NO CALCULATION PARAMETERS
+ ************************************************************************
+ ALLOCATING PHI
+ ALLOCATING PHI -- DONE
+ ************************************************************************
+ READING PHI
+ READING PHI FROM: external/nqmcc-images/li6.phi
+ READING PHI -- DONE
+ ************************************************************************
+ READING PHI TIME (s):         0.0004
+ ************************************************************************
+ RANK: 0
+ FILE: external/nqmcc-images/li6.phi.0.1
+ ISTART: 1
+ IEND:   1280
+ IJ PARTITION:   1280  100.0000%
+ PHI PARTITION:  4320  100.0000%
+ ************************************************************************
+ MAX PHI PARTITION: 4320  100.0000%
+ ************************************************************************
+ SCATTER PHIGEN TIME (s):         0.0002
+ ************************************************************************

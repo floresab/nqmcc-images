@@ -2,3 +2,14 @@
 rm ./*.out
 rm ./*.err
 rm ./*.df
+rm ./*.spin
+rm ./*.isospin
+rm ./*.phi
+rm ./*.phi.*
+rm ./*.ylm
+rm ./*.dk
+rm ./*.grp
+rm ./*.nortab
+rm ./*.config
+rm ./*.rho
+rm ./fort.*
