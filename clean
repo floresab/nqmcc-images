@@ -12,4 +12,5 @@ rm ./*.grp
 rm ./*.nortab
 rm ./*.config
 rm ./*.rho
+rm ./*.walk
 rm ./fort.*
