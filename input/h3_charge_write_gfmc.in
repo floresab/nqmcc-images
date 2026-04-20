@@ -2,7 +2,7 @@
 'constants/fbn95.const'                      constants_file
 'pots/av18.2bp'  'pots/ux.3bp'               2b_file 3b_file
 1  1                                         ke  lemp
-2 'external/nqmcc-images/input/calc/gfmc_av8p.calc' calc_type calc_file
+2 'external/nqmcc-images/input/calc/gfmc_av8p_write.calc' calc_type calc_file
 .true.                                       bra_eq_ket
 'variational'                                Wavefunction_type
 'nuclei/params/h3.params'                    param_file

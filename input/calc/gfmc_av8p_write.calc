@@ -1,0 +1,10 @@
+'external/nqmcc-images/av8p_005.rhodat' prop_file
+1 18.                              lgem max_vij_range
+-8.5                               E0
+8                                  isteps
+2 0.25 30                          branch_freq max_growth max_branches
+2 5                                load_balance_freq max_imbalance
+2 .20 .05 .10                      unconstrained_steps alpha beta epslion
+0  1.0                             lfscat max_rc_diff
+4  1  2                            efreq efirst elast
+4 'external/nqmcc-images/h3_av18ux.configs'               config_freq config_file

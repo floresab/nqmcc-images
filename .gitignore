@@ -10,5 +10,6 @@
 *.grp
 *.walk
 *.config
+*.configs
 *.rhodat
 *.nortab
