@@ -1,0 +1,4 @@
+.false.                                    lomega (false means q is a 3-vector)
+2                                          nucleonic form factor (1=dipole 2=kelly)
+90.0  0.0                                  theta phi (degrees) #theta=90 means q=qx and theta=45 means q=(x+z)/sqrt(2)
+81  0.   4.                                numq qmin qmax
