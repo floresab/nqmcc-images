@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 19-Apr-26
-  TIME: 22:07:31
+  DATE: 22-Aug-26
+  TIME: 08:17:18
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.05.1
+  nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
-  COMPILER: GCC version 15.1.0
-  OPTIONS: -cpp -I /home/floresab/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/qmc/nQMCC/external/nqmcc-fft/build/mod -I /usr/local/include -I /usr/local/lib -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D docc=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        2
   MPI: ROOT:        0
@@ -104,6 +104,7 @@
   41.47108064                 HBAR**2 / (2 * MU)
   41.47106096                 H2MAVG
    0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
    2.73650324                 h_A
  ************************************************************************
                       Hamiltonian
@@ -230,7 +231,7 @@
  ROOT IJ PARTITION:                24  100.0000%
  ROOT PHI PARTITION:                6   85.7143%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0205
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0199
  ************************************************************************
  ARRAY ALLOCATION TIME (s):         0.0000
  ************************************************************************
@@ -238,7 +239,7 @@
  ************************************************************************
  GENERATING INITIAL CONFIGS -- DONE
  ************************************************************************
- T-ZERO INITIALIZATION TIME (s):         0.0022
+ T-ZERO INITIALIZATION TIME (s):         0.0025
  ************************************************************************
  INITIALIZING PROPAGATOR
  ************************************************************************
@@ -263,9 +264,9 @@
    0.06                                  GTABLE MAX RANGE
    0.00    0.00                          ISOSCALAR COULOMB (C TAU)
  ************************************************************************
- PROPAGATOR INITIALIZATION TIME (s):         0.0109
+ PROPAGATOR INITIALIZATION TIME (s):         0.0105
  ************************************************************************
- T-ZERO ENERGY TIME (s):         0.0026
+ T-ZERO ENERGY TIME (s):         0.0025
  ************************************************************************
  INITIAL POPULATION:          100
  ************************************************************************
@@ -4839,6 +4840,6 @@
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0685 (0.0110)
   CHARGE SYMMETRIC MAGNETIC MOMENT                      = -1.9885 (0.0336)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    7.2706999999999994E-002
- TIME PER SAMPLE (s):    0.2560105633802816E-03
+ TOTAL CALCULATION TIME (s):    5.4450999999999999E-002
+ TIME PER SAMPLE (s):    0.1917288732394366E-03
  ************************************************************************

@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 17-Apr-26
-  TIME: 21:19:55
+  DATE: 22-Aug-26
+  TIME: 08:17:24
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.05.1
+  nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
-  COMPILER: GCC version 15.1.0
-  OPTIONS: -cpp -I /home/floresab/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/qmc/nQMCC/external/nqmcc-fft/build/mod -I /usr/local/include -I /usr/local/lib -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D docc=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        1
   MPI: ROOT:        0
@@ -106,6 +106,7 @@
   41.47108064                 HBAR**2 / (2 * MU)
   41.47106096                 H2MAVG
    0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
    2.73650324                 h_A
  ************************************************************************
                       Hamiltonian
@@ -663,11 +664,11 @@
  J Jz   2.50000000      0.500000000    
  <L Lz S Sz | J Jz> =  -0.65465367070797698     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1123
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1085
  ************************************************************************
  ACCEPTANCE PROBABILITY:    70.00%
  ************************************************************************
- BURN IN TIME (s):         0.0117
+ BURN IN TIME (s):         0.0114
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -2556,6 +2557,6 @@
   [Li(1+)]x[n(f5/2)]:    0.2340E-02  (0.1051E-02)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.91067499999999990     
- TIME PER SAMPLE (s):    0.2276687500000000E-01
+ TOTAL CALCULATION TIME (s):   0.86856800000000001     
+ TIME PER SAMPLE (s):    0.2171420000000000E-01
  ************************************************************************

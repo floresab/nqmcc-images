@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 17-Apr-26
-  TIME: 02:47:42
+  DATE: 22-Aug-26
+  TIME: 08:17:20
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.05.1
+  nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
-  COMPILER: GCC version 15.1.0
-  OPTIONS: -cpp -I /home/floresab/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/qmc/nQMCC/external/nqmcc-fft/build/mod -I /usr/local/include -I /usr/local/lib -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D docc=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        2
   MPI: ROOT:        0
@@ -93,6 +93,7 @@
   41.47108064                 HBAR**2 / (2 * MU)
   41.47106096                 H2MAVG
    0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
    2.73650324                 h_A
  ************************************************************************
                       Hamiltonian
@@ -220,13 +221,13 @@
  ROOT IJ PARTITION:                 8   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0205
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0194
  ************************************************************************
  ALLOCATION TIME (s):         0.0000
  ************************************************************************
  ACCEPTANCE PROBABILITY:    63.20%
  ************************************************************************
- BURN IN TIME (s):         0.0018
+ BURN IN TIME (s):         0.0022
  ************************************************************************
  DERIVATIVE TIME (s):         0.0001
  ************************************************************************
@@ -293,5 +294,5 @@
  Vem:       0.26380952946762299682E-01
  H:        -0.90709983894518302350E+01
  ************************************************************************
- TOTAL CALCULATION TIME (s):    2.2738999999999999E-002
+ TOTAL CALCULATION TIME (s):    2.1881999999999999E-002
  ************************************************************************

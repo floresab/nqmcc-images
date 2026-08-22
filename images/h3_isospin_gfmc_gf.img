@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 19-Apr-26
-  TIME: 21:26:54
+  DATE: 22-Aug-26
+  TIME: 08:17:23
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.05.1
+  nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
-  COMPILER: GCC version 15.1.0
-  OPTIONS: -cpp -I /home/floresab/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/qmc/nQMCC/external/nqmcc-fft/build/mod -I /usr/local/include -I /usr/local/lib -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D docc=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        2
   MPI: ROOT:        0
@@ -104,6 +104,7 @@
   41.47108064                 HBAR**2 / (2 * MU)
   41.47106096                 H2MAVG
    0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
    2.73650324                 h_A
  ************************************************************************
                       Hamiltonian
@@ -230,7 +231,7 @@
  ROOT IJ PARTITION:                16  100.0000%
  ROOT PHI PARTITION:                5   71.4286%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0200
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0195
  ************************************************************************
  ARRAY ALLOCATION TIME (s):         0.0000
  ************************************************************************
@@ -263,7 +264,7 @@
    0.06                                  GTABLE MAX RANGE
    0.00    0.00                          ISOSCALAR COULOMB (C TAU)
  ************************************************************************
- PROPAGATOR INITIALIZATION TIME (s):         0.0100
+ PROPAGATOR INITIALIZATION TIME (s):         0.0101
  ************************************************************************
  T-ZERO ENERGY TIME (s):         0.0021
  ************************************************************************
@@ -4839,6 +4840,6 @@
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0682 (0.0111)
   CHARGE SYMMETRIC MAGNETIC MOMENT                      = -1.9893 (0.0329)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    6.6372000000000000E-002
- TIME PER SAMPLE (s):    0.2337042253521127E-03
+ TOTAL CALCULATION TIME (s):    4.9696999999999998E-002
+ TIME PER SAMPLE (s):    0.1749894366197183E-03
  ************************************************************************
