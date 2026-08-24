@@ -1,6 +1,6 @@
  ************************************************************************
-  DATE: 22-Aug-26
-  TIME: 08:17:22
+  DATE: 24-Aug-26
+  TIME: 14:18:16
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
@@ -220,11 +220,11 @@
  ROOT IJ PARTITION:                32  100.0000%
  ROOT PHI PARTITION:               10   40.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1739
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1749
  ************************************************************************
  ACCEPTANCE PROBABILITY:    47.50%
  ************************************************************************
- BURN IN TIME (s):         0.0006
+ BURN IN TIME (s):         0.0007
  ************************************************************************
                               -------------
                               LOCAL AVERAGE
@@ -1111,15 +1111,15 @@
   POINT NEUTRON RMS RADIUS =  1.6327 (0.0654)
   POINT PROTON  RMS RADIUS =  1.6327 (0.0654)
 
-  NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  MAGNETIC MOMENT                      =  0.0000 (0.0000)
 
-  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
  ************************************************************************
                               -------------
                               LOCAL AVERAGE
@@ -2009,12 +2009,12 @@
   NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
   PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  MAGNETIC MOMENT                      =  0.0000 (0.0000)
+  MAGNETIC MOMENT                      = -0.0000 (0.0000)
 
   CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
   CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
+  CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
  ************************************************************************
                               -------------
                               TOTAL AVERAGE
@@ -2901,16 +2901,16 @@
   POINT NEUTRON RMS RADIUS =  1.7208 (0.0638)
   POINT PROTON  RMS RADIUS =  1.7208 (0.0638)
 
-  NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  MAGNETIC MOMENT                      =  0.0000 (0.0000)
 
-  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.20846999999999999     
- TIME PER SAMPLE (s):    0.1042350000000000E-02
+ TOTAL CALCULATION TIME (s):   0.20918300000000001     
+ TIME PER SAMPLE (s):    0.1045915000000000E-02
  ************************************************************************

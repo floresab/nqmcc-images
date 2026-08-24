@@ -1,6 +1,6 @@
  ************************************************************************
-  DATE: 22-Aug-26
-  TIME: 08:17:22
+  DATE: 24-Aug-26
+  TIME: 14:18:17
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
@@ -220,11 +220,11 @@
  ROOT IJ PARTITION:                96  100.0000%
  ROOT PHI PARTITION:               24   96.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1793
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1778
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.50%
  ************************************************************************
- BURN IN TIME (s):         0.0015
+ BURN IN TIME (s):         0.0016
  ************************************************************************
                               -------------
                               LOCAL AVERAGE
@@ -1079,7 +1079,7 @@
 
                         Vem =     0.8738 (0.0202)
   ----
-  T(ci)     =  0.8460E+02 (0.7603E+01)  T(csb)    =  0.3648E-19 (0.1862E-18)
+  T(ci)     =  0.8460E+02 (0.7603E+01)  T(csb)    = -0.3358E-18 (0.4801E-18)
   ----
   CENTRAL   =  0.5476E+01 (0.4328E+01)  T         =  0.2231E+02 (0.5830E+01)
   S         = -0.9863E+01 (0.4205E+01)  S.T       = -0.3512E+02 (0.3617E+01)
@@ -1088,9 +1088,9 @@
   L^2       =  0.5274E+01 (0.1153E+01)  L^2.T     =  0.0000E+00 (0.0000E+00)
   L^2.S     =  0.3169E+00 (0.1408E+00)  L^2.S.T   =  0.0000E+00 (0.0000E+00)
   (L.S)^2   = -0.2237E+01 (0.3490E+00)  (L.S)^2.T =  0.0000E+00 (0.0000E+00)
-  CD        = -0.1491E-16 (0.1272E-16)  CD.S      =  0.6766E-16 (0.4001E-16)
-  CD.TNSR   =  0.8266E-17 (0.9295E-17)  (L.S).CD  = -0.6111E-15 (0.2069E-14)
-  CSB       =  0.2333E-18 (0.5094E-18)  CSB.S     =  0.0000E+00 (0.0000E+00)
+  CD        = -0.1465E-16 (0.9188E-17)  CD.S      =  0.3488E-16 (0.2082E-16)
+  CD.TNSR   =  0.1823E-17 (0.6548E-17)  (L.S).CD  =  0.7423E-16 (0.1197E-14)
+  CSB       = -0.1295E-18 (0.5006E-18)  CSB.S     =  0.0000E+00 (0.0000E+00)
   CSB.TNSR  =  0.0000E+00 (0.0000E+00)  (L.S).CSB =  0.0000E+00 (0.0000E+00)
   ----
   2PI-AC    = -0.4167E+01 (0.7221E+00)  2PI-C     = -0.4384E+01 (0.6378E+00)
@@ -1114,7 +1114,7 @@
   NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
   ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  MAGNETIC MOMENT                      =  0.0000 (0.0000)
 
   CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
@@ -1974,7 +1974,7 @@
 
                         Vem =     0.7230 (0.0171)
   ----
-  T(ci)     =  0.5840E+02 (0.5036E+01)  T(csb)    =  0.2367E-20 (0.1593E-18)
+  T(ci)     =  0.5840E+02 (0.5036E+01)  T(csb)    =  0.1899E-19 (0.3108E-18)
   ----
   CENTRAL   =  0.2818E+01 (0.3266E+01)  T         =  0.9018E+01 (0.2790E+01)
   S         = -0.9125E+01 (0.2245E+01)  S.T       = -0.2214E+02 (0.1987E+01)
@@ -1983,9 +1983,9 @@
   L^2       =  0.2153E+01 (0.1085E+01)  L^2.T     =  0.0000E+00 (0.0000E+00)
   L^2.S     =  0.3287E+00 (0.1335E+00)  L^2.S.T   =  0.0000E+00 (0.0000E+00)
   (L.S)^2   = -0.1229E+01 (0.2761E+00)  (L.S)^2.T =  0.0000E+00 (0.0000E+00)
-  CD        =  0.1168E-17 (0.1336E-16)  CD.S      =  0.1098E-17 (0.1964E-16)
-  CD.TNSR   = -0.9203E-17 (0.6155E-17)  (L.S).CD  = -0.7648E-15 (0.1320E-14)
-  CSB       =  0.3005E-18 (0.4679E-18)  CSB.S     =  0.0000E+00 (0.0000E+00)
+  CD        =  0.6795E-17 (0.8660E-17)  CD.S      = -0.5537E-17 (0.1334E-16)
+  CD.TNSR   =  0.6745E-17 (0.3665E-17)  (L.S).CD  =  0.1174E-14 (0.1221E-14)
+  CSB       = -0.3144E-18 (0.4426E-18)  CSB.S     =  0.0000E+00 (0.0000E+00)
   CSB.TNSR  =  0.0000E+00 (0.0000E+00)  (L.S).CSB =  0.0000E+00 (0.0000E+00)
   ----
   2PI-AC    = -0.1559E+01 (0.5593E+00)  2PI-C     = -0.1860E+01 (0.4863E+00)
@@ -2007,14 +2007,14 @@
   POINT PROTON  RMS RADIUS =  1.7157 (0.0618)
 
   NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   MAGNETIC MOMENT                      =  0.0000 (0.0000)
 
-  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
   CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
  ************************************************************************
                               -------------
                               TOTAL AVERAGE
@@ -2869,7 +2869,7 @@
 
                         Vem =     0.7984 (0.0132)
   ----
-  T(ci)     =  0.7150E+02 (0.4560E+01)  T(csb)    =  0.1942E-19 (0.1225E-18)
+  T(ci)     =  0.7150E+02 (0.4560E+01)  T(csb)    = -0.1584E-18 (0.2859E-18)
   ----
   CENTRAL   =  0.4147E+01 (0.2711E+01)  T         =  0.1566E+02 (0.3232E+01)
   S         = -0.9494E+01 (0.2383E+01)  S.T       = -0.2863E+02 (0.2063E+01)
@@ -2878,9 +2878,9 @@
   L^2       =  0.3714E+01 (0.7918E+00)  L^2.T     =  0.0000E+00 (0.0000E+00)
   L^2.S     =  0.3228E+00 (0.9704E-01)  L^2.S.T   =  0.0000E+00 (0.0000E+00)
   (L.S)^2   = -0.1733E+01 (0.2225E+00)  (L.S)^2.T =  0.0000E+00 (0.0000E+00)
-  CD        = -0.6870E-17 (0.9222E-17)  CD.S      =  0.3438E-16 (0.2229E-16)
-  CD.TNSR   = -0.4683E-18 (0.5574E-17)  (L.S).CD  = -0.6880E-15 (0.1227E-14)
-  CSB       =  0.2669E-18 (0.3458E-18)  CSB.S     =  0.0000E+00 (0.0000E+00)
+  CD        = -0.3930E-17 (0.6313E-17)  CD.S      =  0.1467E-16 (0.1236E-16)
+  CD.TNSR   =  0.4284E-17 (0.3752E-17)  (L.S).CD  =  0.6241E-15 (0.8550E-15)
+  CSB       = -0.2220E-18 (0.3341E-18)  CSB.S     =  0.0000E+00 (0.0000E+00)
   CSB.TNSR  =  0.0000E+00 (0.0000E+00)  (L.S).CSB =  0.0000E+00 (0.0000E+00)
   ----
   2PI-AC    = -0.2863E+01 (0.4567E+00)  2PI-C     = -0.3122E+01 (0.4010E+00)
@@ -2903,14 +2903,14 @@
 
   NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  MAGNETIC MOMENT                      =  0.0000 (0.0000)
 
   CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
+  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.21137599999999998     
- TIME PER SAMPLE (s):    0.1056880000000000E-02
+ TOTAL CALCULATION TIME (s):   0.20951799999999998     
+ TIME PER SAMPLE (s):    0.1047590000000000E-02
  ************************************************************************
