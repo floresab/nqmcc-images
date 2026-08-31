@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 24-Aug-26
-  TIME: 14:18:18
+  DATE: 31-Aug-26
+  TIME: 14:38:35
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
-  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        1
   MPI: ROOT:        0
@@ -477,11 +477,11 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =    1.0000000000000002     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0237
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0241
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.10%
  ************************************************************************
- BURN IN TIME (s):         0.0258
+ BURN IN TIME (s):         0.0197
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -822,6 +822,6 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
   [He4]x[n(s1/2)]:    0.4069E-03  (0.4229E-04)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.21242900000000001     
- TIME PER SAMPLE (s):    0.5310725000000000E-03
+ TOTAL CALCULATION TIME (s):   0.16758800000000001     
+ TIME PER SAMPLE (s):    0.4189700000000001E-03
  ************************************************************************

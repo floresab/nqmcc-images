@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 24-Aug-26
-  TIME: 14:18:22
+  DATE: 31-Aug-26
+  TIME: 14:38:39
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
-  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        2
   MPI: ROOT:        0
@@ -221,11 +221,11 @@
  ROOT IJ PARTITION:                12   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0124
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0127
  ************************************************************************
  ACCEPTANCE PROBABILITY:    54.00%
  ************************************************************************
- BURN IN TIME (s):         0.0003
+ BURN IN TIME (s):         0.0004
  ************************************************************************
  Nucleon Form Factors | mA =    2817.4036
  ************************************************************************
@@ -1606,6 +1606,6 @@
     9.9000   0.9636E-03 (0.6487E-03)   0.1155E-02 (0.1590E-02)
    10.0000   0.9464E-03 (0.6300E-03)   0.9884E-03 (0.1532E-02)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    4.2530999999999999E-002
- TIME PER SAMPLE (s):    0.1063275000000000E-03
+ TOTAL CALCULATION TIME (s):    4.5356999999999995E-002
+ TIME PER SAMPLE (s):    0.1133925000000000E-03
  ************************************************************************

@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 24-Aug-26
-  TIME: 14:18:04
+  DATE: 31-Aug-26
+  TIME: 14:38:21
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
-  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
                       CALCULATION TYPE
     ----------------------------------------------------
@@ -48,7 +48,7 @@
  READING PHI FROM: external/nqmcc-images/li6.phi
  READING PHI -- DONE
  ************************************************************************
- READING PHI TIME (s):         0.0003
+ READING PHI TIME (s):         0.0002
  ************************************************************************
  RANK: 0
  FILE: external/nqmcc-images/li6.phi.0.1
@@ -59,5 +59,5 @@
  ************************************************************************
  MAX PHI PARTITION: 4320  100.0000%
  ************************************************************************
- SCATTER PHIGEN TIME (s):         0.0001
+ SCATTER PHIGEN TIME (s):         0.0002
  ************************************************************************

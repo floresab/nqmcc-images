@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 24-Aug-26
-  TIME: 14:18:10
+  DATE: 31-Aug-26
+  TIME: 14:38:28
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.07.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
-  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        3
   MPI: ROOT:        0
@@ -214,7 +214,7 @@
  READING YLM FROM: external/nqmcc-images/li6.ylm
  ROOT READING SCATTERED PHI FROM: external/nqmcc-images/li6_wf3.phi.0.3
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0214
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0206
  ************************************************************************
  ALLOCATION TIME (s):         0.0011
  ************************************************************************
@@ -226,11 +226,8 @@
  ************************************************************************
  KE TIME (s):         0.0001
  VIJ TIME (s):         0.0015
- VEM TIME (s):         0.0005
- VIJK INTERP TIME (s):         0.0000
- VIJK ALLOCATE TIME (s):         0.0000
- SIGMA-TENSOR TIME (s):         0.0001
- VIJK TIME (s):         0.0008
+ VEM TIME (s):         0.0004
+ VIJK TIME (s):         0.0007
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
  ------------------------------------
@@ -288,7 +285,7 @@
  Vij:      -0.16425319608829946105E+03
  Vijk:      0.84117785430875819941E+01
  Vem:       0.16500119066878353724E+01
- H:        -0.25411891054854240934E+02
+ H:        -0.25411891054854237382E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.8811000000000002E-002
+ TOTAL CALCULATION TIME (s):    5.7679000000000001E-002
  ************************************************************************
