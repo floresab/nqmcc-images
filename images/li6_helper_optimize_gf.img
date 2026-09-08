@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 07-Sep-26
-  TIME: 05:41:43
+  DATE: 08-Sep-26
+  TIME: 17:10:29
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.07.0
+  nuclear Quantum Monte Carlo with Continuum : 1.08.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -45,7 +45,8 @@
  CALCULATION PARAMETERS
  ************************************************************************
  1       1     2                                             NLOPT_METHOD  NUM_OPT_WALKS  NUM_OPT_EVALUATIONS
- F    1.50    1.50                                           LIMIT_CHARGE_RADII NR_LIMIT PR_LIMIT
+   1.00    2.00    0.00                                      ENERGY VARIANCE CRADII (COST FACTORS)
+   1.50    1.50                                              NR_LIMIT PR_LIMIT
  external/nqmcc-images/input/decks/li6.opt                   OPTIMIZATION_INPUT 
  external/nqmcc-images/li6-helper-opt.dk                     OPTIMIZED_DECK
  ************************************************************************
@@ -439,8 +440,8 @@
   POINT PROTON  RMS RADIUS =  2.0788 (0.1155)
  ************************************************************************
  SAMPLE:    1 OF    2
- NORM:                                           1.0000
- ENERGY + SQRT(VAR) + CHARGE RADII COST:       -25.5294
+ NORM:                  1.0000
+ COST FUNCTION:        -4.3795
  WAVE FUNCTION UPDATING
  SETTING TWO BODY OPERATOR CORRELATIONS
  ************************************************************************
@@ -549,8 +550,8 @@
   POINT PROTON  RMS RADIUS =  2.0788 (0.1155)
  ************************************************************************
  SAMPLE:    2 OF    2
- NORM:                                           1.0000
- ENERGY + SQRT(VAR) + CHARGE RADII COST:       -24.9758
+ NORM:                  1.0000
+ COST FUNCTION:        -3.3223
  ************************************************************************
  Lithium-6 1+ (g.s.)
    1       1.0       1.0       0.0       0.0                                              Pi J m_J T m_T
@@ -1043,14 +1044,14 @@
   POINT PROTON  RMS RADIUS =  2.0788 (0.1156)
  ************************************************************************
  SAMPLE:    3 OF    2
- NORM:                                           1.0000
- ENERGY + SQRT(VAR) + CHARGE RADII COST:       -25.4872
+ NORM:                  1.0000
+ COST FUNCTION:        -4.4559
  ************************************************************************
  OPTIMIZED ENERGY: -28.9896 (3.5024)
- NEUTRON RADIUS  :   2.0788 (0.0134)
- PROTON  RADIUS  :   2.0788 (0.0134)
+ NEUTRON RADIUS  :   2.0788 (0.1156)
+ PROTON  RADIUS  :   2.0788 (0.1156)
  ************************************************************************
  WRITTING DECK TO: external/nqmcc-images/li6-helper-opt.dk
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.1684200000000000     
+ TOTAL CALCULATION TIME (s):    1.1749550000000000     
  ************************************************************************
