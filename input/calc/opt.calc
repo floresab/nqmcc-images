@@ -1,4 +1,5 @@
-1  1  2                                      opt_method  num_opt_walks  num_opt_evaluations
+1                                            nlopt_method
+1  2  1.0                                    num_opt_trys  num_opt_evaluations opt_factor
 1.0 2.0 0.0                                  energy variance radii (cost factors)
 1.5  1.5                                     nr_limit  pr_limit
 'external/nqmcc-images/input/decks/li6.opt'  optimization_input

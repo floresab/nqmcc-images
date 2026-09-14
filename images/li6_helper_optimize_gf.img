@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 15:21:10
+  TIME: 16:51:30
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -42,7 +42,8 @@
  ************************************************************************
  CALCULATION PARAMETERS
  ************************************************************************
- 1       1     2                                             NLOPT_METHOD  NUM_OPT_WALKS  NUM_OPT_EVALUATIONS
+  1                                                          NLOPT_METHOD
+      1       2    1.00                                      NUM_OPT_TRYS  NUM_OPT_EVALUATIONS  OPT_TRY_FACTOR
    1.00    2.00    0.00                                      ENERGY VARIANCE CRADII (COST FACTORS)
    1.50    1.50                                              NR_LIMIT PR_LIMIT
  external/nqmcc-images/input/decks/li6.opt                   OPTIMIZATION_INPUT 
@@ -1048,5 +1049,5 @@
  ************************************************************************
  WRITTING DECK TO: external/nqmcc-images/li6-helper-opt.dk
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.1714760000000000     
+ TOTAL CALCULATION TIME (s):    1.1595130000000000     
  ************************************************************************
