@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:36
+  TIME: 15:21:29
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -31,13 +31,11 @@
  external/nqmcc-images/input/decks/he4.dk                    DECK_FILE
  0  kal/he4.spin               kal/he4.isospin               R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4.ylm                kal/he4.phi                   R/W : YLM_FILE PHI_FILE
- 0  configs/he4.config                                       R/W : CONFIG_FILE
  variational                                                 KET-TYPE
  nuclei/params/he4n.params                                   PARAM_FILE
  external/nqmcc-images/input/decks/he4n_1hp.dk               DECK_FILE
  0  kal/he4n.spin              kal/he4n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4n_0p.ylm            kal/he4n_0p.phi               R/W : YLM_FILE PHI_FILE
- 0  configs/he5_0p_av18_uix.config                           R/W : CONFIG_FILE
      25265137                                                RNG SEED
         2         5         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
         5        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -479,11 +477,11 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =    1.0000000000000002     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0317
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0343
  ************************************************************************
  ACCEPTANCE PROBABILITY:    80.00%
  ************************************************************************
- BURN IN TIME (s):         0.0003
+ BURN IN TIME (s):         0.0004
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -851,6 +849,6 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
   S.C. PHASESHIFT   0.9760E+02  (0.6557E+01)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.17383599999999999     
- TIME PER SAMPLE (s):    0.1738360000000000E-01
+ TOTAL CALCULATION TIME (s):   0.18128599999999997     
+ TIME PER SAMPLE (s):    0.1812860000000000E-01
  ************************************************************************

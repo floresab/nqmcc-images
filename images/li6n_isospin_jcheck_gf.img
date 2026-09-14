@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:31
+  TIME: 15:21:24
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -26,7 +26,6 @@
  external/nqmcc-images/input/decks/li6n_1hp.dk               DECK_FILE
  0  kal/li6n.spin              kal/li6n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/li6n.ylm               kal/li6n.phi                  R/W : YLM_FILE PHI_FILE
- 0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
      25265137                                                RNG SEED
         5      1000         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -317,7 +316,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ROOT IJ PARTITION:              1792  100.0000%
  ROOT PHI PARTITION:            15030   25.2012%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0327
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0328
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -42430,7 +42429,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ************************************************************************
  ACCEPTANCE PROBABILITY:    42.00%
  ************************************************************************
- BURN IN TIME (s):         0.0485
+ BURN IN TIME (s):         0.0474
  ************************************************************************
 
  ORTHOGONALITY CHECK
@@ -43132,8 +43131,8 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
     ----------------------------------------------------
  ***MAX SYMMETRY ABOVE OF THRESHOLD***
  ************************************************************************
- TESTS TIME (s):         0.0192
+ TESTS TIME (s):         0.0190
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.14575199999999999     
+ TOTAL CALCULATION TIME (s):   0.14316499999999999     
  ************************************************************************
  TEST FAIL

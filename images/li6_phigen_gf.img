@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:18
+  TIME: 15:21:10
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -29,7 +29,6 @@
  external/nqmcc-images/input/decks/li6.dk                    DECK_FILE
  0  external/nqmcc-images/li6  external/nqmcc-images/li6     R/W : SPIN_FILE ISOSPIN_FILE
  0  external/nqmcc-images/li6  external/nqmcc-images/li6     R/W : YLM_FILE PHI_FILE
- 0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
      25265137                                                RNG SEED
         5      1600         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -153,5 +152,5 @@
  ************************************************************************
  WRITTING PHI -- DONE
  ************************************************************************
- TOTAL CALCULATION TIME (s):    2.5130000000000000E-003
+ TOTAL CALCULATION TIME (s):    2.6259999999999999E-003
  ************************************************************************

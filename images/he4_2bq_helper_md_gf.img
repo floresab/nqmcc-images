@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:37
+  TIME: 15:21:29
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -29,7 +29,6 @@
  external/nqmcc-images/input/decks/he4.dk                    DECK_FILE
  0  kal/he4.spin               kal/he4.isospin               R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4.ylm                kal/he4.phi                   R/W : YLM_FILE PHI_FILE
- 0  configs/he4_av18_uix.config                              R/W : CONFIG_FILE
      25265137                                                RNG SEED
         2        10         1                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -223,11 +222,11 @@
  ROOT IJ PARTITION:                16   50.0000%
  ROOT PHI PARTITION:                6   24.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0129
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0133
  ************************************************************************
  ACCEPTANCE PROBABILITY:    46.00%
  ************************************************************************
- BURN IN TIME (s):         0.0013
+ BURN IN TIME (s):         0.0014
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -913,6 +912,6 @@
     2.5946 (0.2474E-01)     3.4053 (0.4549E-01)     5.9999 (0.5178E-01)
    --------------------------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.18905100000000000     
- TIME PER SAMPLE (s):    0.9452550000000001E-02
+ TOTAL CALCULATION TIME (s):   0.19563100000000000     
+ TIME PER SAMPLE (s):    0.9781550000000000E-02
  ************************************************************************

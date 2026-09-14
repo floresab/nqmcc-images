@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:35
+  TIME: 15:21:28
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -31,13 +31,11 @@
  external/nqmcc-images/input/decks/li6.dk                    DECK_FILE
  0  kal/li6xn.spin             kal/li6xn.isospin             R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/li6xn.ylm              kal/li6xn.phi                 R/W : YLM_FILE PHI_FILE
- 0  configs/li6xn.config                                     R/W : CONFIG_FILE
  variational                                                 KET-TYPE
  nuclei/params/li7.params                                    PARAM_FILE
  external/nqmcc-images/input/decks/li7_3hm.dk                DECK_FILE
  0  kal/li7.spin               kal/li7.isospin               R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/li7.ylm                kal/li7.phi                   R/W : YLM_FILE PHI_FILE
- 0  configs/li7.config                                       R/W : CONFIG_FILE
      27265137                                                RNG SEED
         2        20         1                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
        10        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -663,11 +661,11 @@
  J Jz   2.50000000      0.500000000    
  <L Lz S Sz | J Jz> =  -0.65465367070797698     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0886
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0912
  ************************************************************************
  ACCEPTANCE PROBABILITY:    70.00%
  ************************************************************************
- BURN IN TIME (s):         0.0104
+ BURN IN TIME (s):         0.0109
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -2556,6 +2554,6 @@
   [Li(1+)]x[n(f5/2)]:    0.2340E-02  (0.1051E-02)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.80339199999999988     
- TIME PER SAMPLE (s):    0.2008480000000000E-01
+ TOTAL CALCULATION TIME (s):   0.81838100000000003     
+ TIME PER SAMPLE (s):    0.2045952500000000E-01
  ************************************************************************

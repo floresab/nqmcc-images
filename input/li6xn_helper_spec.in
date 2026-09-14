@@ -11,13 +11,11 @@
 'external/nqmcc-images/input/decks/li6.dk'   deck_file
 0  'kal/li6xn.spin' 'kal/li6xn.isospin'      read_write_spin_phi  spin_file isospin_file (r/w broken for products)
 0  'kal/li6xn.ylm'  'kal/li6xn.phi'          read_write_ylm_phi  ylm_file  phi_file
-0  'configs/li6xn.config'                    read_write_config  config_file
 'variational'                                wavefunction_type
 'nuclei/params/li7.params'                   param_file
 'external/nqmcc-images/input/decks/li7_3hm.dk'               deck_file
 0  'kal/li7.spin' 'kal/li7.isospin'          read_write_spin_phi  spin_file isospin_file
 0  'kal/li7.ylm'  'kal/li7.phi'              read_write_ylm_phi  ylm_file  phi_file
-0  'configs/li7.config'                      read_write_config  config_file
 27265137                                     rng_seed
 2  20  1                                  num_blocks block_size walkers_per_node
 10   10                                    burn_in num_moves_between

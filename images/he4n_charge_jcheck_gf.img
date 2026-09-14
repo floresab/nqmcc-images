@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:31
+  TIME: 15:21:23
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -26,7 +26,6 @@
  external/nqmcc-images/input/decks/he4n_1hp.dk               DECK_FILE
  0  kal/he4n.spin              kal/he4n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4n_0p.ylm            kal/he4n_0p.phi               R/W : YLM_FILE PHI_FILE
- 0  configs/he5_0p_av18_uix.config                           R/W : CONFIG_FILE
      25265137                                                RNG SEED
        10     10000         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
      1000        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -252,7 +251,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  ROOT IJ PARTITION:               320  100.0000%
  ROOT PHI PARTITION:              120   50.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0200
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0203
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -41620,7 +41619,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.10%
  ************************************************************************
- BURN IN TIME (s):         0.0338
+ BURN IN TIME (s):         0.0340
  ************************************************************************
 
  ORTHOGONALITY CHECK
@@ -41700,7 +41699,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
       <Jz> ABSOLUTE ERROR:   0.00000000E+00
     ----------------------------------------------------
  ************************************************************************
- TESTS TIME (s):         0.0007
+ TESTS TIME (s):         0.0008
  ************************************************************************
- TOTAL CALCULATION TIME (s):    9.8650999999999989E-002
+ TOTAL CALCULATION TIME (s):    9.9483999999999989E-002
  ************************************************************************

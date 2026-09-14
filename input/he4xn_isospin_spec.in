@@ -11,13 +11,11 @@
 'external/nqmcc-images/input/decks/he4.dk'         deck_file
 0  'kal/he4.spin' 'kal/he4.isospin'          read_write_spin_phi  spin_file isospin_file (r/w broken for products)
 0  'kal/he4.ylm'  'kal/he4.phi'              read_write_ylm_phi  ylm_file  phi_file
-0  'configs/he4.config'                      read_write_config  config_file
 'variational'                                wavefunction_type
 'nuclei/params/he4n.params'                  param_file
 'external/nqmcc-images/input/decks/he4n_1hp.dk'    deck_file
 0  'kal/he4n.spin' 'kal/he4n.isospin'        read_write_spin_phi  spin_file isospin_file
 0  'kal/he4n_0p.ylm'  'kal/he4n_0p.phi'      read_write_ylm_phi  ylm_file  phi_file
-0  'configs/he5_0p_av18_uix.config'          read_write_config  config_file
 25265137                                     rng_seed
 2  200  0                                    num_blocks block_size walkers_per_node
 1000   10                                    burn_in num_moves_between

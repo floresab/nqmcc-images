@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 11:58:26
+  TIME: 15:21:19
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -29,7 +29,6 @@
  external/nqmcc-images/input/decks/li6.dk                    DECK_FILE
  2  external/nqmcc-images/li6  external/nqmcc-images/li6     R/W : SPIN_FILE ISOSPIN_FILE
  3  external/nqmcc-images/li6  external/nqmcc-images/li6     R/W : YLM_FILE PHI_FILE
- 0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
      25265137                                                RNG SEED
         5      1600         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -213,19 +212,19 @@
  READING YLM FROM: external/nqmcc-images/li6.ylm
  ROOT READING SCATTERED PHI FROM: external/nqmcc-images/li6.phi.0.1
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0202
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0200
  ************************************************************************
  ALLOCATION TIME (s):         0.0010
  ************************************************************************
  ACCEPTANCE PROBABILITY:    52.00%
  ************************************************************************
- BURN IN TIME (s):         0.0204
+ BURN IN TIME (s):         0.0202
  ************************************************************************
- DERIVATIVE TIME (s):         0.0088
+ DERIVATIVE TIME (s):         0.0089
  ************************************************************************
  KE TIME (s):         0.0000
- VIJ TIME (s):         0.0019
- VEM TIME (s):         0.0004
+ VIJ TIME (s):         0.0014
+ VEM TIME (s):         0.0003
  VIJK TIME (s):         0.0006
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
@@ -286,5 +285,5 @@
  Vem:       0.16500119066878353724E+01
  H:        -0.25411891054854237382E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.3525999999999997E-002
+ TOTAL CALCULATION TIME (s):    5.2659999999999998E-002
  ************************************************************************

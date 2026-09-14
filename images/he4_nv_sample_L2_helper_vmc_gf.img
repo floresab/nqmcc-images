@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 14-Sep-26
-  TIME: 13:21:28
+  TIME: 15:21:25
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
@@ -29,7 +29,6 @@
  external/nqmcc-images/input/decks/he4_nv.dk                 DECK_FILE
  0  kal/he4.spin               kal/he4.isospin               R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4.ylm                kal/he4.phi                   R/W : YLM_FILE PHI_FILE
- 0  configs/he4_av18_uix.config                              R/W : CONFIG_FILE
      25265137                                                RNG SEED
         2       100         1                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       200        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -219,11 +218,11 @@
  ROOT IJ PARTITION:                48   50.0000%
  ROOT PHI PARTITION:               12   48.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1743
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1755
  ************************************************************************
  ACCEPTANCE PROBABILITY:    47.50%
  ************************************************************************
- BURN IN TIME (s):         0.0020
+ BURN IN TIME (s):         0.0018
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:      100
  ************************************************************************
@@ -1134,6 +1133,6 @@
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
   CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.24378100000000000     
- TIME PER SAMPLE (s):    0.1218905000000000E-02
+ TOTAL CALCULATION TIME (s):   0.24637499999999998     
+ TIME PER SAMPLE (s):    0.1231875000000000E-02
  ************************************************************************
