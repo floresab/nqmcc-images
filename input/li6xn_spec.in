@@ -18,7 +18,6 @@
 0  'kal/li7.spin' 'kal/li7.isospin'          read_write_spin_phi  spin_file isospin_file
 0  'kal/li7.ylm'  'kal/li7.phi'              read_write_ylm_phi  ylm_file  phi_file
 0  'configs/li7.config'                      read_write_config  config_file
-0  'dummy.walk'                              read_write_walk  walk_file
 27265137                                     rng_seed
 2  20  0                                  num_blocks block_size walkers_per_node
 10   10                                    burn_in num_moves_between

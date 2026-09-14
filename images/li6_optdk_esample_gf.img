@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 07-Sep-26
-  TIME: 05:41:49
+  DATE: 14-Sep-26
+  TIME: 11:58:27
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.07.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -30,7 +30,6 @@
  0  dummy.spin                 dummy.isospin                 R/W : SPIN_FILE ISOSPIN_FILE
  0  dummy.ylm                  dummy.phi                     R/W : YLM_FILE PHI_FILE
  0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
- 0  external/nqmcc-images/li6.walk                           R/W : WALK_FILE
      25265137                                                RNG SEED
         1        10         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
        50        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -284,19 +283,19 @@
  ROOT IJ PARTITION:              1280  100.0000%
  ROOT PHI PARTITION:             4320  100.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0228
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0229
  ************************************************************************
  ALLOCATION TIME (s):         0.0008
  ************************************************************************
  ACCEPTANCE PROBABILITY:    50.00%
  ************************************************************************
- BURN IN TIME (s):         0.0104
+ BURN IN TIME (s):         0.0103
  ************************************************************************
  DERIVATIVE TIME (s):         0.0089
  ************************************************************************
  KE TIME (s):         0.0000
- VIJ TIME (s):         0.0013
- VEM TIME (s):         0.0004
+ VIJ TIME (s):         0.0014
+ VEM TIME (s):         0.0003
  VIJK TIME (s):         0.0006
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
@@ -357,5 +356,5 @@
  Vem:       0.20703776857590154847E+01
  H:        -0.26588029041859741142E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    4.5405000000000001E-002
+ TOTAL CALCULATION TIME (s):    4.5469999999999997E-002
  ************************************************************************

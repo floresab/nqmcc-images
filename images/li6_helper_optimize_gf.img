@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 08-Sep-26
-  TIME: 17:10:29
+  DATE: 14-Sep-26
+  TIME: 11:58:18
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.08.1
+  nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -30,7 +30,6 @@
  0  dummy.spin                 dummy.isospin                 R/W : SPIN_FILE ISOSPIN_FILE
  0  dummy.ylm                  dummy.phi                     R/W : YLM_FILE PHI_FILE
  0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
- 0  external/nqmcc-images/li6.walk                           R/W : WALK_FILE
      25265137                                                RNG SEED
         1        10         1                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
         5        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -440,7 +439,6 @@
   POINT PROTON  RMS RADIUS =  2.0788 (0.1155)
  ************************************************************************
  SAMPLE:    1 OF    2
- NORM:                  1.0000
  COST FUNCTION:        -4.3795
  WAVE FUNCTION UPDATING
  SETTING TWO BODY OPERATOR CORRELATIONS
@@ -550,7 +548,6 @@
   POINT PROTON  RMS RADIUS =  2.0788 (0.1155)
  ************************************************************************
  SAMPLE:    2 OF    2
- NORM:                  1.0000
  COST FUNCTION:        -3.3223
  ************************************************************************
  Lithium-6 1+ (g.s.)
@@ -593,14 +590,14 @@
    1   0   0   4   1   1   0                                                              lfsp e_v lscat m1 m2 L nodes
    1.00000 -21.00000   4.00000   1.50000   0.00000   1.44000                              wse wsv wsr wsa wbrho wbalph
  ************************************************************************
- WRITING WALK TO: external/nqmcc-images/li6.walk
+ WRITING WALK TO: scratch/opt.walk
  DISKSPACE NEEDED (MB):       0.0028
  ************************************************************************
  ACCEPTANCE PROBABILITY:    60.00%
  ************************************************************************
  <3S[2]        | 3S[2]       >
  ************************************************************************
- READING WALK FROM: external/nqmcc-images/li6.walk
+ READING WALK FROM: scratch/opt.walk
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -653,7 +650,7 @@
  ************************************************************************
  <3S[2]        | 3D[2]       >
  ************************************************************************
- READING WALK FROM: external/nqmcc-images/li6.walk
+ READING WALK FROM: scratch/opt.walk
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -706,7 +703,7 @@
  ************************************************************************
  <3S[2]        | 1P[11]      >
  ************************************************************************
- READING WALK FROM: external/nqmcc-images/li6.walk
+ READING WALK FROM: scratch/opt.walk
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -759,7 +756,7 @@
  ************************************************************************
  <3D[2]        | 3D[2]       >
  ************************************************************************
- READING WALK FROM: external/nqmcc-images/li6.walk
+ READING WALK FROM: scratch/opt.walk
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -812,7 +809,7 @@
  ************************************************************************
  <3D[2]        | 1P[11]      >
  ************************************************************************
- READING WALK FROM: external/nqmcc-images/li6.walk
+ READING WALK FROM: scratch/opt.walk
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -865,7 +862,7 @@
  ************************************************************************
  <1P[11]       | 1P[11]      >
  ************************************************************************
- READING WALK FROM: external/nqmcc-images/li6.walk
+ READING WALK FROM: scratch/opt.walk
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -1044,7 +1041,6 @@
   POINT PROTON  RMS RADIUS =  2.0788 (0.1156)
  ************************************************************************
  SAMPLE:    3 OF    2
- NORM:                  1.0000
  COST FUNCTION:        -4.4559
  ************************************************************************
  OPTIMIZED ENERGY: -28.9896 (3.5024)
@@ -1053,5 +1049,5 @@
  ************************************************************************
  WRITTING DECK TO: external/nqmcc-images/li6-helper-opt.dk
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.1749550000000000     
+ TOTAL CALCULATION TIME (s):    1.1393090000000001     
  ************************************************************************

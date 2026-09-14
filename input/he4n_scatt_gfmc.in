@@ -10,7 +10,6 @@
 0  'kal/he4n.spin' 'kal/he4n.isospin'        read_write_spin_phi  spin_file isospin_file
 0  'kal/he4n_0p.ylm'  'kal/he4n_0p.phi'      read_write_ylm_phi  ylm_file  phi_file
 0  'configs/he5_0p_av18_uix.config'          read_write_config  config_file
-0  'walks/he5_0p_av18_uix.walk'              read_write_walk  walk_file
 25265137                                     rng_seed
 10  25  0                                    num_blocks block_size walkers_per_node
 10   10                                      burn_in num_moves_between

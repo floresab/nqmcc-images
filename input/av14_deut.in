@@ -5,7 +5,6 @@
 0 'dummy.calc'                               calc_type calc_file
 .true.                                       bra_eq_ket
 'deuteron'                                   Wavefunction_type
-0 'dummy'
 25265137                                     rng_seed
 0  0  0                                      num_blocks block_size walkers_per_node
 0  0                                         burn_in num_moves_between

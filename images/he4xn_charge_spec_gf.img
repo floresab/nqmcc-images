@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 07-Sep-26
-  TIME: 05:41:56
+  DATE: 14-Sep-26
+  TIME: 11:58:34
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.07.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -38,7 +38,6 @@
  0  kal/he4n.spin              kal/he4n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4n_0p.ylm            kal/he4n_0p.phi               R/W : YLM_FILE PHI_FILE
  0  configs/he5_0p_av18_uix.config                           R/W : CONFIG_FILE
- 0  dummy.walk                                               R/W : WALK_FILE
      25265137                                                RNG SEED
         2       200         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
      1000        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -477,11 +476,11 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =    1.0000000000000002     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0249
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0247
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.10%
  ************************************************************************
- BURN IN TIME (s):         0.0345
+ BURN IN TIME (s):         0.0343
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -822,6 +821,6 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
   [He4]x[n(s1/2)]:    0.4069E-03  (0.4229E-04)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.27967699999999995     
- TIME PER SAMPLE (s):    0.6991924999999999E-03
+ TOTAL CALCULATION TIME (s):   0.27486100000000002     
+ TIME PER SAMPLE (s):    0.6871525000000001E-03
  ************************************************************************

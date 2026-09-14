@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 07-Sep-26
-  TIME: 05:41:54
+  DATE: 14-Sep-26
+  TIME: 11:58:32
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.07.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -27,7 +27,6 @@
  0  kal/li6n.spin              kal/li6n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/li6n.ylm               kal/li6n.phi                  R/W : YLM_FILE PHI_FILE
  0  configs/li6_av18_uix.config                              R/W : CONFIG_FILE
- 0  walks/li6_av18_uix.walk                                  R/W : WALK_FILE
      25265137                                                RNG SEED
         5      1000         1                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -318,7 +317,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ROOT IJ PARTITION:              2240   50.0000%
  ROOT PHI PARTITION:             7524   12.6157%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0563
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0537
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -43148,7 +43147,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ************************************************************************
  ACCEPTANCE PROBABILITY:    42.00%
  ************************************************************************
- BURN IN TIME (s):         0.0949
+ BURN IN TIME (s):         0.0947
  ************************************************************************
 
  TOTAL NORM =   2.0000
@@ -43219,7 +43218,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
       <Jz> ABSOLUTE ERROR:   0.11102230E-15
     ----------------------------------------------------
  ************************************************************************
- TESTS TIME (s):         0.0233
+ TESTS TIME (s):         0.0217
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.22042600000000001     
+ TOTAL CALCULATION TIME (s):   0.21629200000000001     
  ************************************************************************

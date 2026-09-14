@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 09-Sep-26
-  TIME: 18:57:30
+  DATE: 14-Sep-26
+  TIME: 11:58:27
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.08.1
+  nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -30,7 +30,6 @@
  0  dummy.spin                 dummy.isospin                 R/W : SPIN_FILE ISOSPIN_FILE
  0  dummy.ylm                  dummy.phi                     R/W : YLM_FILE PHI_FILE
  0  configs/li7_av18_uix.config                              R/W : CONFIG_FILE
- 0  external/nqmcc-images/li7.walk                           R/W : WALK_FILE
      25265137                                                RNG SEED
         1        40         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
        50        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -323,19 +322,19 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ROOT IJ PARTITION:              1792  100.0000%
  ROOT PHI PARTITION:            15030   25.2012%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0356
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0349
  ************************************************************************
- ALLOCATION TIME (s):         0.0018
+ ALLOCATION TIME (s):         0.0017
  ************************************************************************
  ACCEPTANCE PROBABILITY:    46.00%
  ************************************************************************
- BURN IN TIME (s):         0.0245
+ BURN IN TIME (s):         0.0246
  ************************************************************************
- DERIVATIVE TIME (s):         0.0282
+ DERIVATIVE TIME (s):         0.0273
  ************************************************************************
  KE TIME (s):         0.0001
- VIJ TIME (s):         0.0033
- VEM TIME (s):         0.0011
+ VIJ TIME (s):         0.0030
+ VEM TIME (s):         0.0010
  VIJK TIME (s):         0.0000
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
@@ -397,5 +396,5 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  Vem:       0.18965676822120451916E+01
  H:         0.20654506853190145677E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    9.4739999999999991E-002
+ TOTAL CALCULATION TIME (s):    9.2649999999999996E-002
  ************************************************************************

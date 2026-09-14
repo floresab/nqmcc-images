@@ -10,7 +10,6 @@
 0  'kal/li6n.spin' 'kal/li6n.isospin'        read_write_spin_phi  spin_file isospin_file
 0  'kal/li6n.ylm'  'kal/li6n.phi'            read_write_ylm_phi  ylm_file  phi_file
 0  'configs/li6_av18_uix.config'             read_write_config  config_file
-0  'walks/li6_av18_uix.walk'                 read_write_walk  walk_file
 25265137                                     rng_seed
 5  1000  1                                   num_blocks block_size walkers_per_node
 100   10                                     burn_in num_moves_between

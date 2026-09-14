@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 07-Sep-26
-  TIME: 05:42:00
+  DATE: 14-Sep-26
+  TIME: 11:58:38
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.07.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -30,7 +30,6 @@
  0  kal/h3.spin                kal/h3.isospin                R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/h3.ylm                 kal/h3.phi                    R/W : YLM_FILE PHI_FILE
  0  configs/h3_av18_uix.config                               R/W : CONFIG_FILE
- 0  walks/h3_av18_uix.walk                                   R/W : WALK_FILE
      25265137                                                RNG SEED
         2      2000         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
       100        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -223,7 +222,7 @@
  ROOT IJ PARTITION:                24  100.0000%
  ROOT PHI PARTITION:                6   85.7143%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0123
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0128
  ************************************************************************
  ACCEPTANCE PROBABILITY:    54.00%
  ************************************************************************
@@ -1436,6 +1435,6 @@
  
  
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.50518899999999989     
- TIME PER SAMPLE (s):    0.1262972500000000E-03
+ TOTAL CALCULATION TIME (s):   0.50343000000000004     
+ TIME PER SAMPLE (s):    0.1258575000000000E-03
  ************************************************************************
