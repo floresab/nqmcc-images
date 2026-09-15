@@ -1,8 +1,8 @@
  ************************************************************************
   DATE: 15-Sep-26
-  TIME: 07:24:38
+  TIME: 12:44:54
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -50,6 +50,7 @@
  CALCULATION PARAMETERS
  ************************************************************************
   5    0.1414E+01    0.1000E+01    0.1000E+01    0.0000E+00  LASTP_SAMPLE_TYPE LPS_A LPS_B NORM NORM_ERR
+ F  F     0    -1  dummy.config                              READ_BRA READ_KET TAUI TAUF GFMC_CONFIG_FILE
  ************************************************************************
  BROADCASTING CONTROL
  ************************************************************************
@@ -580,11 +581,11 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =  -0.57735026918962584     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0258
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0256
  ************************************************************************
  ACCEPTANCE PROBABILITY:    60.80%
  ************************************************************************
- BURN IN TIME (s):         0.0031
+ BURN IN TIME (s):         0.0029
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -1204,6 +1205,6 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
   [H3]x[n(p1/2)]:    0.4048E-02  (0.1535E-02)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):    3.5185999999999995E-002
- TIME PER SAMPLE (s):    0.3518600000000000E-03
+ TOTAL CALCULATION TIME (s):    3.4382999999999997E-002
+ TIME PER SAMPLE (s):    0.3438300000000000E-03
  ************************************************************************

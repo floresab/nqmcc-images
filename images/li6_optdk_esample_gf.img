@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 14-Sep-26
-  TIME: 15:21:19
+  DATE: 15-Sep-26
+  TIME: 12:44:45
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -282,15 +282,15 @@
  ROOT IJ PARTITION:              1280  100.0000%
  ROOT PHI PARTITION:             4320  100.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0230
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0229
  ************************************************************************
  ALLOCATION TIME (s):         0.0008
  ************************************************************************
  ACCEPTANCE PROBABILITY:    50.00%
  ************************************************************************
- BURN IN TIME (s):         0.0107
+ BURN IN TIME (s):         0.0102
  ************************************************************************
- DERIVATIVE TIME (s):         0.0088
+ DERIVATIVE TIME (s):         0.0090
  ************************************************************************
  KE TIME (s):         0.0000
  VIJ TIME (s):         0.0014
@@ -355,5 +355,5 @@
  Vem:       0.20703776857590154847E+01
  H:        -0.26588029041859741142E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    4.5767999999999996E-002
+ TOTAL CALCULATION TIME (s):    4.5456999999999997E-002
  ************************************************************************

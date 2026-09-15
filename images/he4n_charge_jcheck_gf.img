@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 14-Sep-26
-  TIME: 15:21:23
+  DATE: 15-Sep-26
+  TIME: 12:44:49
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -251,7 +251,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  ROOT IJ PARTITION:               320  100.0000%
  ROOT PHI PARTITION:              120   50.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0203
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0198
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -41619,7 +41619,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.10%
  ************************************************************************
- BURN IN TIME (s):         0.0340
+ BURN IN TIME (s):         0.0341
  ************************************************************************
 
  ORTHOGONALITY CHECK
@@ -41699,7 +41699,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
       <Jz> ABSOLUTE ERROR:   0.00000000E+00
     ----------------------------------------------------
  ************************************************************************
- TESTS TIME (s):         0.0008
+ TESTS TIME (s):         0.0007
  ************************************************************************
- TOTAL CALCULATION TIME (s):    9.9483999999999989E-002
+ TOTAL CALCULATION TIME (s):    9.8944999999999991E-002
  ************************************************************************

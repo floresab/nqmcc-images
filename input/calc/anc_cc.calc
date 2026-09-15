@@ -1,2 +1,4 @@
-5  1.414  1.0  1.0   0.                          lastp_sample_type lspa lspb norm norm_err
-3.0 0.9 0. 0. 0. 0.                            ance gam e1 v1 e2 v2
+1                                            ancden_type 
+5  1.414  1.0  1.0   0.                      lastp_sample_type lspa lspb norm norm_err
+3.0 0.9 0. 0. 0. 0.                          ance gam e1 v1 e2 v2
+.false. .false. 0 -1 'dummy.config'          read_bra read_ket taui tauf config_file

@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 14-Sep-26
-  TIME: 15:21:19
+  DATE: 15-Sep-26
+  TIME: 12:44:45
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -212,15 +212,15 @@
  READING YLM FROM: external/nqmcc-images/li6.ylm
  ROOT READING SCATTERED PHI FROM: external/nqmcc-images/li6_wf3.phi.0.3
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0209
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0200
  ************************************************************************
- ALLOCATION TIME (s):         0.0011
+ ALLOCATION TIME (s):         0.0010
  ************************************************************************
  ACCEPTANCE PROBABILITY:    52.00%
  ************************************************************************
- BURN IN TIME (s):         0.0207
+ BURN IN TIME (s):         0.0206
  ************************************************************************
- DERIVATIVE TIME (s):         0.0091
+ DERIVATIVE TIME (s):         0.0089
  ************************************************************************
  KE TIME (s):         0.0000
  VIJ TIME (s):         0.0014
@@ -285,5 +285,5 @@
  Vem:       0.16500119066878353724E+01
  H:        -0.25411891054854237382E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.4348999999999995E-002
+ TOTAL CALCULATION TIME (s):    5.3171999999999997E-002
  ************************************************************************

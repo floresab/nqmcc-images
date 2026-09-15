@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 14-Sep-26
-  TIME: 15:21:19
+  DATE: 15-Sep-26
+  TIME: 12:44:45
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -321,18 +321,18 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ROOT IJ PARTITION:              1792  100.0000%
  ROOT PHI PARTITION:            15030   25.2012%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0353
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0352
  ************************************************************************
- ALLOCATION TIME (s):         0.0019
+ ALLOCATION TIME (s):         0.0017
  ************************************************************************
  ACCEPTANCE PROBABILITY:    46.00%
  ************************************************************************
- BURN IN TIME (s):         0.0246
+ BURN IN TIME (s):         0.0239
  ************************************************************************
- DERIVATIVE TIME (s):         0.0266
+ DERIVATIVE TIME (s):         0.0263
  ************************************************************************
  KE TIME (s):         0.0001
- VIJ TIME (s):         0.0030
+ VIJ TIME (s):         0.0031
  VEM TIME (s):         0.0010
  VIJK TIME (s):         0.0000
  ************************************************************************
@@ -395,5 +395,5 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  Vem:       0.18965676822120451916E+01
  H:         0.20654506853190145677E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    9.2601000000000003E-002
+ TOTAL CALCULATION TIME (s):    9.1360999999999998E-002
  ************************************************************************

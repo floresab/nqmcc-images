@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 14-Sep-26
-  TIME: 15:21:17
+  DATE: 15-Sep-26
+  TIME: 12:44:43
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.0
+  nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -50,7 +50,7 @@
     2     5                                                  LOAD_BALANCE_FREQ MAX_IMBALANCE
     2  0.2000  0.0500  0.1000                                UNCONSTRAINED_STEPS ALPHA BETA EPSILON
     0    1.00                                                LFSCAT MAX RC-RC' DIFF
-    4     1     2                                            E_FREQ EFIRST ELAST
+    4     1     2                                            E_FREQ TAUI TAUF
     4  external/nqmcc-images/h3_av18ux.configs               CONFIG_FREQ GFMC_CONFIG_FILE
  ************************************************************************
  BROADCASTING CONTROL
@@ -229,7 +229,7 @@
  ROOT IJ PARTITION:                24  100.0000%
  ROOT PHI PARTITION:                6   85.7143%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0196
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0205
  ************************************************************************
  ARRAY ALLOCATION TIME (s):         0.0000
  ************************************************************************
@@ -237,7 +237,7 @@
  ************************************************************************
  GENERATING INITIAL CONFIGS -- DONE
  ************************************************************************
- T-ZERO INITIALIZATION TIME (s):         0.0016
+ T-ZERO INITIALIZATION TIME (s):         0.0011
  ************************************************************************
  INITIALIZING PROPAGATOR
  ************************************************************************
@@ -262,11 +262,11 @@
    0.06                                  GTABLE MAX RANGE
    0.00    0.00                          ISOSCALAR COULOMB (C TAU)
  ************************************************************************
- PROPAGATOR INITIALIZATION TIME (s):         0.0101
+ PROPAGATOR INITIALIZATION TIME (s):         0.0102
  ************************************************************************
  CALCULTING T-ZERO OBSERVABLES
  ************************************************************************
- T-ZERO OBSERVABLE TIME (s):         0.0025
+ T-ZERO OBSERVABLE TIME (s):         0.0023
  ************************************************************************
  INITIAL POPULATION:          100
  ************************************************************************
@@ -4842,6 +4842,6 @@
    0.4000E-01        110    -8.3452 (0.4762)     1.0385 (0.5134)    -6.5226 (1.2832)
  
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.4928999999999999E-002
- TIME PER SAMPLE (s):    0.1639671641791045E-03
+ TOTAL CALCULATION TIME (s):    5.4981000000000002E-002
+ TIME PER SAMPLE (s):    0.1641223880597015E-03
  ************************************************************************
