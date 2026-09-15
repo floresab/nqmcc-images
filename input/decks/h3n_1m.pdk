@@ -1,0 +1,7 @@
+'Hydrogen-3+n 1- (product)'          Name
+  1.0    -1.0                        T MT
+'[H3]x[n(p3/2)]'
+ -1    1.0    1.0    1.0  1.5          PI J MJ  L_sps J_sps
+'[H3]x[n(p1/2)]'
+ -1    1.0    1.0    1.0  0.5          PI J MJ  L_sps J_sps
+
