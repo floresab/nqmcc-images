@@ -1,11 +1,11 @@
  ************************************************************************
-  DATE: 15-Sep-26
-  TIME: 12:44:55
+  DATE: 23-Sep-26
+  TIME: 14:49:45
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.09.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
-  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
   MPI: SIZE:        1
   MPI: ROOT:        0
@@ -37,7 +37,8 @@
  0  kal/he4n.spin              kal/he4n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4n_0p.ylm            kal/he4n_0p.phi               R/W : YLM_FILE PHI_FILE
      25265137                                                RNG SEED
-        2         5         0                                BLOCKS BLOCK_SIZE WALKERS_PER_NODE
+        2         5                                          BLOCKS BLOCK_SIZE
+        0  F                                                 WALKERS_PER_NODE FAULT_TOLERANCE
         5        10                                          BURN_IN NUM_MOVES_BETWEEN
  1.4000                                                      PARTICLE_DX
  F    1.60    0.01                                           SAMPLE_L2 RSAM PSAM
@@ -479,7 +480,7 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =    1.0000000000000002     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0315
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0320
  ************************************************************************
  ACCEPTANCE PROBABILITY:    80.00%
  ************************************************************************
@@ -851,6 +852,6 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
   S.C. PHASESHIFT   0.9760E+02  (0.6555E+01)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.11143000000000000     
- TIME PER SAMPLE (s):    0.1114300000000000E-01
+ TOTAL CALCULATION TIME (s):   0.11536900000000000     
+ TIME PER SAMPLE (s):    0.1153690000000000E-01
  ************************************************************************

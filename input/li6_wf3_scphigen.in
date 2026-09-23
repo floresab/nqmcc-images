@@ -10,7 +10,8 @@
 0  'external/nqmcc-images/li6.spin' 'external/nqmcc-images/li6.isospin'          read_write_spin_phi  spin_file isospin_file
 0  'external/nqmcc-images/li6.ylm'  'external/nqmcc-images/li6_wf3.phi'              read_write_ylm_phi  ylm_file  phi_file
 25265137                                     rng_seed
-5  1600  3                                   num_blocks block_size walkers_per_node
+5  1600                                      num_blocks block_size
+3  .false.                                   walkers_per_node fault_tolerance
 100   10                                     burn_in num_moves_between
 1.2                                          particle_dx
 .false.  1.6  0.01                           sample_L2 rsam psam
