@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 24-Sep-26
-  TIME: 12:10:54
+  TIME: 12:44:59
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.10.0
  ************************************************************************
@@ -29,7 +29,7 @@
  external/nqmcc-images/input/decks/he4_nv.dk                 DECK_FILE
  0  kal/he4.spin               kal/he4.isospin               R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4.ylm                kal/he4.phi                   R/W : YLM_FILE PHI_FILE
-        2  T       3.0       5.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
+        2  T       0.5       1.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
      25265137                                                RNG SEED
         2       100                                          BLOCKS BLOCK_SIZE
       200        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -67,8 +67,8 @@
  ************************************************************************
  FAULT TOLERANCE
  ************************************************************************
- MIN TIMEOUT (s):                       3.00
- INIT TIMEOUT (s):                      5.00
+ MIN TIMEOUT (s):                       0.50
+ INIT TIMEOUT (s):                      1.00
  DEAD FACTOR:                          10.00
  POLL INTERVAL (s):                     0.01
  REPORT INTERVAL (s):                  30.00
@@ -236,7 +236,7 @@
  ************************************************************************
  WAVE FUNCTION INITIALIZATION TIME (s):         0.1777
  ************************************************************************
- BURN IN TIME (s):         0.0358
+ BURN IN TIME (s):         0.0355
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:       50
  ************************************************************************
@@ -1159,7 +1159,7 @@
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.2168530469934922     
- TIME PER SAMPLE (s):    0.5216853046993492E-01
+ TOTAL CALCULATION TIME (s):    1.2196394009952201     
+ TIME PER SAMPLE (s):    0.1219639400995220E-01
  ************************************************************************
  FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS

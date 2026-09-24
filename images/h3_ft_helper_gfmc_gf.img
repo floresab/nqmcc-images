@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 24-Sep-26
-  TIME: 09:28:46
+  TIME: 12:44:44
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.10.0
  ************************************************************************
@@ -29,7 +29,7 @@
  external/nqmcc-images/input/decks/h3.dk                     DECK_FILE
  0  kal/h3.spin                kal/h3.isospin                R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/h3.ylm                 kal/h3.phi                    R/W : YLM_FILE PHI_FILE
-        2  T       3.0       5.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
+        2  T       0.5       1.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
      25265137                                                RNG SEED
         1       100                                          BLOCKS BLOCK_SIZE
        15        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -78,8 +78,8 @@
  ************************************************************************
  FAULT TOLERANCE
  ************************************************************************
- MIN TIMEOUT (s):                       3.00
- INIT TIMEOUT (s):                      5.00
+ MIN TIMEOUT (s):                       0.50
+ INIT TIMEOUT (s):                      1.00
  DEAD FACTOR:                          10.00
  POLL INTERVAL (s):                     0.01
  REPORT INTERVAL (s):                  30.00
@@ -242,7 +242,7 @@
  ROOT IJ PARTITION:                12   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0195
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0191
  ************************************************************************
  ARRAY ALLOCATION TIME (s):         0.0000
  ************************************************************************
@@ -250,7 +250,7 @@
  ************************************************************************
  GENERATING INITIAL CONFIGS -- DONE
  ************************************************************************
- T-ZERO INITIALIZATION TIME (s):         0.0015
+ T-ZERO INITIALIZATION TIME (s):         0.0014
  ************************************************************************
  INITIALIZING PROPAGATOR
  ************************************************************************
@@ -275,7 +275,7 @@
    0.06                                  GTABLE MAX RANGE
    0.00    0.00                          ISOSCALAR COULOMB (C TAU)
  ************************************************************************
- PROPAGATOR INITIALIZATION TIME (s):         0.0107
+ PROPAGATOR INITIALIZATION TIME (s):         0.0100
  ************************************************************************
  CALCULTING T-ZERO OBSERVABLES
  ************************************************************************
@@ -11968,6 +11968,6 @@
    0.2000E+00        129    -8.9622 (0.6108)     1.5825 (0.6439)    -6.0517 (1.5483)
  
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.13341572399076540     
- TIME PER SAMPLE (s):    0.1096267247253619E-03
+ TOTAL CALCULATION TIME (s):   0.13312251200841274     
+ TIME PER SAMPLE (s):    0.1093857945837410E-03
  ************************************************************************
