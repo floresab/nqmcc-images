@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 23-Sep-26
-  TIME: 14:49:42
+  DATE: 24-Sep-26
+  TIME: 09:04:24
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.1
+  nuclear Quantum Monte Carlo with Continuum : 1.10.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -36,9 +36,9 @@
  external/nqmcc-images/input/decks/he4n_1hp.dk               DECK_FILE
  0  kal/he4n.spin              kal/he4n.isospin              R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/he4n_0p.ylm            kal/he4n_0p.phi               R/W : YLM_FILE PHI_FILE
+        0  F     300.0    3600.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
      25265137                                                RNG SEED
         2       200                                          BLOCKS BLOCK_SIZE
-        0  F                                                 WALKERS_PER_NODE FAULT_TOLERANCE
      1000        10                                          BURN_IN NUM_MOVES_BETWEEN
  1.4000                                                      PARTICLE_DX
  F    1.60    0.01                                           SAMPLE_L2 RSAM PSAM
@@ -476,11 +476,11 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =    1.0000000000000002     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0246
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0237
  ************************************************************************
  ACCEPTANCE PROBABILITY:    49.10%
  ************************************************************************
- BURN IN TIME (s):         0.0192
+ BURN IN TIME (s):         0.0185
  ************************************************************************
                       -------------
                       LOCAL AVERAGE
@@ -821,6 +821,6 @@ MULTI_YLM1: NEEDS     1 CY1 PRODS INSTEAD OF      1
   [He4]x[n(s1/2)]:    0.4069E-03  (0.4229E-04)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.16572299999999998     
- TIME PER SAMPLE (s):    0.4143074999999999E-03
+ TOTAL CALCULATION TIME (s):   0.16042492100677919     
+ TIME PER SAMPLE (s):    0.4010623025169480E-03
  ************************************************************************

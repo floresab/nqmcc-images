@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 23-Sep-26
-  TIME: 14:49:34
+  DATE: 24-Sep-26
+  TIME: 09:04:16
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.09.1
+  nuclear Quantum Monte Carlo with Continuum : 1.10.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -29,9 +29,9 @@
  external/nqmcc-images/input/decks/h3.dk                     DECK_FILE
  0  kal/h3.spin                kal/h3.isospin                R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/h3.ylm                 kal/h3.phi                    R/W : YLM_FILE PHI_FILE
+        0  F     300.0    3600.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
      25265137                                                RNG SEED
         4     25000                                          BLOCKS BLOCK_SIZE
-        0  F                                                 WALKERS_PER_NODE FAULT_TOLERANCE
      1000        10                                          BURN_IN NUM_MOVES_BETWEEN
  1.4000                                                      PARTICLE_DX
  F    1.60    0.01                                           SAMPLE_L2 RSAM PSAM
@@ -220,13 +220,13 @@
  ROOT IJ PARTITION:                24  100.0000%
  ROOT PHI PARTITION:                6   85.7143%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1720
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1703
  ************************************************************************
  ALLOCATION TIME (s):         0.0000
  ************************************************************************
  ACCEPTANCE PROBABILITY:    64.10%
  ************************************************************************
- BURN IN TIME (s):         0.0016
+ BURN IN TIME (s):         0.0014
  ************************************************************************
  DERIVATIVE TIME (s):         0.0001
  ************************************************************************
@@ -290,5 +290,5 @@
  Vem:       0.25522405745154332080E-01
  H:        -0.86603305040122329217E+01
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.17396500000000001     
+ TOTAL CALCULATION TIME (s):   0.17201552700134926     
  ************************************************************************
