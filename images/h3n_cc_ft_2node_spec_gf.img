@@ -1,0 +1,837 @@
+ ************************************************************************
+  DATE: 02-Oct-26
+  TIME: 10:35:56
+ ************************************************************************
+  nuclear Quantum Monte Carlo with Continuum : 1.10.0
+ ************************************************************************
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+ ************************************************************************
+  MPI: SIZE:       10
+  MPI: ROOT:        0
+ ************************************************************************
+                      CALCULATION TYPE
+    ----------------------------------------------------
+                     VMC-SPEC
+                     BASIS: charge
+    ----------------------------------------------------
+ ************************************************************************
+ CONTROL INPUTS
+ ************************************************************************
+ charge                                                      BASIS
+ constants/fbn95.const                                       CONSTANTS_FILE
+ pots/av18.2bp              pots/none.3bp                    2B_POT_FILE, 3B_POT_FILE
+ 1  1                                                        LKE LEMP
+ 4  external/nqmcc-images/input/calc/spec_cc.calc            CALC_FILE_FORMAT CALC_FILE
+ F                                                           BRA_EQ_KET
+ product                                                     BRA-TYPE
+ nuclei/params/h3n_cc.params                                 PRODUCT-PARAM_FILE
+ external/nqmcc-images/input/decks/h3n_1m.pdk                PRODUCT-DECK_FILE
+ nuclei/params/h3.params                                     PARAM_FILE
+ external/nqmcc-images/input/decks/h3.dk                     DECK_FILE
+ 0  kal/h3.spin                kal/h3.isospin                R/W : SPIN_FILE ISOSPIN_FILE
+ 0  kal/h3.ylm                 kal/h3.phi                    R/W : YLM_FILE PHI_FILE
+ variational                                                 KET-TYPE
+ nuclei/params/h3n_cc.params                                 PARAM_FILE
+ external/nqmcc-images/input/decks/h3n_1m.dk                 DECK_FILE
+ 0  kal/h3.spin                kal/h3.isospin                R/W : SPIN_FILE ISOSPIN_FILE
+ 0  kal/h3.ylm                 kal/h3.phi                    R/W : YLM_FILE PHI_FILE
+        2  T       0.5       1.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
+     25265169                                                RNG SEED
+        2        50                                          BLOCKS BLOCK_SIZE
+      500        10                                          BURN_IN NUM_MOVES_BETWEEN
+ 1.4000                                                      PARTICLE_DX
+ F    1.60    0.01                                           SAMPLE_L2 RSAM PSAM
+     5120       128        32                                NPTS ONE_OVER_DX FD_FACTOR
+  40.00    9.00   40.00                                      SS_LIMIT SP_LIMIT SD_LIMIT (in fm)
+   9.00                                                      BOX RADIUS (in fm)
+       0.1000        9.0000                                  BIN_WIDTH BIN_MAXR
+ scratch/                                                    SCRATCH_DIRECTORY
+ ************************************************************************
+ CALCULATION PARAMETERS
+ ************************************************************************
+  5    0.1414E+01    0.1000E+01    0.1000E+01    0.0000E+00  LASTP_SAMPLE_TYPE LPS_A LPS_B NORM NORM_ERR
+ F  F     0    -1  dummy.config                              READ_BRA READ_KET TAUI TAUF GFMC_CONFIG_FILE
+ ************************************************************************
+ BROADCASTING CONTROL
+ ************************************************************************
+ BROADCASTING CALC
+ ************************************************************************
+ BROADCAST CALC -- DONE
+ ************************************************************************
+ BROADCASTING WAVEFUNCTION INPUT
+ BROADCAST WAVEFUNCTION INPUT -- DONE
+ ************************************************************************
+ BROADCASTING WAVEFUNCTION INPUT
+ BROADCAST WAVEFUNCTION INPUT -- DONE
+ ************************************************************************
+ BROADCAST CONTROL -- DONE
+ ************************************************************************
+ MPI TOPOLOGY
+ ************************************************************************
+ IS TRIVIAL?  F
+ FAULT TOLERANT?  T
+ SUPERVISOR ISOLATED?  F
+ NUMBER OF MANAGERS:                2
+ WORKER RANKS PER NODE:             4
+ NUMBER OF WALKERS PER NODE:        2
+ NUMBER OF HELPERS PER WALKER:      2
+ TOTAL NUMBER OF WALKERS:           4
+ ************************************************************************
+ FAULT TOLERANCE
+ ************************************************************************
+ MIN TIMEOUT (s):                       0.50
+ INIT TIMEOUT (s):                      1.00
+ DEAD FACTOR:                          10.00
+ POLL INTERVAL (s):                     0.01
+ REPORT INTERVAL (s):                  30.00
+ INJECTED HANG ON RANK:                    7
+ INJECTED HANG AT STEP:                   20
+ ************************************************************************
+ CONSTANTS
+ ************************************************************************
+   3.14159265                 PI
+   0.57721566                 EULERS_CONSTANT
+ ************************************************************************
+ PHYSICAL CONSTANTS
+ ************************************************************************
+ 197.32705300                 HBARC
+ 938.27231000                 PROTON MASS
+ 939.56563000                 NEUTRON MASS
+   0.51099900                 ELECTRON MASS
+ 293.10000000                 NUCLEON MASS DIFFERENCE
+ 134.97390000                 NEUTRAL PION MASS
+ 139.56750000                 CHARGED PION MASS
+   0.07500000                 PION NUCLEON COUPLING CONSTANT
+   0.00729735                 HYPER FINE STRUCTURE CONSTANT (ALPHA)
+   2.79284740                 PROTON MAGNETIC MOMENT
+  -1.91304270                 NEUTRON MAGNETIC MOMENT
+   5.58569478                 PROTON G-FACTOR
+  -3.82608560                 NEUTRON G-FACTOR
+   0.81200000                 GD ROOT MEAN SQUARE RADIUS
+   0.01890000                 NEUTRON FORM FACTOR SLOPE
+   1.29000000                 g_A
+  92.40000000                 PION DECAY AMPLITUDE
+ ************************************************************************
+ COMPUTED CONSTANTS
+ ************************************************************************
+ 138.03630000                 PION MASS
+  41.47108064                 HBAR**2 / (2 * MU)
+  41.47106096                 H2MAVG
+   0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
+   2.73650324                 h_A
+ ************************************************************************
+                      Hamiltonian
+    ----------------------------------------------------
+         Two-Body Potential: Argonne v18
+         Three-Body Potential: NONE
+    ----------------------------------------------------
+ ************************************************************************
+                        NUCLEI
+ ************************************************************************
+ PARAMETERS FROM: nuclei/params/h3n_cc.params
+ ************************************************************************
+            4                 NUMBER OF PARTICLES (A)
+            1                 NUMBER OF PROTONS (Z)
+            3                 NUMBER OF S-SHELL PARTICLES (NSPART)
+            1                 NUMBER OF P-SHELL PARTICLES (NPPART)
+            0                 NUMBER OF SD-SHELL PARTICLES (NDPART)
+            1                 PHI_TYPE
+            2                 NUMBER OF SPATIAL SYMMETRIES (NBETA)
+          120                 NUMBER OF NON-ZERO MATRIX ELEMENTS (NPHIM)
+        10000                 MAX ? (NS0) : KALMAN LIMITS
+          500                 MAX L (MXL)
+           20                 MAX YOUNG TABLEUX (MNYOUNG)
+           10                 MAX MS (M_SPIN_LIM)
+           20                 MAX PERMUTATIONS? (IMA_LIM)
+           20                 MAX YOUNG NUMBERS (NY_LIM)
+            3                 MAX ? (KMACO_LIM)
+           10                 MAX L (M_L_LIM)
+        15000                 MAX ? (NTERM)
+           60                 MAX ? (NSTA0)
+          200                 MAX ? (NSC0)
+           25                 MAX YLM COMBINATIONS (NORTAB_DIM)
+         1000                 MAX UNIQUE YLM COMBINATIONS (MAX_ICY1)
+ ************************************************************************
+ COMPUTED PARAMETERS FROM: nuclei/params/h3n_cc.params
+ ************************************************************************
+           16                 NUMBER OF SPIN STATES (NS)
+            4                 NUMBER OF ISOSPIN STATES (NT)
+            1                 NUMBER OF P-SHELL + SD-SHELL PARTICLES
+            4                 NUMBER OF SPIN GROUPS (NS/4)
+            6                 NUMBER OF PAIRS
+            4                 NUMBER OF TRIPLES
+            1                 NUMBER OF QUADRUPLES
+            3                 NUMBER PAIRS IN THE S-SHELL
+            0                 NUMBER PAIRS IN THE P-SHELL
+            0                 NUMBER PAIRS IN THE P-SHELL+SD-SHELL
+            4                 NUMBER OF S-SHELL COMBINATIONS
+            1                 NUMBER OF P-SHELL COMBINATIONS
+            2                 NSPART - 1 (NCL)
+            2                 2**(NPPART + NDPART)
+            4                 2**(2*(NPPART + NDPART))
+            1                 (NPPART + NDPART)!
+           12                 4-BYTE INTEGER FACTORIAL LIMIT
+ ************************************************************************
+ H3+n
+  -1       1.0       1.0       1.0      -1.0                                              Pi J m_J T m_T
+   2   0   6   1                                                                          lwf lsc lopc lcut
+   5.90000   3.90000  13.80000   6.20000                                                  esep
+   0.02500  -0.00500                                                                      eta
+   0.00000   0.00000                                                                      zeta
+   1.00000   0.66000   1.00000   0.75000   1.00000   1.00000   1.00000   1.00000          fscal
+   1.00000   1.30000   2.00000   2.00000   2.00000   2.00000   2.00000   2.00000          ac
+   0.40000   0.60000   0.40000   0.40000   0.60000   0.60000   0.24000   0.24000          aa
+   0.60000   0.75000   2.50000   2.50000   3.50000   3.50000   0.40000   0.40000          ar
+   1.00000   1.00000   1.00000   1.00000   0.88000   0.88000   1.00000   1.00000          alpha
+   1.00000   1.00000   1.00000   1.00000   1.10000   1.10000   1.00000   1.00000          beta
+     47.29   -125.92      3.49    -14.34      2.70     -0.83      0.00      0.00          gamma
+  14.00000   8.00000   0.00000                                                            cutR cutA cutW
+   0   0   0   0   0   0   0                                                              lfsp e_v lscat m1 m2 L nodes
+   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000                              wse wsv wsr wsa wbrho wbalph
+  -0.00045   0.00000  -0.00055   0.00000   0.55000   0.80000                              delta eps theta ups rscal uscal
+   0.55000   0.20000                                                                      qps1 qps2
+   0.20000   0.85000                                                                      qsss1 qsss2
+   0.60500   1.32500                                                                      qssp1 qssp2
+ 3P[1]
+       0.0       0.5       0.5       0.5      -0.5                                        L_core S_core J_core T_core Tz_core
+       1.0       0.5       1.5       0.5      -0.5                                        L_sdsh S_sdsh J_sdsh T_sdsh Tz_sdsh
+   0.99832                                                                                beta (LS)
+   1    0.00000   1.29672   4.26067   1.60244   1.04554   3.50999   0.00000   0.00000     lfcsp spu spv spr spa spb spc spk spl
+   1   0   1   3   1   1   0                                                              lfsp e_v lscat m1 m2 L nodes
+  -0.20000                                                                                B.C.
+   3.50000 -10.00000   2.85064   0.63502   0.00000   0.00000                              wse wsv wsr wsa wbrho wbalph
+ 1P[1]
+       0.0       0.5       0.5       0.5      -0.5                                        L_core S_core J_core T_core Tz_core
+       1.0       0.5       0.5       0.5      -0.5                                        L_sdsh S_sdsh J_sdsh T_sdsh Tz_sdsh
+  -0.05801                                                                                beta (LS)
+   1    0.00000   1.84672   4.33567   1.77744   1.12054   3.88499   0.00000   0.00000     lfcsp spu spv spr spa spb spc spk spl
+   1   0   1   3   1   1   0                                                              lfsp e_v lscat m1 m2 L nodes
+  -0.20000                                                                                B.C.
+   3.25000 -10.00000   3.10064   0.63502   0.00000   0.00000                              wse wsv wsr wsa wbrho wbalph
+ ************************************************************************
+ SETTING BOOKS
+ ************************************************************************
+ SETTING BOOKS -- DONE
+ ************************************************************************
+ SETTING SPIN TABLES
+ ************************************************************************
+ SETTING SPIN TABLES -- DONE
+ ************************************************************************
+ SETTING ISOSPIN TABLES
+ ************************************************************************
+ SETTING ISOSPIN TABLES -- DONE
+ ************************************************************************
+    ----------------------------------------------------
+ MULTI1 FIND STATES WITH THE FOLLOWING QUANTUM NUMBERS
+ J Jz   1.0000000000000000        1.0000000000000000     
+ T Tz   1.0000000000000000       -1.0000000000000000     
+    ----------------------------------------------------
+ MULTI1 STATE :           1
+    ----------------------------------------------------
+ VALID jj COUPLING
+ CORE: J Jz  0.500000000      0.500000000    
+ VALENCE: J Jz   1.50000000      0.500000000    
+ J JZ   1.0000000000000000        1.0000000000000000     
+ <jc jcz jv jvz | J JZ> =   0.49999999999999994     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ GROUP FIND STATES WITH THE FOLLOWING QUANTUM NUMBERS
+ J,Jz :   0.50000000000000000       0.50000000000000000     
+ T,Tz :   0.50000000000000000      -0.50000000000000000     
+ GROUP STATE :           1
+    ----------------------------------------------------
+ ************************************************************************
+ MIN, CURRENT NSTA0:           1          60
+ MIN, CURRENT NSC0:           1         200
+ MIN, CURRENT NORTAB DIM:           1          25
+ MIN, CURRENT MXL:           0         500
+ MIN, CURRENT NS0:           0       10000
+ MIN, CURRENT MNYOUNG:           0          20
+ NSCO:            1
+    ----------------------------------------------------
+ VALID SINGLE PARTICLE LSJ COUPLING
+ L LZ   1.0000000000000000        1.0000000000000000     
+ S SZ  0.500000000     -0.50000000000000000     
+ J JZ   1.50000000      0.500000000    
+ <L LZ S SZ | J JZ> =   0.57735026918962573     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ VALID SINGLE PARTICLE LSJ COUPLING
+ L LZ   1.0000000000000000        0.0000000000000000     
+ S SZ  0.500000000      0.50000000000000000     
+ J JZ   1.50000000      0.500000000    
+ <L LZ S SZ | J JZ> =   0.81649658092772592     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ VALID jj COUPLING
+ CORE: J Jz  0.500000000     -0.500000000    
+ VALENCE: J Jz   1.50000000       1.50000000    
+ J JZ   1.0000000000000000        1.0000000000000000     
+ <jc jcz jv jvz | J JZ> =  -0.86602540378443860     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ GROUP FIND STATES WITH THE FOLLOWING QUANTUM NUMBERS
+ J,Jz :   0.50000000000000000      -0.50000000000000000     
+ T,Tz :   0.50000000000000000      -0.50000000000000000     
+ GROUP STATE :           1
+    ----------------------------------------------------
+ ************************************************************************
+ MIN, CURRENT NSTA0:           1          60
+ MIN, CURRENT NSC0:           1         200
+ MIN, CURRENT NORTAB DIM:           1          25
+ MIN, CURRENT MXL:           0         500
+ MIN, CURRENT NS0:           0       10000
+ MIN, CURRENT MNYOUNG:           0          20
+ NSCO:            1
+    ----------------------------------------------------
+ VALID SINGLE PARTICLE LSJ COUPLING
+ L LZ   1.0000000000000000        1.0000000000000000     
+ S SZ  0.500000000      0.50000000000000000     
+ J JZ   1.50000000       1.50000000    
+ <L LZ S SZ | J JZ> =    1.0000000000000000     
+    ----------------------------------------------------
+ MULTI1 STATE :           2
+    ----------------------------------------------------
+ VALID jj COUPLING
+ CORE: J Jz  0.500000000      0.500000000    
+ VALENCE: J Jz  0.500000000      0.500000000    
+ J JZ   1.0000000000000000        1.0000000000000000     
+ <jc jcz jv jvz | J JZ> =   0.99999999999999978     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ GROUP FIND STATES WITH THE FOLLOWING QUANTUM NUMBERS
+ J,Jz :   0.50000000000000000       0.50000000000000000     
+ T,Tz :   0.50000000000000000      -0.50000000000000000     
+ GROUP STATE :           1
+    ----------------------------------------------------
+ ************************************************************************
+ MIN, CURRENT NSTA0:           1          60
+ MIN, CURRENT NSC0:           1         200
+ MIN, CURRENT NORTAB DIM:           1          25
+ MIN, CURRENT MXL:           0         500
+ MIN, CURRENT NS0:           0       10000
+ MIN, CURRENT MNYOUNG:           0          20
+ NSCO:            1
+    ----------------------------------------------------
+ VALID SINGLE PARTICLE LSJ COUPLING
+ L LZ   1.0000000000000000        1.0000000000000000     
+ S SZ  0.500000000     -0.50000000000000000     
+ J JZ  0.500000000      0.500000000    
+ <L LZ S SZ | J JZ> =   0.81649658092772603     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ VALID SINGLE PARTICLE LSJ COUPLING
+ L LZ   1.0000000000000000        0.0000000000000000     
+ S SZ  0.500000000      0.50000000000000000     
+ J JZ  0.500000000      0.500000000    
+ <L LZ S SZ | J JZ> =  -0.57735026918962584     
+    ----------------------------------------------------
+ MULTI-GROUP: MIN, CURRENT NSTA0:           5          60
+ MULTI-GROUP: MIN, CURRENT NSC0:           1         200
+ MULTI-GROUP: MIN, CURRENT NORTAB DIM:           1          25
+ MULTI-GROUP: MIN, CURRENT NSTA0:           5          60
+ SETTING YLM
+MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
+           5  OF           5          60  CFSPR ARE USED
+ NUCO REDUCED FROM           5  TO           5
+ ************************************************************************
+ GENERATING PHI
+ NPHIM MIN:                  120 CURRENT:                  120
+ ************************************************************************
+ GENERATING PHI -- DONE
+ ************************************************************************
+ SETTING TWO BODY OPERATOR CORRELATIONS
+ ************************************************************************
+ SETTING TWO BODY OPERATOR CORRELATIONS -- DONE
+ ************************************************************************
+ SETTING THREE BODY OPERATOR CORRELATIONS
+ ************************************************************************
+ NO THREE BODY CORRELATIONS
+ SETTING THREE BODY OPERATOR CORRELATIONS -- DONE
+ ************************************************************************
+ SETTING TWO BODY SCALAR CORRELATIONS
+ ************************************************************************
+ SETTING TWO BODY SCALAR CORRELATIONS -- DONE
+ ************************************************************************
+ PHI PARTITION
+ ************************************************************************
+ MAX IJ INDEX:                     64
+ ROOT IJ PARTITION:                32   50.0000%
+ ROOT PHI PARTITION:               60   50.0000%
+ ************************************************************************
+ ************************************************************************
+ PARAMETERS FROM: nuclei/params/h3n_cc.params
+ ************************************************************************
+            4                 NUMBER OF PARTICLES (A)
+            1                 NUMBER OF PROTONS (Z)
+            3                 NUMBER OF S-SHELL PARTICLES (NSPART)
+            1                 NUMBER OF P-SHELL PARTICLES (NPPART)
+            0                 NUMBER OF SD-SHELL PARTICLES (NDPART)
+            1                 PHI_TYPE
+            2                 NUMBER OF SPATIAL SYMMETRIES (NBETA)
+          120                 NUMBER OF NON-ZERO MATRIX ELEMENTS (NPHIM)
+        10000                 MAX ? (NS0) : KALMAN LIMITS
+          500                 MAX L (MXL)
+           20                 MAX YOUNG TABLEUX (MNYOUNG)
+           10                 MAX MS (M_SPIN_LIM)
+           20                 MAX PERMUTATIONS? (IMA_LIM)
+           20                 MAX YOUNG NUMBERS (NY_LIM)
+            3                 MAX ? (KMACO_LIM)
+           10                 MAX L (M_L_LIM)
+        15000                 MAX ? (NTERM)
+           60                 MAX ? (NSTA0)
+          200                 MAX ? (NSC0)
+           25                 MAX YLM COMBINATIONS (NORTAB_DIM)
+         1000                 MAX UNIQUE YLM COMBINATIONS (MAX_ICY1)
+ ************************************************************************
+ COMPUTED PARAMETERS FROM: nuclei/params/h3n_cc.params
+ ************************************************************************
+           16                 NUMBER OF SPIN STATES (NS)
+            4                 NUMBER OF ISOSPIN STATES (NT)
+            1                 NUMBER OF P-SHELL + SD-SHELL PARTICLES
+            4                 NUMBER OF SPIN GROUPS (NS/4)
+            6                 NUMBER OF PAIRS
+            4                 NUMBER OF TRIPLES
+            1                 NUMBER OF QUADRUPLES
+            3                 NUMBER PAIRS IN THE S-SHELL
+            0                 NUMBER PAIRS IN THE P-SHELL
+            0                 NUMBER PAIRS IN THE P-SHELL+SD-SHELL
+            4                 NUMBER OF S-SHELL COMBINATIONS
+            1                 NUMBER OF P-SHELL COMBINATIONS
+            2                 NSPART - 1 (NCL)
+            2                 2**(NPPART + NDPART)
+            4                 2**(2*(NPPART + NDPART))
+            1                 (NPPART + NDPART)!
+           12                 4-BYTE INTEGER FACTORIAL LIMIT
+ ************************************************************************
+ Hydrogen-3+n 1- (product)
+  1.0 -1.0                          T m_T
+ [H3]x[n(p3/2)]
+  -1  1.0  1.0  1.0  1.5            Pi J m_J L_sps J_sps
+ [H3]x[n(p1/2)]
+  -1  1.0  1.0  1.0  0.5            Pi J m_J L_sps J_sps
+ ************************************************************************
+ SETTING BOOKS
+ ************************************************************************
+ SETTING BOOKS -- DONE
+ ************************************************************************
+ SETTING SPIN TABLES
+ ************************************************************************
+ SETTING SPIN TABLES -- DONE
+ ************************************************************************
+ SETTING ISOSPIN TABLES
+ ************************************************************************
+ SETTING ISOSPIN TABLES -- DONE
+ ************************************************************************
+ GENERATING CORE WAVE FUNCTION
+ ************************************************************************
+ PARAMETERS FROM: nuclei/params/h3.params
+ ************************************************************************
+            3                 NUMBER OF PARTICLES (A)
+            1                 NUMBER OF PROTONS (Z)
+            3                 NUMBER OF S-SHELL PARTICLES (NSPART)
+            0                 NUMBER OF P-SHELL PARTICLES (NPPART)
+            0                 NUMBER OF SD-SHELL PARTICLES (NDPART)
+            0                 PHI_TYPE
+            1                 NUMBER OF SPATIAL SYMMETRIES (NBETA)
+            7                 NUMBER OF NON-ZERO MATRIX ELEMENTS (NPHIM)
+        10000                 MAX ? (NS0) : KALMAN LIMITS
+          500                 MAX L (MXL)
+           20                 MAX YOUNG TABLEUX (MNYOUNG)
+           10                 MAX MS (M_SPIN_LIM)
+           20                 MAX PERMUTATIONS? (IMA_LIM)
+           20                 MAX YOUNG NUMBERS (NY_LIM)
+            3                 MAX ? (KMACO_LIM)
+           10                 MAX L (M_L_LIM)
+        15000                 MAX ? (NTERM)
+           60                 MAX ? (NSTA0)
+          200                 MAX ? (NSC0)
+           25                 MAX YLM COMBINATIONS (NORTAB_DIM)
+         1000                 MAX UNIQUE YLM COMBINATIONS (MAX_ICY1)
+ ************************************************************************
+ COMPUTED PARAMETERS FROM: nuclei/params/h3.params
+ ************************************************************************
+            8                 NUMBER OF SPIN STATES (NS)
+            3                 NUMBER OF ISOSPIN STATES (NT)
+            0                 NUMBER OF P-SHELL + SD-SHELL PARTICLES
+            2                 NUMBER OF SPIN GROUPS (NS/4)
+            3                 NUMBER OF PAIRS
+            1                 NUMBER OF TRIPLES
+            0                 NUMBER OF QUADRUPLES
+            3                 NUMBER PAIRS IN THE S-SHELL
+            0                 NUMBER PAIRS IN THE P-SHELL
+            0                 NUMBER PAIRS IN THE P-SHELL+SD-SHELL
+            1                 NUMBER OF S-SHELL COMBINATIONS
+            1                 NUMBER OF P-SHELL COMBINATIONS
+            2                 NSPART - 1 (NCL)
+            1                 2**(NPPART + NDPART)
+            1                 2**(2*(NPPART + NDPART))
+            1                 (NPPART + NDPART)!
+           12                 4-BYTE INTEGER FACTORIAL LIMIT
+ ************************************************************************
+ H-3 1/2+ (g.s.)
+   1       0.5       0.5       0.5      -0.5                                              Pi J m_J T m_T
+   2   0   6   1                                                                          lwf lsc lopc lcut
+   5.90000   3.90000  13.80000   6.20000                                                  esep
+   0.02500  -0.00500                                                                      eta
+   0.00000   0.00000                                                                      zeta
+   1.00000   0.66000   1.00000   0.75000   1.00000   1.00000   1.00000   1.00000          fscal
+   1.00000   1.30000   2.00000   2.00000   2.00000   2.00000   2.00000   2.00000          ac
+   0.40000   0.60000   0.40000   0.40000   0.60000   0.60000   0.24000   0.24000          aa
+   0.60000   0.75000   2.50000   2.50000   3.50000   3.50000   0.40000   0.40000          ar
+   1.00000   1.00000   1.00000   1.00000   0.88000   0.88000   1.00000   1.00000          alpha
+   1.00000   1.00000   1.00000   1.00000   1.10000   1.10000   1.00000   1.00000          beta
+     45.00   -100.00      4.00    -20.00      2.00     -1.00      0.00      0.00          gamma
+  14.00000   8.00000   0.00000                                                            cutR cutA cutW
+   0   0   0   0   0   0   0                                                              lfsp e_v lscat m1 m2 L nodes
+   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000                              wse wsv wsr wsa wbrho wbalph
+  -0.00045   0.00000  -0.00055   0.00000   0.55000   0.80000                              delta eps theta ups rscal uscal
+   0.55000   0.20000                                                                      qps1 qps2
+   0.20000   0.85000                                                                      qsss1 qsss2
+ ************************************************************************
+ SETTING BOOKS
+ ************************************************************************
+ SETTING BOOKS -- DONE
+ ************************************************************************
+ SETTING SPIN TABLES
+ ************************************************************************
+ SETTING SPIN TABLES -- DONE
+ ************************************************************************
+ SETTING ISOSPIN TABLES
+ ************************************************************************
+ SETTING ISOSPIN TABLES -- DONE
+ ************************************************************************
+    ----------------------------------------------------
+ GROUP FIND STATES WITH THE FOLLOWING QUANTUM NUMBERS
+ J,Jz :   0.50000000000000000       0.50000000000000000     
+ T,Tz :   0.50000000000000000      -0.50000000000000000     
+ GROUP STATE :           1
+    ----------------------------------------------------
+ ************************************************************************
+ MIN, CURRENT NSTA0:           0          60
+ MIN, CURRENT NSC0:           0         200
+ MIN, CURRENT NORTAB DIM:           0          25
+ MIN, CURRENT MXL:           0         500
+ MIN, CURRENT NS0:           0       10000
+ MIN, CURRENT MNYOUNG:           0          20
+ NSCO:            0
+ ************************************************************************
+ GENERATING PHI
+ NPHIM MIN:                    7 CURRENT:                    7
+ ************************************************************************
+ GENERATING PHI -- DONE
+ ************************************************************************
+ SETTING TWO BODY OPERATOR CORRELATIONS
+ ************************************************************************
+ SETTING TWO BODY OPERATOR CORRELATIONS -- DONE
+ ************************************************************************
+ SETTING THREE BODY OPERATOR CORRELATIONS
+ ************************************************************************
+ NO THREE BODY CORRELATIONS
+ SETTING THREE BODY OPERATOR CORRELATIONS -- DONE
+ ************************************************************************
+ SETTING TWO BODY SCALAR CORRELATIONS
+ ************************************************************************
+ SETTING TWO BODY SCALAR CORRELATIONS -- DONE
+ ************************************************************************
+ PHI PARTITION
+ ************************************************************************
+ MAX IJ INDEX:                     24
+ ROOT IJ PARTITION:                12   50.0000%
+ ROOT PHI PARTITION:                3   42.8571%
+ ************************************************************************
+    ----------------------------------------------------
+ GENERATING PRODUCT CLEBSCH TABLE
+    ----------------------------------------------------
+ VALID ISOSPIN COUPLING
+ CORE: T Tz  0.500000000     -0.500000000    
+ VALENCE: T Tz  0.500000000     -0.500000000    
+ T TZ   1.00000000      -1.00000000    
+ <tc tcz tv tvz | T TZ> =   0.99999999999999978     
+    ----------------------------------------------------
+ PRODUCT STATE: [H3]x[n(p3/2)]
+    ----------------------------------------------------
+ VALID jj COUPLING
+ CORE: J Jz  0.500000000      0.500000000    
+ VALENCE: J Jz   1.50000000      0.500000000    
+ J JZ   1.00000000       1.00000000    
+ <jc jcz jv jvz | J JZ> =   0.49999999999999994     
+    ----------------------------------------------------
+ SPIN DOWN LSJ COUPLING
+    ----------------------------------------------------
+ L Lz   1.00000000       1.00000000    
+ S Sz  0.500000000     -0.500000000    
+ J Jz   1.50000000      0.500000000    
+ <L Lz S Sz | J Jz> =   0.57735026918962573     
+    ----------------------------------------------------
+ SPIN UP LSJ COUPLING
+    ----------------------------------------------------
+ L Lz   1.00000000       0.00000000    
+ S Sz  0.500000000      0.500000000    
+ J Jz   1.50000000      0.500000000    
+ <L Lz S Sz | J Jz> =   0.81649658092772592     
+    ----------------------------------------------------
+    ----------------------------------------------------
+ PRODUCT STATE: [H3]x[n(p1/2)]
+    ----------------------------------------------------
+ VALID jj COUPLING
+ CORE: J Jz  0.500000000      0.500000000    
+ VALENCE: J Jz  0.500000000      0.500000000    
+ J JZ   1.00000000       1.00000000    
+ <jc jcz jv jvz | J JZ> =   0.99999999999999978     
+    ----------------------------------------------------
+ SPIN DOWN LSJ COUPLING
+    ----------------------------------------------------
+ L Lz   1.00000000       1.00000000    
+ S Sz  0.500000000     -0.500000000    
+ J Jz  0.500000000      0.500000000    
+ <L Lz S Sz | J Jz> =   0.81649658092772603     
+    ----------------------------------------------------
+ SPIN UP LSJ COUPLING
+    ----------------------------------------------------
+ L Lz   1.00000000       0.00000000    
+ S Sz  0.500000000      0.500000000    
+ J Jz  0.500000000      0.500000000    
+ <L Lz S Sz | J Jz> =  -0.57735026918962584     
+    ----------------------------------------------------
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0280
+ ************************************************************************
+ BURN IN TIME (s):         0.0666
+   BLOCK:        1    COMMANDER SAMPLES:       13
+ ************************************************************************
+  <i|i>         0.1001E+01  (0.1179E-02)
+  <i|i>/<f|f>   0.5452E-01  (0.1892E-01)
+  [H3]x[n(p3/2)]:    0.1408E+00  (0.1020E+00)
+  [H3]x[n(p1/2)]:    0.2308E-01  (0.1745E-01)
+ ************************************************************************
+   BLOCK:        2    COMMANDER SAMPLES:       13
+ ************************************************************************
+  <i|i>         0.9991E+00  (0.2737E-02)
+  <i|i>/<f|f>   0.6717E-01  (0.1467E-01)
+  [H3]x[n(p3/2)]:    0.2243E+00  (0.1571E+00)
+  [H3]x[n(p1/2)]:    0.1159E-01  (0.1033E-01)
+ ************************************************************************
+ FAULT TOLERANCE SUMMARY
+ ************************************************************************
+ WALKER GROUPS LAUNCHED:                   4
+ WALKER GROUPS SURVIVING:                  3
+ WALKER GROUPS LOST:                       1
+ SURVIVING FRACTION:                  0.7500
+ NODES LOST:                               0
+ RANKS DECLARED DEAD:                      2
+   LOST WF GROUP        2 IN PHASE ENERGY    AT STEP       19
+ ************************************************************************
+ ACCEPTANCE PROBABILITY:    61.87%
+ ************************************************************************
+                      -------------
+                      TOTAL AVERAGE
+                      -------------
+                    BLOCKS:         2
+                    SAMPLES:       76
+
+ ************************************************************************
+ ----------------------------------------------------
+               SPECTROSCOPIC OVERLAPS
+ ----------------------------------------------------
+    r(fm)        [H3]x[n(p3/2)]           COUNT
+    0.0500    0.0000E+00  (0.0000E+00)         0
+    0.1500    0.0000E+00  (0.0000E+00)         0
+    0.2500    0.0000E+00  (0.0000E+00)         0
+    0.3500    0.0000E+00  (0.0000E+00)         0
+    0.4500   -0.6624E-01  (0.6327E-01)         1
+    0.5500    0.1262E-01  (0.1172E-01)         1
+    0.6500    0.1313E-01  (0.1272E-01)         1
+    0.7500   -0.1240E-01  (0.1481E-01)         2
+    0.8500    0.3433E-02  (0.3281E-02)         1
+    0.9500    0.9252E-02  (0.1351E-01)         2
+    1.0500    0.2101E-01  (0.1872E-01)         8
+    1.1500   -0.6390E-03  (0.2299E-02)         4
+    1.2500    0.4257E-02  (0.5592E-02)         4
+    1.3500    0.2048E-01  (0.1769E-01)         4
+    1.4500    0.5185E-01  (0.2987E-01)         6
+    1.5500    0.1004E-01  (0.5801E-02)         9
+    1.6500    0.3368E-01  (0.2307E-01)         9
+    1.7500    0.4517E-02  (0.7588E-02)         8
+    1.8500    0.1411E-01  (0.1035E-01)         5
+    1.9500    0.1726E-01  (0.8501E-02)         7
+    2.0500    0.2648E-01  (0.1392E-01)        15
+    2.1500    0.1537E-01  (0.9844E-02)         5
+    2.2500    0.4861E-02  (0.2711E-02)         5
+    2.3500    0.8860E-02  (0.6871E-02)         6
+    2.4500    0.1622E-01  (0.9092E-02)         9
+    2.5500    0.2327E-02  (0.1305E-02)         7
+    2.6500    0.5955E-01  (0.5675E-01)         4
+    2.7500    0.2015E-01  (0.8391E-02)        10
+    2.8500    0.1393E-01  (0.7482E-02)         8
+    2.9500    0.7944E-02  (0.4268E-02)         7
+    3.0500    0.8392E-02  (0.4944E-02)         5
+    3.1500    0.6337E-01  (0.3299E-01)         7
+    3.2500    0.2614E-01  (0.1252E-01)         8
+    3.3500    0.1401E+00  (0.5626E-01)         9
+    3.4500    0.1112E-01  (0.6714E-02)         3
+    3.5500    0.1282E-01  (0.7469E-02)         5
+    3.6500    0.1053E-01  (0.7822E-02)         5
+    3.7500    0.2633E-02  (0.1521E-02)         4
+    3.8500    0.2192E-01  (0.1596E-01)         8
+    3.9500    0.1472E-01  (0.1349E-01)         5
+    4.0500    0.7336E-02  (0.4848E-02)         3
+    4.1500    0.2288E-01  (0.1713E-01)         3
+    4.2500    0.6960E-01  (0.5044E-01)         6
+    4.3500    0.2170E-01  (0.2041E-01)         3
+    4.4500    0.5713E-02  (0.4183E-02)         5
+    4.5500    0.2469E-01  (0.1568E-01)         5
+    4.6500    0.1876E-01  (0.1305E-01)         3
+    4.7500    0.9222E-02  (0.6484E-02)         3
+    4.8500    0.4610E-01  (0.1984E-01)         7
+    4.9500    0.2457E-01  (0.2421E-01)         5
+    5.0500    0.5088E-01  (0.2791E-01)         4
+    5.1500    0.2072E-02  (0.1993E-02)         1
+    5.2500    0.2047E-01  (0.1244E-01)         4
+    5.3500    0.1098E-01  (0.7701E-02)         2
+    5.4500    0.1659E-02  (0.1601E-02)         1
+    5.5500    0.6327E-02  (0.6120E-02)         1
+    5.6500    0.2402E-01  (0.1415E-01)         6
+    5.7500    0.1277E-01  (0.8256E-02)         4
+    5.8500    0.4373E-02  (0.4228E-02)         1
+    5.9500    0.0000E+00  (0.0000E+00)         0
+    6.0500    0.8631E-02  (0.8665E-02)         3
+    6.1500    0.4880E-02  (0.4694E-02)         1
+    6.2500    0.4590E-02  (0.4442E-02)         1
+    6.3500    0.1348E-01  (0.1297E-01)         1
+    6.4500    0.4481E-01  (0.2436E-01)         4
+    6.5500    0.1235E-01  (0.1201E-01)         1
+    6.6500    0.1912E-01  (0.1385E-01)         3
+    6.7500    0.1491E-01  (0.1008E-01)         3
+    6.8500    0.3357E-01  (0.1714E-01)         5
+    6.9500    0.5818E-02  (0.5613E-02)         1
+    7.0500    0.5571E-02  (0.5445E-02)         1
+    7.1500    0.1316E-03  (0.1272E-03)         1
+    7.2500    0.1427E-01  (0.1389E-01)         1
+    7.3500    0.6244E-02  (0.6043E-02)         1
+    7.4500    0.6504E-02  (0.6301E-02)         1
+    7.5500    0.6647E-02  (0.6417E-02)         1
+    7.6500    0.0000E+00  (0.0000E+00)         0
+    7.7500    0.0000E+00  (0.0000E+00)         0
+    7.8500    0.0000E+00  (0.0000E+00)         0
+    7.9500    0.0000E+00  (0.0000E+00)         0
+    8.0500    0.0000E+00  (0.0000E+00)         0
+    8.1500    0.0000E+00  (0.0000E+00)         0
+    8.2500    0.0000E+00  (0.0000E+00)         0
+    8.3500    0.0000E+00  (0.0000E+00)         0
+    8.4500    0.0000E+00  (0.0000E+00)         0
+    8.5500    0.6330E-02  (0.6129E-02)         1
+    8.6500    0.0000E+00  (0.0000E+00)         0
+    8.7500    0.0000E+00  (0.0000E+00)         0
+    8.8500    0.0000E+00  (0.0000E+00)         0
+    8.9500    0.0000E+00  (0.0000E+00)         0
+ ----------------------------------------------------
+    r(fm)        [H3]x[n(p1/2)]           COUNT
+    0.0500    0.0000E+00  (0.0000E+00)         0
+    0.1500    0.0000E+00  (0.0000E+00)         0
+    0.2500    0.0000E+00  (0.0000E+00)         0
+    0.3500    0.0000E+00  (0.0000E+00)         0
+    0.4500    0.3590E-01  (0.3428E-01)         1
+    0.5500    0.1763E-01  (0.1637E-01)         1
+    0.6500   -0.3103E-02  (0.3006E-02)         1
+    0.7500    0.7414E-02  (0.6567E-02)         2
+    0.8500    0.3077E-02  (0.2942E-02)         1
+    0.9500   -0.4618E-02  (0.3418E-02)         2
+    1.0500   -0.2909E-02  (0.7307E-02)         8
+    1.1500    0.4617E-03  (0.1584E-02)         4
+    1.2500   -0.2458E-05  (0.1728E-02)         4
+    1.3500   -0.2928E-02  (0.3953E-02)         4
+    1.4500   -0.1479E-01  (0.1067E-01)         6
+    1.5500   -0.9227E-03  (0.1717E-02)         9
+    1.6500   -0.5331E-02  (0.5689E-02)         9
+    1.7500    0.4778E-02  (0.6659E-02)         8
+    1.8500   -0.2410E-02  (0.2919E-02)         5
+    1.9500   -0.1050E-02  (0.2207E-02)         7
+    2.0500   -0.4495E-02  (0.4242E-02)        15
+    2.1500   -0.3172E-02  (0.2284E-02)         5
+    2.2500    0.1788E-03  (0.6240E-03)         5
+    2.3500   -0.8003E-03  (0.2547E-02)         6
+    2.4500   -0.1624E-02  (0.2494E-02)         9
+    2.5500    0.3893E-03  (0.6344E-03)         7
+    2.6500   -0.1476E-01  (0.1844E-01)         4
+    2.7500   -0.1082E-02  (0.2950E-02)        10
+    2.8500   -0.1420E-03  (0.1949E-02)         8
+    2.9500    0.1413E-04  (0.8078E-03)         7
+    3.0500   -0.2568E-02  (0.1704E-02)         5
+    3.1500   -0.4058E-02  (0.1211E-01)         7
+    3.2500    0.1529E-02  (0.2619E-02)         8
+    3.3500   -0.3654E-01  (0.1662E-01)         9
+    3.4500   -0.2832E-02  (0.1665E-02)         3
+    3.5500    0.5243E-02  (0.3781E-02)         5
+    3.6500    0.1965E-02  (0.1485E-02)         5
+    3.7500    0.6081E-03  (0.6943E-03)         4
+    3.8500   -0.2075E-02  (0.5191E-02)         8
+    3.9500    0.6372E-03  (0.2941E-02)         5
+    4.0500   -0.8819E-04  (0.5519E-03)         3
+    4.1500   -0.7009E-02  (0.5077E-02)         3
+    4.2500   -0.1349E-01  (0.1779E-01)         6
+    4.3500   -0.5814E-02  (0.5780E-02)         3
+    4.4500    0.4855E-02  (0.4801E-02)         5
+    4.5500    0.8758E-03  (0.5504E-02)         5
+    4.6500   -0.1088E-02  (0.3410E-02)         3
+    4.7500    0.4206E-02  (0.4899E-02)         3
+    4.8500   -0.5361E-03  (0.4272E-02)         7
+    4.9500    0.4698E-02  (0.1098E-01)         5
+    5.0500   -0.1239E-01  (0.7209E-02)         4
+    5.1500   -0.6616E-03  (0.6365E-03)         1
+    5.2500    0.1441E-02  (0.3019E-02)         4
+    5.3500    0.1071E-02  (0.1466E-02)         2
+    5.4500    0.1271E-03  (0.1227E-03)         1
+    5.5500    0.3935E-03  (0.3806E-03)         1
+    5.6500    0.2621E-02  (0.4570E-02)         6
+    5.7500    0.6563E-02  (0.4456E-02)         4
+    5.8500    0.8987E-03  (0.8687E-03)         1
+    5.9500    0.0000E+00  (0.0000E+00)         0
+    6.0500    0.6904E-02  (0.5964E-02)         3
+    6.1500   -0.6564E-03  (0.6314E-03)         1
+    6.2500   -0.1406E-02  (0.1361E-02)         1
+    6.3500   -0.4170E-02  (0.4012E-02)         1
+    6.4500   -0.1066E-01  (0.7687E-02)         4
+    6.5500   -0.3599E-02  (0.3500E-02)         1
+    6.6500   -0.1765E-03  (0.5574E-02)         3
+    6.7500    0.5279E-03  (0.2575E-02)         3
+    6.8500    0.9635E-03  (0.3815E-02)         5
+    6.9500   -0.2140E-03  (0.2064E-03)         1
+    7.0500    0.2922E-03  (0.2856E-03)         1
+    7.1500    0.3543E-02  (0.3426E-02)         1
+    7.2500   -0.4490E-02  (0.4369E-02)         1
+    7.3500   -0.7396E-03  (0.7157E-03)         1
+    7.4500   -0.5873E-03  (0.5690E-03)         1
+    7.5500   -0.6004E-03  (0.5797E-03)         1
+    7.6500    0.0000E+00  (0.0000E+00)         0
+    7.7500    0.0000E+00  (0.0000E+00)         0
+    7.8500    0.0000E+00  (0.0000E+00)         0
+    7.9500    0.0000E+00  (0.0000E+00)         0
+    8.0500    0.0000E+00  (0.0000E+00)         0
+    8.1500    0.0000E+00  (0.0000E+00)         0
+    8.2500    0.0000E+00  (0.0000E+00)         0
+    8.3500    0.0000E+00  (0.0000E+00)         0
+    8.4500    0.0000E+00  (0.0000E+00)         0
+    8.5500   -0.5727E-03  (0.5545E-03)         1
+    8.6500    0.0000E+00  (0.0000E+00)         0
+    8.7500    0.0000E+00  (0.0000E+00)         0
+    8.8500    0.0000E+00  (0.0000E+00)         0
+    8.9500    0.0000E+00  (0.0000E+00)         0
+ ----------------------------------------------------
+                        NORMS
+ ----------------------------------------------------
+  <i|i>         0.1001E+01  (0.7412E-03)
+  <f|f>         0.2417E+02  (0.3899E+01)
+  <i|i>/<f|f>   0.4140E-01  (0.6677E-02)
+ ----------------------------------------------------
+                SPECTROSCOPIC FACTORS
+ ----------------------------------------------------
+  [H3]x[n(p3/2)]:    0.8389E-01  (0.2721E-01)
+  [H3]x[n(p1/2)]:    0.4017E-02  (0.1946E-02)
+ ----------------------------------------------------
+ ************************************************************************
+ TOTAL CALCULATION TIME (s):   0.88996317307464778     
+ TIME PER SAMPLE (s):    0.1171004175098221E-01
+ ************************************************************************
+ FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS
