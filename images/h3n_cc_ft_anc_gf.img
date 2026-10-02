@@ -1,13 +1,13 @@
  ************************************************************************
   DATE: 02-Oct-26
-  TIME: 11:41:26
+  TIME: 11:42:01
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.10.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
  ************************************************************************
-  MPI: SIZE:        2
+  MPI: SIZE:        3
   MPI: ROOT:        0
  ************************************************************************
                       CALCULATION TYPE
@@ -36,7 +36,7 @@
  external/nqmcc-images/input/decks/h3n_1m.dk                 DECK_FILE
  0  kal/h3.spin                kal/h3.isospin                R/W : SPIN_FILE ISOSPIN_FILE
  0  kal/h3.ylm                 kal/h3.phi                    R/W : YLM_FILE PHI_FILE
-        0  F     300.0    3600.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
+        0  T       0.5       1.0   10.00  F                  WALKERS_PER_NODE FAULT_TOLERANCE MIN_TIMEOUT INIT_TIMEOUT DEAD_FACTOR ISOLATE_SUPERVISOR
      25265169                                                RNG SEED
         2        50                                          BLOCKS BLOCK_SIZE
       500        10                                          BURN_IN NUM_MOVES_BETWEEN
@@ -72,9 +72,21 @@
  MPI TOPOLOGY
  ************************************************************************
  IS TRIVIAL?  T
+ FAULT TOLERANT?  T
+ SUPERVISOR ISOLATED?  F
+ NUMBER OF MANAGERS:                1
+ WORKER RANKS PER NODE:             2
  NUMBER OF WALKERS PER NODE:        2
  NUMBER OF HELPERS PER WALKER:      1
  TOTAL NUMBER OF WALKERS:           2
+ ************************************************************************
+ FAULT TOLERANCE
+ ************************************************************************
+ MIN TIMEOUT (s):                       0.50
+ INIT TIMEOUT (s):                      1.00
+ DEAD FACTOR:                          10.00
+ POLL INTERVAL (s):                     0.01
+ REPORT INTERVAL (s):                  30.00
  ************************************************************************
  CONSTANTS
  ************************************************************************
@@ -586,11 +598,9 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =  -0.57735026918962584     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0332
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0304
  ************************************************************************
- ACCEPTANCE PROBABILITY:    60.80%
- ************************************************************************
- BURN IN TIME (s):         0.0030
+ BURN IN TIME (s):         0.1118
    BLOCK:        1    COMMANDER SAMPLES:       25
  ************************************************************************
   <i|i>         0.9996E+00  (0.1531E-02)
@@ -616,6 +626,17 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
     S =  0.6110E-01 (0.6242E-02)
     A = -0.1800E+00 (0.5231E-01)
     B =  0.1939E+00 (0.7896E-01)
+ ************************************************************************
+ FAULT TOLERANCE SUMMARY
+ ************************************************************************
+ WALKER GROUPS LAUNCHED:                   2
+ WALKER GROUPS SURVIVING:                  2
+ WALKER GROUPS LOST:                       0
+ SURVIVING FRACTION:                  1.0000
+ NODES LOST:                               0
+ RANKS DECLARED DEAD:                      0
+ ************************************************************************
+ ACCEPTANCE PROBABILITY:    60.80%
  ************************************************************************
                       -------------
                       TOTAL AVERAGE
@@ -841,6 +862,6 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
   S.C. PHASESHIFT   0.1392E+03  (0.1800E+02)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.11572557000909001     
- TIME PER SAMPLE (s):    0.1157255700090900E-02
+ TOTAL CALCULATION TIME (s):   0.43323491211049259     
+ TIME PER SAMPLE (s):    0.4332349121104926E-02
  ************************************************************************
