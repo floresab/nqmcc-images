@@ -1,0 +1,2 @@
+2  1.0   0.                                  lewk norm norm_err
+.false. .false. 5 -1 'dummy.config'          read_bra read_ket taui tauf config_file
