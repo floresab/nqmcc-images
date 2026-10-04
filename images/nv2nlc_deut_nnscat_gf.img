@@ -1,0 +1,116 @@
+ ************************************************************************
+  DATE: 04-Oct-26
+  TIME: 17:25:34
+ ************************************************************************
+  nuclear Quantum Monte Carlo with Continuum : 1.11.0
+ ************************************************************************
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+ ************************************************************************
+                      CALCULATION TYPE
+    ----------------------------------------------------
+                     NN SCATTERING
+                     BASIS: np
+    ----------------------------------------------------
+ ************************************************************************
+ NN SCATTERING CONTROL INPUTS
+ ************************************************************************
+ constants/nv19.const                                        CONSTANTS_FILE
+ pots/nv2_nonlocal_c.2bp                                     2B_POT_FILE
+ np  1  T  T                                                 PAIR LEMP EM_ALL_WAVES ALPHA_PRIME
+     2560       128                                          NPTS NPTS_IN_ONE_FERMI
+     2560      2432        64                                MATCH_OUTER MATCH_INNER STABILIZE_STEPS
+ 0                                                           BOUNDARY_CONDITION
+ T    2.200000                                               SOLVE_DEUTERON EBIND_GUESS
+ T      0.3000    0.2000    0.1000                           EFFECTIVE_RANGE ERE_TLAB (MeV)
+    301     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
+      1                                                      NUM_ENERGIES
+ TLAB (MeV)
+    50.0000
+      1                                                      NUM_CHANNELS
+ 3s1
+ 1                                                           PRINT_LEVEL
+ ************************************************************************
+ CONSTANTS
+ ************************************************************************
+   3.14159265                 PI
+   0.57721566                 EULERS_CONSTANT
+ ************************************************************************
+ PHYSICAL CONSTANTS
+ ************************************************************************
+ 197.32697000                 HBARC
+ 938.27192000                 PROTON MASS
+ 939.56524000                 NEUTRON MASS
+   0.51099900                 ELECTRON MASS
+ 293.10000000                 NUCLEON MASS DIFFERENCE
+ 134.97660000                 NEUTRAL PION MASS
+ 139.57020000                 CHARGED PION MASS
+   0.07500000                 PION NUCLEON COUPLING CONSTANT
+   0.00729735                 HYPER FINE STRUCTURE CONSTANT (ALPHA)
+   2.79284740                 PROTON MAGNETIC MOMENT
+  -1.91304270                 NEUTRON MAGNETIC MOMENT
+   5.58569478                 PROTON G-FACTOR
+  -3.82608560                 NEUTRON G-FACTOR
+   0.81200000                 GD ROOT MEAN SQUARE RADIUS
+   0.01890000                 NEUTRON FORM FACTOR SLOPE
+   1.29000000                 g_A
+  92.40000000                 PION DECAY AMPLITUDE
+ ************************************************************************
+ COMPUTED CONSTANTS
+ ************************************************************************
+ 138.03900000                 PION MASS
+  41.47106297                 HBAR**2 / (2 * MU)
+  41.47104330                 H2MAVG
+   0.02856230                 H2MCSB
+   4.75818452                 2*MU/HBARC
+   2.73650324                 h_A
+ ************************************************************************
+         Two-Body Potential: Norfolk non-local c
+         p**2 terms: used by nnscat and deut only
+         EM Potential: Full
+ ************************************************************************
+ DEUTERON
+ ************************************************************************
+         COMPUTED DEUTERON PROPTERTIES
+ ************************************************************************
+ BINDING ENERGY (MeV):    2.2247611962915528     
+ ETA:    2.4522929953655254E-002
+ D-STATE:    5.6177023101312569E-002
+ QUADRUPOLE MOMENT:   0.26294239044698964     
+ MAGNETIC MOMENT (mu0):   0.84780025389116920     
+ DEUTERON RADIUS (fm):    1.9643019871312315     
+ ************************************************************************
+ EFFECTIVE RANGE EXPANSION: 1s0
+ ************************************************************************
+     TLAB (MeV)    K**2 (1/fm**2)      F(K**2) (1/fm)
+       0.300000   3.6144887539E-03   4.6873486431E-02
+       0.200000   2.4096591692E-03   4.5287869911E-02
+       0.100000   1.2048295846E-03   4.3700817786E-02
+ SCATTERING LENGTH (fm):   -23.74601450
+ EFFECTIVE RANGE (fm):       2.63805861
+ SHAPE PARAMETER (fm^3):    -0.49448532
+ ************************************************************************
+ EFFECTIVE RANGE EXPANSION: 3s1
+ ************************************************************************
+     TLAB (MeV)    K**2 (1/fm**2)      F(K**2) (1/fm)
+       0.300000   3.6144887539E-03  -1.8163214435E-01
+       0.200000   2.4096591692E-03  -1.8268371557E-01
+       0.100000   1.2048295846E-03  -1.8373518212E-01
+ SCATTERING LENGTH (fm):     5.41164945
+ EFFECTIVE RANGE (fm):       1.74515896
+ SHAPE PARAMETER (fm^3):     0.03604876
+ ************************************************************************
+ CHANNEL: 3s1-3d1    PAIR: np    S=1  T=0  J=1
+ ************************************************************************
+     TLAB (MeV)       K (1/fm)  DELTA(J-1) (deg)   EPSILON (deg)  DELTA(J+1) (deg)
+      50.000000     0.77615385      62.74685112       1.58901651      -6.35828477
+ INTERMEDIATE QUANTITIES
+ TLAB=   50.0000  ETA, ALPHA'/ALPHA:              0.00000000E+00   1.00000000E+00
+ TLAB=   50.0000  F,G OUTER (fm):                 2.36853468E-01   1.08495705E-02  -1.26644629E+00   1.29645363E+00
+ TLAB=   50.0000  F,G INNER (fm):                 1.05621797E+00  -8.91549644E-01  -7.37827465E-01   9.42518029E-01
+ TLAB=   50.0000  SIGMA, RHO, TAU (rad):          0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00
+ TLAB=   50.0000  S(1,1), S(2,2):                -5.79720538E-01   8.12927210E-01   9.73970741E-01  -2.19789776E-01
+ TLAB=   50.0000  S(2,1), S(1,2):                -4.61698569E-02   3.06884618E-02  -4.61700425E-02   3.06885852E-02
+ TLAB=   50.0000  BLATT-BIEDENHARN (deg):         6.27636687E+01   1.70061789E+00  -6.37510240E+00
+ TLAB=   50.0000  EFFECTIVE RANGE FUNCTION:       4.01267812E-01
+ ************************************************************************

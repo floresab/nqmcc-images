@@ -1,0 +1,14 @@
+'constants/nv19.const'                               constants_file
+'pots/nv2_nonlocal_b.2bp'                            2b_file
+'pp'  1  .true.  .true.                              pair lemp em_all_waves alpha_prime
+2560  128                                            npts npts_in_one_fermi
+2560  2432  64                                       match_outer match_inner stabilize_steps
+0                                                    boundary_condition
+.false.  2.2                                         solve_deuteron ebind_guess
+.true.  0.3  0.2  0.1                                effective_range ere_tlab
+301  30.  50.  201  1.e-12                           em_quad_npts vp_zmax c2_scale vp_npts series_tol
+10                                                   num_energies
+300. 250. 200. 150. 100. 50. 25. 10. 5. 1.           tlab
+8                                                    num_channels
+'1s0' '1d2' '1g4' '3p0' '3p1' '3f3' '3p2' '3f4'
+1                                                    print_level
