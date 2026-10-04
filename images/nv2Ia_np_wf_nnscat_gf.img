@@ -1,8 +1,8 @@
  ************************************************************************
   DATE: 04-Oct-26
-  TIME: 12:40:17
+  TIME: 13:35:01
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.10.1
+  nuclear Quantum Monte Carlo with Continuum : 1.11.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -22,8 +22,7 @@
      1536      1408       128                                MATCH_OUTER MATCH_INNER STABILIZE_STEPS
  1                                                           BOUNDARY_CONDITION
  T    2.200000                                               SOLVE_DEUTERON EBIND_GUESS
- T  3s1                                                      EFFECTIVE_RANGE ERE_CHANNEL
-     0.3000    0.2000    0.1000                              ERE_TLAB (MeV)
+ T      0.3000    0.2000    0.1000                           EFFECTIVE_RANGE ERE_TLAB (MeV)
     301     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
       1                                                      NUM_ENERGIES
  TLAB (MeV)
@@ -1617,6 +1616,16 @@
   11.9844   5.51866772E-02   3.38596594E-03
   11.9922   5.50869096E-02   3.37818738E-03
   12.0000   5.49873222E-02   3.37042848E-03
+ ************************************************************************
+ EFFECTIVE RANGE EXPANSION: 1s0
+ ************************************************************************
+     TLAB (MeV)    K**2 (1/fm**2)      F(K**2) (1/fm)
+       0.300000   3.6144887539E-03   4.6980445146E-02
+       0.200000   2.4096591692E-03   4.5380250948E-02
+       0.100000   1.2048295846E-03   4.3778907195E-02
+ SCATTERING LENGTH (fm):   -23.70993425
+ EFFECTIVE RANGE (fm):       2.66107026
+ SHAPE PARAMETER (fm^3):    -0.39595779
  ************************************************************************
  EFFECTIVE RANGE EXPANSION: 3s1
  ************************************************************************
