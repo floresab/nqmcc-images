@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Sep-26
-  TIME: 09:04:16
+  DATE: 06-Oct-26
+  TIME: 09:21:38
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.10.0
+  nuclear Quantum Monte Carlo with Continuum : 1.11.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -72,14 +72,13 @@
  ************************************************************************
          Two-Body Potential: Argonne v14
          EM Potential: NONE
- ****** DID NOT CONVERGE -- DEUTERON ******
  ************************************************************************
          COMPUTED DEUTERON PROPTERTIES
  ************************************************************************
- BINDING ENERGY (MeV):    2.2248682241526727     
- ETA:    2.6516081020349313E-002
- D-STATE:    6.0817950231096637E-002
- QUADRUPOLE MOMENT:   0.28596529954086247     
- MAGNETIC MOMENT (mu0):   0.84515628498679496     
- DEUTERON RADIUS (fm):    1.9817073496891684     
+ BINDING ENERGY (MeV):    2.2248681777945718     
+ ETA:    2.6516029042470697E-002
+ D-STATE:    6.0817948687586158E-002
+ QUADRUPOLE MOMENT:   0.28596518264634457     
+ MAGNETIC MOMENT (mu0):   0.84515628586614366     
+ DEUTERON RADIUS (fm):    1.9817073033129955     
  ************************************************************************
