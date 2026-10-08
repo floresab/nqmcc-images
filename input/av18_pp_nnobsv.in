@@ -1,0 +1,13 @@
+'constants/fbn95.const'                              constants_file
+'pots/av18.2bp'                                      2b_file
+'pp'  1  .true.                                      pair lemp alpha_prime
+2560  128                                            npts npts_in_one_fermi
+2560  2432  64                                       match_outer match_inner stabilize_steps
+301  30.  50.  201  1.e-12                           em_quad_npts vp_zmax c2_scale vp_npts series_tol
+3                                                    num_energies
+5.05 50.06 144.1                                     tlab
+15  5                                                jmax num_angles
+14. 30.6 50. 80. 86.                                 theta_cm
+14                                                   num_observables
+'DSG' 'P' 'D' 'AYY' 'AXX' 'AZZ' 'AZX' 'CKP' 'R' 'RP' 'A' 'AP' 'MSSN' 'MSKN'
+1                                                    print_level
