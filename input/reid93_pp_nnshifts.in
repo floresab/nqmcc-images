@@ -6,7 +6,7 @@
 0                                                    boundary_condition
 .false.  2.2                                         solve_deuteron ebind_guess
 .false.  0.3  0.2  0.1                               effective_range ere_tlab
-301  30.  50.  201  1.e-12                           em_quad_npts vp_zmax c2_scale vp_npts series_tol
+1201  30.  50.  201  1.e-12                          em_quad_npts vp_zmax c2_scale vp_npts series_tol
 11                                                   num_energies
 350. 300. 250. 200. 150. 100. 50. 25. 10. 5. 1.      tlab
 8                                                    num_channels

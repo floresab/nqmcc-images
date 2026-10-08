@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 08-Oct-26
-  TIME: 09:12:45
+  TIME: 15:08:51
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.11.0
  ************************************************************************
@@ -23,7 +23,7 @@
  0                                                           BOUNDARY_CONDITION
  T    2.200000                                               SOLVE_DEUTERON EBIND_GUESS
  T      0.3000    0.2000    0.1000                           EFFECTIVE_RANGE ERE_TLAB (MeV)
-    301     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
+   1201     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
       1                                                      NUM_ENERGIES
  TLAB (MeV)
     50.0000

@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 08-Oct-26
-  TIME: 09:52:04
+  TIME: 15:08:51
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.11.0
  ************************************************************************
@@ -20,7 +20,7 @@
  np  0  T                                                    PAIR LEMP ALPHA_PRIME
      2560       128                                          NPTS NPTS_IN_ONE_FERMI
      2560      2432        64                                MATCH_OUTER MATCH_INNER STABILIZE_STEPS
-    301     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
+   1201     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
       2                                                      NUM_ENERGIES
  TLAB (MeV)
     50.0000  200.0000
