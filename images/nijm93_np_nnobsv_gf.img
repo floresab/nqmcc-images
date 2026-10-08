@@ -1,0 +1,102 @@
+ ************************************************************************
+  DATE: 08-Oct-26
+  TIME: 09:52:04
+ ************************************************************************
+  nuclear Quantum Monte Carlo with Continuum : 1.11.0
+ ************************************************************************
+  COMPILER: GCC version 16.1.0
+  OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
+ ************************************************************************
+                      CALCULATION TYPE
+    ----------------------------------------------------
+                     NN OBSERVABLES
+                     BASIS: np
+    ----------------------------------------------------
+ ************************************************************************
+ NN OBSERVABLES CONTROL INPUTS
+ ************************************************************************
+ constants/fbn95.const                                       CONSTANTS_FILE
+ pots/nijm93.2bp                                     T       2B_POT_FILE CHANNEL_POTENTIAL
+ np  0  T                                                    PAIR LEMP ALPHA_PRIME
+     2560       128                                          NPTS NPTS_IN_ONE_FERMI
+     2560      2432        64                                MATCH_OUTER MATCH_INNER STABILIZE_STEPS
+    301     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
+      2                                                      NUM_ENERGIES
+ TLAB (MeV)
+    50.0000  200.0000
+     15       4                                              JMAX NUM_ANGLES
+ THETA_CM (deg)
+    30.0000   60.0000   90.0000  150.0000
+      4                                                      NUM_OBSERVABLES
+ DSG  P    AYY  SGT 
+ 0                                                           PRINT_LEVEL
+ ************************************************************************
+ CONSTANTS
+ ************************************************************************
+   3.14159265                 PI
+   0.57721566                 EULERS_CONSTANT
+ ************************************************************************
+ PHYSICAL CONSTANTS
+ ************************************************************************
+ 197.32705300                 HBARC
+ 938.27231000                 PROTON MASS
+ 939.56563000                 NEUTRON MASS
+   0.51099900                 ELECTRON MASS
+ 293.10000000                 NUCLEON MASS DIFFERENCE
+ 134.97390000                 NEUTRAL PION MASS
+ 139.56750000                 CHARGED PION MASS
+   0.07500000                 PION NUCLEON COUPLING CONSTANT
+   0.00729735                 HYPER FINE STRUCTURE CONSTANT (ALPHA)
+   2.79284740                 PROTON MAGNETIC MOMENT
+  -1.91304270                 NEUTRON MAGNETIC MOMENT
+   5.58569478                 PROTON G-FACTOR
+  -3.82608560                 NEUTRON G-FACTOR
+   0.81200000                 GD ROOT MEAN SQUARE RADIUS
+   0.01890000                 NEUTRON FORM FACTOR SLOPE
+   1.29000000                 g_A
+  92.40000000                 PION DECAY AMPLITUDE
+ ************************************************************************
+ COMPUTED CONSTANTS
+ ************************************************************************
+ 138.03630000                 PION MASS
+  41.47108064                 HBAR**2 / (2 * MU)
+  41.47106096                 H2MAVG
+   0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
+   2.73650324                 h_A
+ ************************************************************************
+         Two-Body Potential: Nijm93
+         channel potential: for nnshifts, nnobsv and deut only
+         nonlocal term: solved as a p**2 term
+         EM Potential: NONE
+ ************************************************************************
+ SCATTERING AMPLITUDES AND OBSERVABLES: PAIR np
+ ************************************************************************
+ TLAB (MeV) =    50.000000   K (1/fm) =   0.77615369   ETA =   0.00000000
+ WOLFENSTEIN AMPLITUDES A, M, G, H, C (fm) : THETA_CM (deg), RE AND IM OF EACH
+   30.000   6.10536082E-01   1.00862342E+00   2.33906045E-01   1.45852917E-01   1.03435061E-01   1.13871723E-01   1.38097217E-02  -2.14850034E-02   2.46274852E-02   6.64521739E-02
+   60.000   4.99826197E-01   9.34664854E-01   2.31305941E-01   1.51193745E-01  -4.82815274E-02   9.65805816E-02  -3.78794005E-02  -1.77927141E-02   2.61678612E-02   9.80723417E-02
+   90.000   4.45930076E-01   8.78045019E-01   1.87649412E-01   1.59442577E-01  -1.45326283E-01   9.03184586E-02  -1.78515683E-01  -8.60739276E-03   1.08113675E-02   8.92273587E-02
+  150.000   7.49464999E-01   8.78005333E-01  -1.69517867E-01   1.67309237E-01  -2.09690123E-01   1.28496670E-01  -2.49644837E-01   2.20107928E-02  -1.11167839E-02   2.53432865E-02
+ OBSERVABLES (DSG IN mb/sr)
+ THETA_CM             DSG              P                AYY 
+   30.000   1.52474122E+01   1.27908851E-01   3.56687263E-01
+   60.000   1.24721317E+01   2.01448898E-01   4.12637887E-01
+   90.000   1.16904592E+01   1.70091075E-01   4.01044074E-01
+  150.000   1.63742829E+01   2.44829771E-02   2.80222802E-02
+ SGT  (mb):   1.69167002E+02
+ ************************************************************************
+ TLAB (MeV) =   200.000000   K (1/fm) =   1.55230740   ETA =   0.00000000
+ WOLFENSTEIN AMPLITUDES A, M, G, H, C (fm) : THETA_CM (deg), RE AND IM OF EACH
+   30.000   2.82057708E-01   3.89730229E-01   3.48727415E-01   1.64776728E-02   1.05013360E-01   5.98762291E-02   1.11045574E-01   7.43360596E-02   7.44751439E-02   1.92094834E-01
+   60.000   8.45483526E-02   1.25940092E-01   3.15316532E-01   3.16285422E-02  -8.84270974E-03  -1.19730918E-02   5.05454371E-02   4.76094872E-02   5.89190644E-02   2.28738060E-01
+   90.000   4.91615799E-02  -3.54724613E-02   2.74588517E-01   5.71874784E-02  -7.16779762E-02  -3.99888013E-02  -1.06348836E-01   1.52212184E-02   2.28828007E-03   1.81769121E-01
+  150.000   5.01509468E-01   6.45888329E-02   8.94914550E-02   1.01072922E-01  -2.34872427E-01   6.99102300E-02  -3.28497266E-01  -4.48256212E-03  -6.89356947E-02   3.86823046E-02
+ OBSERVABLES (DSG IN mb/sr)
+ THETA_CM             DSG              P                AYY 
+   30.000   5.03162347E+00   4.96890331E-01   5.98113419E-01
+   60.000   2.45105429E+00   4.86334463E-01   7.42825710E-01
+   90.000   1.84992111E+00   5.06827069E-02   5.33220559E-01
+  150.000   6.22370909E+00  -1.10329324E-01   3.39140191E-01
+ SGT  (mb):   4.44784561E+01
+ ************************************************************************

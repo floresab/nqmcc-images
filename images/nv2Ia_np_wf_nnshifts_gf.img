@@ -1,6 +1,6 @@
  ************************************************************************
-  DATE: 06-Oct-26
-  TIME: 09:21:41
+  DATE: 08-Oct-26
+  TIME: 09:12:41
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.11.0
  ************************************************************************
@@ -16,7 +16,7 @@
  NN SCATTERING CONTROL INPUTS
  ************************************************************************
  constants/nv19.const                                        CONSTANTS_FILE
- pots/nv2_Ia.2bp                                             2B_POT_FILE
+ pots/nv2_Ia.2bp                                     F       2B_POT_FILE CHANNEL_POTENTIAL
  np  1  T  T                                                 PAIR LEMP EM_ALL_WAVES ALPHA_PRIME
      1536       128                                          NPTS NPTS_IN_ONE_FERMI
      1536      1408       128                                MATCH_OUTER MATCH_INNER STABILIZE_STEPS

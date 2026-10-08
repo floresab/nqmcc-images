@@ -1,5 +1,5 @@
 'constants/nv19.const'                               constants_file
-'pots/nv2_nonlocal_b.2bp'                            2b_file
+'pots/nv2_nonlocal_b.2bp'  .false.                   2b_file channel_potential
 'np'  1  .true.  .true.                              pair lemp em_all_waves alpha_prime
 2560  128                                            npts npts_in_one_fermi
 2560  2432  64                                       match_outer match_inner stabilize_steps

@@ -1,6 +1,6 @@
 'constants/fbn95.const'                              constants_file
-'pots/av18.2bp'  .false.                             2b_file channel_potential
-'np'  1  .false.  .true.                             pair lemp em_all_waves alpha_prime
+'pots/reid93.2bp'  .true.                           2b_file channel_potential
+'np'  0  .false.  .true.                             pair lemp em_all_waves alpha_prime
 2560  128                                            npts npts_in_one_fermi
 2560  2432  64                                       match_outer match_inner stabilize_steps
 0                                                    boundary_condition
@@ -11,4 +11,4 @@
 350. 300. 250. 200. 150. 100. 50. 25. 10. 5. 1.      tlab
 14                                                   num_channels
 '1s0' '1d2' '3p1' '3p0' '3p2' '1g4' '3f3' '3f4' '3s1' '3d2' '3d3' '3g4' '1p1' '1f3'
-1                                                    print_level
+0                                                    print_level

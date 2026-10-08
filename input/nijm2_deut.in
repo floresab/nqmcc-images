@@ -1,0 +1,5 @@
+'constants/fbn95.const'                              constants_file
+'pots/nijm2_nonrel.2bp'  .true.                      2b_file channel_potential
+0                                                    lemp
+5120  128                                            npts npts_in_one_fermi
+2.2                                                  e_guess

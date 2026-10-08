@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 08-Oct-26
-  TIME: 09:12:38
+  TIME: 09:52:04
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.11.0
  ************************************************************************
@@ -15,11 +15,11 @@
  ************************************************************************
  DEUTERON CONTROL INPUTS
  ************************************************************************
- constants/fbn84.const                                       CONSTANTS_FILE
- pots/av14.2bp                                       F       2B_POT_FILE CHANNEL_POTENTIAL
+ constants/fbn95.const                                       CONSTANTS_FILE
+ pots/nijm2_nonrel.2bp                               T       2B_POT_FILE CHANNEL_POTENTIAL
  0                                                           LEMP
      5120       128                                          NPTS NPTS_IN_ONE_FERMI
-   2.000000                                                  E_GUESS
+   2.200000                                                  E_GUESS
  ************************************************************************
  CONSTANTS
  ************************************************************************
@@ -28,14 +28,14 @@
  ************************************************************************
  PHYSICAL CONSTANTS
  ************************************************************************
- 197.33000000                 HBARC
- 938.90000000                 PROTON MASS
- 938.90000000                 NEUTRON MASS
+ 197.32705300                 HBARC
+ 938.27231000                 PROTON MASS
+ 939.56563000                 NEUTRON MASS
    0.51099900                 ELECTRON MASS
-   0.00000000                 NUCLEON MASS DIFFERENCE
- 138.03000000                 NEUTRAL PION MASS
- 138.03000000                 CHARGED PION MASS
-   0.08100000                 PION NUCLEON COUPLING CONSTANT
+ 293.10000000                 NUCLEON MASS DIFFERENCE
+ 134.97390000                 NEUTRAL PION MASS
+ 139.56750000                 CHARGED PION MASS
+   0.07500000                 PION NUCLEON COUPLING CONSTANT
    0.00729735                 HYPER FINE STRUCTURE CONSTANT (ALPHA)
    2.79284740                 PROTON MAGNETIC MOMENT
   -1.91304270                 NEUTRON MAGNETIC MOMENT
@@ -48,22 +48,23 @@
  ************************************************************************
  COMPUTED CONSTANTS
  ************************************************************************
- 138.03000000                 PION MASS
-  41.47313761                 HBAR**2 / (2 * MU)
-  41.47313761                 H2MAVG
-   0.00000000                 H2MCSB
-   4.75801956                 2*MU/HBARC
+ 138.03630000                 PION MASS
+  41.47108064                 HBAR**2 / (2 * MU)
+  41.47106096                 H2MAVG
+   0.02856230                 H2MCSB
+   4.75818450                 2*MU/HBARC
    2.73650324                 h_A
  ************************************************************************
-         Two-Body Potential: Argonne v14
+         Two-Body Potential: Nijm II (non-relativistic deuteron)
+         channel potential: for nnshifts, nnobsv and deut only
          EM Potential: NONE
  ************************************************************************
          COMPUTED DEUTERON PROPTERTIES
  ************************************************************************
- BINDING ENERGY (MeV):    2.2248681777945718     
- ETA:    2.6516029042470697E-002
- D-STATE:    6.0817948687586158E-002
- QUADRUPOLE MOMENT:   0.28596518264634457     
- MAGNETIC MOMENT (mu0):   0.84515628586614366     
- DEUTERON RADIUS (fm):    1.9817073033129955     
+ BINDING ENERGY (MeV):    2.2245625430016087     
+ ETA:    2.5140905902041898E-002
+ D-STATE:    5.6515830537744567E-002
+ QUADRUPOLE MOMENT:   0.27075621710410669     
+ MAGNETIC MOMENT (mu0):   0.84760723290604145     
+ DEUTERON RADIUS (fm):    1.9672178688283721     
  ************************************************************************
