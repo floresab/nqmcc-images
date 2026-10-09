@@ -1,6 +1,6 @@
  ************************************************************************
   DATE: 09-Oct-26
-  TIME: 11:47:20
+  TIME: 12:41:17
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.12.0
  ************************************************************************
@@ -219,11 +219,11 @@
  ROOT IJ PARTITION:                32  100.0000%
  ROOT PHI PARTITION:               10   40.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1734
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.2655
  ************************************************************************
  ACCEPTANCE PROBABILITY:    47.50%
  ************************************************************************
- BURN IN TIME (s):         0.0006
+ BURN IN TIME (s):         0.0007
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:      100
  ************************************************************************
@@ -1101,8 +1101,8 @@
   L^2       =  0.3737E+01 (0.6905E+00)  L^2.T     =  0.0000E+00 (0.0000E+00)
   L^2.S     =  0.1720E+00 (0.7067E-01)  L^2.S.T   =  0.0000E+00 (0.0000E+00)
   (L.S)^2   = -0.1537E+01 (0.2160E+00)  (L.S)^2.T =  0.0000E+00 (0.0000E+00)
-  CD        =  0.9132E-08 (0.1397E-08)  CD.S      = -0.6330E-09 (0.6627E-08)
-  CD.TNSR   = -0.8467E-09 (0.1461E-09)  (L.S).CD  =  0.7303E-10 (0.1302E-09)
+  CD        =  0.0000E+00 (0.0000E+00)  CD.S      =  0.0000E+00 (0.0000E+00)
+  CD.TNSR   =  0.0000E+00 (0.0000E+00)  (L.S).CD  =  0.0000E+00 (0.0000E+00)
   CSB       =  0.0000E+00 (0.0000E+00)  CSB.S     =  0.0000E+00 (0.0000E+00)
   CSB.TNSR  =  0.0000E+00 (0.0000E+00)  (L.S).CSB =  0.0000E+00 (0.0000E+00)
   ----
@@ -1124,16 +1124,16 @@
   POINT NEUTRON RMS RADIUS =  1.7208 (0.0638)
   POINT PROTON  RMS RADIUS =  1.7208 (0.0638)
 
-  NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  MAGNETIC MOMENT                      =  0.0000 (0.0000)
+  NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  MAGNETIC MOMENT                      = -0.0000 (0.0000)
 
-  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
-  CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
-  CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
+  CHARGE SYMMETRIC NEUTRON MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
+  CHARGE SYMMETRIC PROTON  MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION = -0.0000 (0.0000)
+  CHARGE SYMMETRIC MAGNETIC MOMENT                      = -0.0000 (0.0000)
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.20714078203309327     
- TIME PER SAMPLE (s):    0.1035703910165466E-02
+ TOTAL CALCULATION TIME (s):   0.30124383699148893     
+ TIME PER SAMPLE (s):    0.1506219184957445E-02
  ************************************************************************
