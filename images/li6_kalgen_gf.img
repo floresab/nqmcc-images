@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Sep-26
-  TIME: 09:04:07
+  DATE: 09-Oct-26
+  TIME: 11:46:39
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.10.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -40,7 +40,7 @@
  ************************************************************************
  CALCULATION PARAMETERS
  ************************************************************************
- T  external/nqmcc-images/li6  external/nqmcc-images/li6     READ_GROUP GROUP_FILE NORTAB_FILE
+ T  external/nqmcc-images/li6     READ_GROUP GROUP_FILE
  ************************************************************************
  CONSTANTS
  ************************************************************************
@@ -160,21 +160,21 @@
   L , ml  =  1 , 1
     ----------------------------------------------------
  ************************************************************************
- MIN, CURRENT NSTA0:           5         200
- MIN, CURRENT NSC0:           4         200
- MIN, CURRENT NORTAB DIM:           3         200
- MIN, CURRENT MXL:           3         500
- MIN, CURRENT NS0:           9       10000
- MIN, CURRENT MNYOUNG:           2          20
- NSCO:           12
+ MIN, CURRENT FUNCTIONS OR COUPLINGS (NSTA0):           5         200
+ MIN, CURRENT SPIN-ISOSPIN TERMS (NSC0):           4         200
+ MIN, CURRENT ORBITAL TERMS (NORTAB_DIM):           3         200
+ MIN, CURRENT COUPLING CHAINS (MXL):           3         500
+ MIN, CURRENT TERMS OF A COUPLED STATE (NS0):           9       10000
+ MIN, CURRENT YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG):           2          20
+ TOTAL SPIN-ISOSPIN TERMS:          12
  ************************************************************************
  SETTING YLM
  ************************************************************************
- NSIST:            4
- NYLM:           60
- MIN, CURRENT NCY:           6        1000
- MIN, CURRENT NOMST:           5           5
- MIN, CURRENT NUCO:           5           5
+ SPIN-ISOSPIN FUNCTIONS (NSIST):           4
+ ORBITAL AMPLITUDES (NYLM):          60
+ MIN, CURRENT UNIQUE YLM PRODUCTS (MAX_ICY1):           6        1000
+ USED, BUILT ORBITAL FUNCTIONS:           5           5
+ KEPT, BUILT COUPLINGS:           5           5
  ************************************************************************
  WRITING YLM TO: external/nqmcc-images/li6.ylm
  WRITTING YLM -- DONE
@@ -182,7 +182,5 @@
  WRTITING PHI DATA TO: external/nqmcc-images/li6.grp
  WRITTING PHI DATA -- DONE
  ************************************************************************
- WRITING NORTAB TO: external/nqmcc-images/li6.nortab
- ************************************************************************
- TOTAL CALCULATION TIME (s):    4.0159199998015538E-003
+ TOTAL CALCULATION TIME (s):    2.5985690299421549E-003
  ************************************************************************

@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Sep-26
-  TIME: 09:04:16
+  DATE: 09-Oct-26
+  TIME: 11:47:15
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.10.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -116,19 +116,19 @@
             0                 PHI_TYPE
             3                 NUMBER OF SPATIAL SYMMETRIES (NBETA)
          4320                 NUMBER OF NON-ZERO MATRIX ELEMENTS (NPHIM)
-        10000                 MAX ? (NS0) : KALMAN LIMITS
-          500                 MAX L (MXL)
-           20                 MAX YOUNG TABLEUX (MNYOUNG)
-           10                 MAX MS (M_SPIN_LIM)
-           20                 MAX PERMUTATIONS? (IMA_LIM)
-           20                 MAX YOUNG NUMBERS (NY_LIM)
-            3                 MAX ? (KMACO_LIM)
-           10                 MAX L (M_L_LIM)
-        15000                 MAX ? (NTERM)
-          200                 MAX ? (NSTA0)
-          200                 MAX ? (NSC0)
-          200                 MAX YLM COMBINATIONS (NORTAB_DIM)
-         1000                 MAX UNIQUE YLM COMBINATIONS (MAX_ICY1)
+        10000                 MAX TERMS OF A COUPLED STATE (NS0)
+          500                 MAX COUPLING CHAINS (MXL)
+           20                 MAX YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG)
+           10                 MAX 2S (M_SPIN_LIM)
+           20                 MAX YOUNG DIAGRAM INDEX (IMA_LIM)
+           20                 MAX STANDARD TABLEAUX (NY_LIM)
+            3                 MAX REPEATED CHANNELS (KMACO_LIM)
+           10                 MAX 2L (M_L_LIM)
+        15000                 MAX PARTITION CANDIDATES (NTERM)
+          200                 MAX FUNCTIONS OR COUPLINGS (NSTA0)
+          200                 MAX SPIN-ISOSPIN TERMS (NSC0)
+          200                 MAX ORBITAL TERMS (NORTAB_DIM)
+         1000                 MAX UNIQUE YLM PRODUCTS (MAX_ICY1)
  ************************************************************************
  COMPUTED PARAMETERS FROM: nuclei/params/li6.params
  ************************************************************************
@@ -145,9 +145,9 @@
            15                 NUMBER OF S-SHELL COMBINATIONS
             1                 NUMBER OF P-SHELL COMBINATIONS
             3                 NSPART - 1 (NCL)
-            4                 2**(NPPART + NDPART)
-           16                 2**(2*(NPPART + NDPART))
-            2                 (NPPART + NDPART)!
+            4                 P+SD SHELL SPIN CONFIGURATIONS (NSI)
+           16                 P+SD SHELL SPIN-ISOSPIN CONFIGURATIONS (NIS)
+            2                 P+SD SHELL PERMUTATIONS (NFAC)
            12                 4-BYTE INTEGER FACTORIAL LIMIT
  ************************************************************************
  Lithium-6 1+ (g.s.)
@@ -213,20 +213,20 @@
  READING YLM FROM: external/nqmcc-images/li6.ylm
  ROOT READING SCATTERED PHI FROM: external/nqmcc-images/li6_wf3.phi.0.3
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0204
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0208
  ************************************************************************
- ALLOCATION TIME (s):         0.0012
+ ALLOCATION TIME (s):         0.0011
  ************************************************************************
  ACCEPTANCE PROBABILITY:    52.00%
  ************************************************************************
- BURN IN TIME (s):         0.0206
+ BURN IN TIME (s):         0.0215
  ************************************************************************
- DERIVATIVE TIME (s):         0.0089
+ DERIVATIVE TIME (s):         0.0095
  ************************************************************************
  KE TIME (s):         0.0001
  VIJ TIME (s):         0.0014
- VEM TIME (s):         0.0004
- VIJK TIME (s):         0.0006
+ VEM TIME (s):         0.0003
+ VIJK TIME (s):         0.0007
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
  ------------------------------------
@@ -286,5 +286,5 @@
  Vem:       0.16500119066878353724E+01
  H:        -0.25411891054854237382E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.3811088000657037E-002
+ TOTAL CALCULATION TIME (s):    5.5324012995697558E-002
  ************************************************************************

@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Sep-26
-  TIME: 09:04:21
+  DATE: 09-Oct-26
+  TIME: 11:47:20
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.10.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -111,19 +111,19 @@
             1                 PHI_TYPE
             1                 NUMBER OF SPATIAL SYMMETRIES (NBETA)
         59640                 NUMBER OF NON-ZERO MATRIX ELEMENTS (NPHIM)
-        10000                 MAX ? (NS0) : KALMAN LIMITS
-          500                 MAX L (MXL)
-           20                 MAX YOUNG TABLEUX (MNYOUNG)
-           10                 MAX MS (M_SPIN_LIM)
-           20                 MAX PERMUTATIONS? (IMA_LIM)
-           20                 MAX YOUNG NUMBERS (NY_LIM)
-            3                 MAX ? (KMACO_LIM)
-           10                 MAX L (M_L_LIM)
-        15000                 MAX ? (NTERM)
-          200                 MAX ? (NSTA0)
-          200                 MAX ? (NSC0)
-          200                 MAX YLM COMBINATIONS (NORTAB_DIM)
-         1000                 MAX UNIQUE YLM COMBINATIONS (MAX_ICY1)
+        10000                 MAX TERMS OF A COUPLED STATE (NS0)
+          500                 MAX COUPLING CHAINS (MXL)
+           20                 MAX YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG)
+           10                 MAX 2S (M_SPIN_LIM)
+           20                 MAX YOUNG DIAGRAM INDEX (IMA_LIM)
+           20                 MAX STANDARD TABLEAUX (NY_LIM)
+            3                 MAX REPEATED CHANNELS (KMACO_LIM)
+           10                 MAX 2L (M_L_LIM)
+        15000                 MAX PARTITION CANDIDATES (NTERM)
+          200                 MAX FUNCTIONS OR COUPLINGS (NSTA0)
+          200                 MAX SPIN-ISOSPIN TERMS (NSC0)
+          200                 MAX ORBITAL TERMS (NORTAB_DIM)
+         1000                 MAX UNIQUE YLM PRODUCTS (MAX_ICY1)
  ************************************************************************
  COMPUTED PARAMETERS FROM: nuclei/params/li6n.params
  ************************************************************************
@@ -140,9 +140,9 @@
            35                 NUMBER OF S-SHELL COMBINATIONS
             3                 NUMBER OF P-SHELL COMBINATIONS
             3                 NSPART - 1 (NCL)
-            8                 2**(NPPART + NDPART)
-           64                 2**(2*(NPPART + NDPART))
-            6                 (NPPART + NDPART)!
+            8                 P+SD SHELL SPIN CONFIGURATIONS (NSI)
+           64                 P+SD SHELL SPIN-ISOSPIN CONFIGURATIONS (NIS)
+            6                 P+SD SHELL PERMUTATIONS (NFAC)
            12                 4-BYTE INTEGER FACTORIAL LIMIT
  ************************************************************************
  Lithium-6+n 1/2+ (scattering) ------ in progress 3/22/25
@@ -229,13 +229,13 @@
   L , ml  =  0 , 0
     ----------------------------------------------------
  ************************************************************************
- MIN, CURRENT NSTA0:           1         200
- MIN, CURRENT NSC0:           2         200
- MIN, CURRENT NORTAB DIM:           3         200
- MIN, CURRENT MXL:           3         500
- MIN, CURRENT NS0:           9       10000
- MIN, CURRENT MNYOUNG:           2          20
- NSCO:            2
+ MIN, CURRENT FUNCTIONS OR COUPLINGS (NSTA0):           1         200
+ MIN, CURRENT SPIN-ISOSPIN TERMS (NSC0):           2         200
+ MIN, CURRENT ORBITAL TERMS (NORTAB_DIM):           3         200
+ MIN, CURRENT COUPLING CHAINS (MXL):           3         500
+ MIN, CURRENT TERMS OF A COUPLED STATE (NS0):           9       10000
+ MIN, CURRENT YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG):           2          20
+ TOTAL SPIN-ISOSPIN TERMS:           2
     ----------------------------------------------------
  VALID SINGLE PARTICLE LSJ COUPLING
  L LZ   0.0000000000000000        0.0000000000000000     
@@ -271,13 +271,13 @@
   L , ml  =  0 , 0
     ----------------------------------------------------
  ************************************************************************
- MIN, CURRENT NSTA0:           1         200
- MIN, CURRENT NSC0:           4         200
- MIN, CURRENT NORTAB DIM:           3         200
- MIN, CURRENT MXL:           3         500
- MIN, CURRENT NS0:           9       10000
- MIN, CURRENT MNYOUNG:           2          20
- NSCO:            4
+ MIN, CURRENT FUNCTIONS OR COUPLINGS (NSTA0):           1         200
+ MIN, CURRENT SPIN-ISOSPIN TERMS (NSC0):           4         200
+ MIN, CURRENT ORBITAL TERMS (NORTAB_DIM):           3         200
+ MIN, CURRENT COUPLING CHAINS (MXL):           3         500
+ MIN, CURRENT TERMS OF A COUPLED STATE (NS0):           9       10000
+ MIN, CURRENT YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG):           2          20
+ TOTAL SPIN-ISOSPIN TERMS:           4
     ----------------------------------------------------
  VALID SINGLE PARTICLE LSJ COUPLING
  L LZ   0.0000000000000000        0.0000000000000000     
@@ -285,10 +285,10 @@
  J JZ  0.500000000      0.500000000    
  <L LZ S SZ | J JZ> =    1.0000000000000002     
     ----------------------------------------------------
- MULTI-GROUP: MIN, CURRENT NSTA0:           2         200
- MULTI-GROUP: MIN, CURRENT NSC0:           4         200
- MULTI-GROUP: MIN, CURRENT NORTAB DIM:           3         200
- MULTI-GROUP: MIN, CURRENT NSTA0:           2         200
+ MULTI-GROUP: MIN, CURRENT FUNCTIONS OR COUPLINGS (NSTA0):           2         200
+ MULTI-GROUP: MIN, CURRENT SPIN-ISOSPIN TERMS (NSC0):           4         200
+ MULTI-GROUP: MIN, CURRENT ORBITAL TERMS (NORTAB_DIM):           3         200
+ MULTI-GROUP: MIN, CURRENT FUNCTIONS OR COUPLINGS (NSTA0):           2         200
  SETTING YLM
 MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
            2  OF           2         200  CFSPR ARE USED
@@ -317,7 +317,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ROOT IJ PARTITION:              1792  100.0000%
  ROOT PHI PARTITION:            15030   25.2012%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0329
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0339
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -42430,7 +42430,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ************************************************************************
  ACCEPTANCE PROBABILITY:    42.00%
  ************************************************************************
- BURN IN TIME (s):         0.0464
+ BURN IN TIME (s):         0.0467
  ************************************************************************
 
  ORTHOGONALITY CHECK
@@ -43132,8 +43132,8 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
     ----------------------------------------------------
  ***MAX SYMMETRY ABOVE OF THRESHOLD***
  ************************************************************************
- TESTS TIME (s):         0.0186
+ TESTS TIME (s):         0.0189
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.14320829500502441     
+ TOTAL CALCULATION TIME (s):   0.14504063001368195     
  ************************************************************************
  TEST FAIL

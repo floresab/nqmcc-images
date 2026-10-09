@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Sep-26
-  TIME: 09:04:21
+  DATE: 09-Oct-26
+  TIME: 11:47:19
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.10.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -111,19 +111,19 @@
             0                 PHI_TYPE
             1                 NUMBER OF SPATIAL SYMMETRIES (NBETA)
            25                 NUMBER OF NON-ZERO MATRIX ELEMENTS (NPHIM)
-        10000                 MAX ? (NS0) : KALMAN LIMITS
-          500                 MAX L (MXL)
-           20                 MAX YOUNG TABLEUX (MNYOUNG)
-           10                 MAX MS (M_SPIN_LIM)
-           20                 MAX PERMUTATIONS? (IMA_LIM)
-           20                 MAX YOUNG NUMBERS (NY_LIM)
-            3                 MAX ? (KMACO_LIM)
-           10                 MAX L (M_L_LIM)
-        15000                 MAX ? (NTERM)
-           60                 MAX ? (NSTA0)
-          200                 MAX ? (NSC0)
-           25                 MAX YLM COMBINATIONS (NORTAB_DIM)
-         1000                 MAX UNIQUE YLM COMBINATIONS (MAX_ICY1)
+        10000                 MAX TERMS OF A COUPLED STATE (NS0)
+          500                 MAX COUPLING CHAINS (MXL)
+           20                 MAX YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG)
+           10                 MAX 2S (M_SPIN_LIM)
+           20                 MAX YOUNG DIAGRAM INDEX (IMA_LIM)
+           20                 MAX STANDARD TABLEAUX (NY_LIM)
+            3                 MAX REPEATED CHANNELS (KMACO_LIM)
+           10                 MAX 2L (M_L_LIM)
+        15000                 MAX PARTITION CANDIDATES (NTERM)
+           60                 MAX FUNCTIONS OR COUPLINGS (NSTA0)
+          200                 MAX SPIN-ISOSPIN TERMS (NSC0)
+           25                 MAX ORBITAL TERMS (NORTAB_DIM)
+         1000                 MAX UNIQUE YLM PRODUCTS (MAX_ICY1)
  ************************************************************************
  COMPUTED PARAMETERS FROM: nuclei/params/he4.params
  ************************************************************************
@@ -140,9 +140,9 @@
             1                 NUMBER OF S-SHELL COMBINATIONS
             1                 NUMBER OF P-SHELL COMBINATIONS
             3                 NSPART - 1 (NCL)
-            1                 2**(NPPART + NDPART)
-            1                 2**(2*(NPPART + NDPART))
-            1                 (NPPART + NDPART)!
+            1                 P+SD SHELL SPIN CONFIGURATIONS (NSI)
+            1                 P+SD SHELL SPIN-ISOSPIN CONFIGURATIONS (NIS)
+            1                 P+SD SHELL PERMUTATIONS (NFAC)
            12                 4-BYTE INTEGER FACTORIAL LIMIT
  ************************************************************************
  Helium-4 0+ (g.s.)
@@ -184,13 +184,13 @@
  GROUP STATE :           1
     ----------------------------------------------------
  ************************************************************************
- MIN, CURRENT NSTA0:           0          60
- MIN, CURRENT NSC0:           0         200
- MIN, CURRENT NORTAB DIM:           0          25
- MIN, CURRENT MXL:           0         500
- MIN, CURRENT NS0:           0       10000
- MIN, CURRENT MNYOUNG:           0          20
- NSCO:            0
+ MIN, CURRENT FUNCTIONS OR COUPLINGS (NSTA0):           0          60
+ MIN, CURRENT SPIN-ISOSPIN TERMS (NSC0):           0         200
+ MIN, CURRENT ORBITAL TERMS (NORTAB_DIM):           0          25
+ MIN, CURRENT COUPLING CHAINS (MXL):           0         500
+ MIN, CURRENT TERMS OF A COUPLED STATE (NS0):           0       10000
+ MIN, CURRENT YOUNG DIAGRAMS OR TABLEAUX (MNYOUNG):           0          20
+ TOTAL SPIN-ISOSPIN TERMS:           0
  ************************************************************************
  GENERATING PHI
  NPHIM MIN:                   25 CURRENT:                   25
@@ -215,7 +215,7 @@
  ROOT IJ PARTITION:                96  100.0000%
  ROOT PHI PARTITION:               24   96.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0215
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0196
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -41479,5 +41479,5 @@
  ************************************************************************
  TESTS TIME (s):         0.0002
  ************************************************************************
- TOTAL CALCULATION TIME (s):    6.7501901998184621E-002
+ TOTAL CALCULATION TIME (s):    6.5160376951098442E-002
  ************************************************************************
