@@ -1,6 +1,6 @@
  ************************************************************************
-  DATE: 09-Oct-26
-  TIME: 11:47:14
+  DATE: 13-Oct-26
+  TIME: 11:34:34
  ************************************************************************
   nuclear Quantum Monte Carlo with Continuum : 1.12.0
  ************************************************************************
@@ -17,7 +17,7 @@
  ************************************************************************
  constants/fbn95.const                                       CONSTANTS_FILE
  pots/nijm93.2bp                                     T       2B_POT_FILE CHANNEL_POTENTIAL
- np  0  T                                                    PAIR LEMP ALPHA_PRIME
+ np  0  F  T  F                                              PAIR LEMP EM_ALL_WAVES ALPHA_PRIME NP_PROTON_BEAM
      2560       128                                          NPTS NPTS_IN_ONE_FERMI
      2560      2432        64                                MATCH_OUTER MATCH_INNER STABILIZE_STEPS
    1201     30.00     50.00     201    1.00E-12              EM_QUAD_NPTS VP_ZMAX C2_SCALE VP_NPTS SERIES_TOL
