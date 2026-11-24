@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 09-Oct-26
-  TIME: 11:48:02
+  DATE: 24-Nov-26
+  TIME: 08:10:48
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -234,9 +234,9 @@
  ROOT IJ PARTITION:                12   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0122
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0126
  ************************************************************************
- BURN IN TIME (s):         0.0183
+ BURN IN TIME (s):         0.0181
  ************************************************************************
  Nucleon Form Factors | mA =    2817.4036
  ************************************************************************
@@ -789,7 +789,7 @@
     9.9000   0.1545E-02 (0.9290E-03)   0.7802E-04 (0.2084E-02)
    10.0000   0.1579E-02 (0.9056E-03)  -0.1063E-03 (0.2009E-02)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.0307884430512786     
- TIME PER SAMPLE (s):    0.5153942215256393E-02
+ TOTAL CALCULATION TIME (s):    1.0409269109999286     
+ TIME PER SAMPLE (s):    0.5204634554999643E-02
  ************************************************************************
  FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS

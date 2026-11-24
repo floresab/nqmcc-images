@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 09-Oct-26
-  TIME: 18:46:53
+  DATE: 24-Nov-26
+  TIME: 08:10:05
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -332,7 +332,7 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
  ROOT IJ PARTITION:                96  100.0000%
  ROOT PHI PARTITION:               72   60.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0215
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0213
  ************************************************************************
  BOOKKEEPING INFORMATION
  ************************************************************************
@@ -56930,7 +56930,7 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
  ************************************************************************
  ACCEPTANCE PROBABILITY:    59.30%
  ************************************************************************
- BURN IN TIME (s):         0.0077
+ BURN IN TIME (s):         0.0081
  ************************************************************************
 
  ORTHOGONALITY CHECK
@@ -57024,5 +57024,5 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
  ************************************************************************
  TESTS TIME (s):         0.0003
  ************************************************************************
- TOTAL CALCULATION TIME (s):    8.6556817055679858E-002
+ TOTAL CALCULATION TIME (s):    8.7830191999955787E-002
  ************************************************************************

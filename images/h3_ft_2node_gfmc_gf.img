@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 09-Oct-26
-  TIME: 11:48:10
+  DATE: 24-Nov-26
+  TIME: 08:10:57
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -244,7 +244,7 @@
  ROOT IJ PARTITION:                12   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0207
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0239
  ************************************************************************
  ARRAY ALLOCATION TIME (s):         0.0000
  ************************************************************************
@@ -252,7 +252,7 @@
  ************************************************************************
  GENERATING INITIAL CONFIGS -- DONE
  ************************************************************************
- T-ZERO INITIALIZATION TIME (s):         0.0016
+ T-ZERO INITIALIZATION TIME (s):         0.0014
  ************************************************************************
  INITIALIZING PROPAGATOR
  ************************************************************************
@@ -277,11 +277,11 @@
    0.06                                  GTABLE MAX RANGE
    0.00    0.00                          ISOSCALAR COULOMB (C TAU)
  ************************************************************************
- PROPAGATOR INITIALIZATION TIME (s):         0.0122
+ PROPAGATOR INITIALIZATION TIME (s):         0.0112
  ************************************************************************
  CALCULTING T-ZERO OBSERVABLES
  ************************************************************************
- T-ZERO OBSERVABLE TIME (s):         0.0022
+ T-ZERO OBSERVABLE TIME (s):         0.0025
  ************************************************************************
  INITIAL POPULATION:          100
  ************************************************************************
@@ -11971,7 +11971,7 @@
    0.2000E+00         58    -7.8922 (0.7851)     0.3008 (0.2068)    -7.2724 (1.1328)
  
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.0356737920083106     
- TIME PER SAMPLE (s):    0.1317651134870624E-02
+ TOTAL CALCULATION TIME (s):    1.0460459509999964     
+ TIME PER SAMPLE (s):    0.1330847265903303E-02
  ************************************************************************
  FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS

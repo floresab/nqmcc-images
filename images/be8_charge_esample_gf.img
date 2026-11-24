@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 09-Oct-26
-  TIME: 12:03:24
+  DATE: 24-Nov-26
+  TIME: 08:10:01
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.0
+  nuclear Quantum Monte Carlo with Continuum : 1.12.1
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -369,20 +369,20 @@
  ROOT IJ PARTITION:             17920  100.0000%
  ROOT PHI PARTITION:          1061760  100.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         2.9131
+ WAVE FUNCTION INITIALIZATION TIME (s):         2.8292
  ************************************************************************
- ALLOCATION TIME (s):         0.0449
+ ALLOCATION TIME (s):         0.0418
  ************************************************************************
  ACCEPTANCE PROBABILITY:    37.00%
  ************************************************************************
- BURN IN TIME (s):         0.5636
+ BURN IN TIME (s):         0.5822
  ************************************************************************
- DERIVATIVE TIME (s):         0.4269
+ DERIVATIVE TIME (s):         0.4361
  ************************************************************************
  KE TIME (s):         0.0005
- VIJ TIME (s):         0.0426
- VEM TIME (s):         0.0094
- VIJK TIME (s):         0.0222
+ VIJ TIME (s):         0.0400
+ VEM TIME (s):         0.0086
+ VIJK TIME (s):         0.0223
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
  ------------------------------------
@@ -444,5 +444,5 @@
  Vem:       0.37422496010634200836E+01
  H:        -0.39682911092386397911E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    4.0233175110770389     
+ TOTAL CALCULATION TIME (s):    3.9608281150000266     
  ************************************************************************
