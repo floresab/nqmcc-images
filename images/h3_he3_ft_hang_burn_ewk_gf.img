@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:55
+  DATE: 25-Nov-26
+  TIME: 07:12:11
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -358,7 +358,7 @@
  ROOT IJ PARTITION:                12   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0244
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0268
  ************************************************************************
  TPLUS SPARSE MATRIX: MAX       1 NONZEROS PER ROW OF       3
  TPLUS SPARSE MATRIX: REDUCTION OF  66.667 (%)
@@ -368,7 +368,7 @@
  ************************************************************************
  FERMI + GT FIRST ORDER (RAISING)
  ************************************************************************
- BURN IN TIME (s):         0.0163
+ BURN IN TIME (s):         0.0139
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:      100
  ************************************************************************
@@ -409,7 +409,7 @@
      1.0367      1.0000     0.96459    
     0.18587E-02  0.0000     0.17294E-02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.4434853039999780     
- TIME PER SAMPLE (s):    0.7217426519999890E-02
+ TOTAL CALCULATION TIME (s):    1.4438291120022768     
+ TIME PER SAMPLE (s):    0.7219145560011384E-02
  ************************************************************************
  FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS

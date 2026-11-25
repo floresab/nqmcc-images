@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:25
+  DATE: 25-Nov-26
+  TIME: 07:11:41
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -224,9 +224,9 @@
  READING YLM FROM: external/nqmcc-images/li6.ylm
  ROOT READING SCATTERED PHI FROM: external/nqmcc-images/li6_wf3.phi.0.3
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0213
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0233
  ************************************************************************
- BURN IN TIME (s):         0.0274
+ BURN IN TIME (s):         0.0257
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:       20
  ************************************************************************
@@ -1125,6 +1125,7 @@
   CE        =  0.0000E+00 (0.0000E+00)  2PI-SWAVE =  0.0000E+00 (0.0000E+00)
   3PI-SS    =  0.0000E+00 (0.0000E+00)  3PI-AA    =  0.0000E+00 (0.0000E+00)
   T 3/2 ATR =  0.0000E+00 (0.0000E+00)  T 3/2 RPL =  0.0000E+00 (0.0000E+00)
+  D2        =  0.0000E+00 (0.0000E+00)  F2        =  0.0000E+00 (0.0000E+00)
   ----
   COULOMB   =  0.1636E+01 (0.2659E-01)  DF        = -0.3185E-02 (0.2748E-03)
   C2   (pp) = -0.1153E-02 (0.3708E-04)  VP        =  0.9401E-02 (0.1962E-03)
@@ -1148,6 +1149,6 @@
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0974 (0.0045)
   CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.8058 (0.0034)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.0538162550000152     
- TIME PER SAMPLE (s):    0.1317270318750019E-01
+ TOTAL CALCULATION TIME (s):    1.0950604660029057     
+ TIME PER SAMPLE (s):    0.1368825582503632E-01
  ************************************************************************

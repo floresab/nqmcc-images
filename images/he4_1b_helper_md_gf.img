@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:12
+  DATE: 25-Nov-26
+  TIME: 07:11:27
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -223,11 +223,11 @@
  ROOT IJ PARTITION:                16   50.0000%
  ROOT PHI PARTITION:                6   24.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0139
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0136
  ************************************************************************
  ACCEPTANCE PROBABILITY:    46.00%
  ************************************************************************
- BURN IN TIME (s):         0.0013
+ BURN IN TIME (s):         0.0015
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:       10
  ************************************************************************
@@ -359,6 +359,6 @@
   DOWN PARTICLES          UP PARTICLES           PARTICLES 
     2.0001 (0.2122E-01)     2.0001 (0.2122E-01)     4.0001 (0.3001E-01)
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.13577129899999818     
- TIME PER SAMPLE (s):    0.6788564949999909E-02
+ TOTAL CALCULATION TIME (s):   0.14333332999376580     
+ TIME PER SAMPLE (s):    0.7166666499688290E-02
  ************************************************************************

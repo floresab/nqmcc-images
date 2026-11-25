@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:46
+  DATE: 25-Nov-26
+  TIME: 07:12:02
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -232,9 +232,9 @@
  ROOT IJ PARTITION:                12   50.0000%
  ROOT PHI PARTITION:                3   42.8571%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0128
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0140
  ************************************************************************
- BURN IN TIME (s):         0.0179
+ BURN IN TIME (s):         0.0167
  ************************************************************************
  Nucleon Form Factors | mA =    2817.4036
  ************************************************************************
@@ -786,6 +786,6 @@
     9.9000   0.3455E-03 (0.6319E-03)  -0.2639E-03 (0.1533E-02)
    10.0000   0.3638E-03 (0.6134E-03)  -0.3553E-03 (0.1487E-02)
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.57686053600002651     
- TIME PER SAMPLE (s):    0.1442151340000066E-02
+ TOTAL CALCULATION TIME (s):   0.54652674499084242     
+ TIME PER SAMPLE (s):    0.1366316862477106E-02
  ************************************************************************

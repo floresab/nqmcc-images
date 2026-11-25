@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:11:00
+  DATE: 25-Nov-26
+  TIME: 07:12:15
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -233,9 +233,9 @@
  ROOT IJ PARTITION:                48   50.0000%
  ROOT PHI PARTITION:               12   48.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1984
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.2180
  ************************************************************************
- BURN IN TIME (s):         0.0350
+ BURN IN TIME (s):         0.0260
  ************************************************************************
    BLOCK:        1    COMMANDER SAMPLES:       25
  ************************************************************************
@@ -1135,6 +1135,7 @@
   CE        = -0.8416E+00 (0.3137E+00)  2PI-SWAVE = -0.2696E-01 (0.7899E-02)
   3PI-SS    =  0.0000E+00 (0.0000E+00)  3PI-AA    =  0.0000E+00 (0.0000E+00)
   T 3/2 ATR =  0.0000E+00 (0.0000E+00)  T 3/2 RPL =  0.0000E+00 (0.0000E+00)
+  D2        =  0.0000E+00 (0.0000E+00)  F2        =  0.0000E+00 (0.0000E+00)
   ----
   COULOMB   =  0.6823E+00 (0.1198E-01)  DF        = -0.2263E-02 (0.1952E-03)
   C2   (pp) = -0.5874E-03 (0.2044E-04)  VP        =  0.4171E-02 (0.9475E-04)
@@ -1158,7 +1159,7 @@
   CHARGE SYMMETRIC ORBITAL MAGNETIC MOMENT CONTRIBUTION =  0.0000 (0.0000)
   CHARGE SYMMETRIC MAGNETIC MOMENT                      =  0.0000 (0.0000)
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.2194093320000547     
- TIME PER SAMPLE (s):    0.8129395546667032E-02
+ TOTAL CALCULATION TIME (s):    1.2426781100075459     
+ TIME PER SAMPLE (s):    0.8284520733383639E-02
  ************************************************************************
  FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS

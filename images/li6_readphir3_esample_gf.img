@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:00
+  DATE: 25-Nov-26
+  TIME: 07:11:15
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -224,20 +224,20 @@
  ROOT IJ PARTITION:              1280  100.0000%
  ROOT PHI PARTITION:             4320  100.0000%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0204
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0212
  ************************************************************************
  ALLOCATION TIME (s):         0.0010
  ************************************************************************
  ACCEPTANCE PROBABILITY:    52.00%
  ************************************************************************
- BURN IN TIME (s):         0.0201
+ BURN IN TIME (s):         0.0216
  ************************************************************************
- DERIVATIVE TIME (s):         0.0089
+ DERIVATIVE TIME (s):         0.0094
  ************************************************************************
  KE TIME (s):         0.0001
- VIJ TIME (s):         0.0014
+ VIJ TIME (s):         0.0015
  VEM TIME (s):         0.0004
- VIJK TIME (s):         0.0008
+ VIJK TIME (s):         0.0007
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
  ------------------------------------
@@ -278,6 +278,7 @@
   CE        =  0.0000E+00 (0.0000E+00)  2PI-SWAVE =  0.0000E+00 (0.0000E+00)
   3PI-SS    =  0.0000E+00 (0.0000E+00)  3PI-AA    =  0.0000E+00 (0.0000E+00)
   T 3/2 ATR =  0.0000E+00 (0.0000E+00)  T 3/2 RPL =  0.0000E+00 (0.0000E+00)
+  D2        =  0.0000E+00 (0.0000E+00)  F2        =  0.0000E+00 (0.0000E+00)
   ----
   COULOMB   =  0.1530E+01 (0.0000E+00)  DF        = -0.3001E-02 (0.0000E+00)
   C2   (pp) = -0.1031E-02 (0.0000E+00)  VP        =  0.8651E-02 (0.0000E+00)
@@ -297,5 +298,5 @@
  Vem:       0.16500119066878373708E+01
  H:        -0.25411889711244182166E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    5.3233118999969520E-002
+ TOTAL CALCULATION TIME (s):    5.6041389005258679E-002
  ************************************************************************

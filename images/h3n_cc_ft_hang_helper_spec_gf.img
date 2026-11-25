@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:31
+  DATE: 25-Nov-26
+  TIME: 07:11:47
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -596,9 +596,9 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
  J Jz  0.500000000      0.500000000    
  <L Lz S Sz | J Jz> =  -0.57735026918962584     
     ----------------------------------------------------
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0252
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0278
  ************************************************************************
- BURN IN TIME (s):         0.1368
+ BURN IN TIME (s):         0.1248
    BLOCK:        1    COMMANDER SAMPLES:       25
  ************************************************************************
   <i|i>         0.9992E+00  (0.9765E-03)
@@ -831,7 +831,7 @@ MULTI_YLM1: NEEDS     2 CY1 PRODS INSTEAD OF      5
   [H3]x[n(p1/2)]:    0.2606E-01  (0.1174E-01)
  ----------------------------------------------------
  ************************************************************************
- TOTAL CALCULATION TIME (s):    1.0908159640000576     
- TIME PER SAMPLE (s):    0.2181631928000115E-01
+ TOTAL CALCULATION TIME (s):    1.0822923970117699     
+ TIME PER SAMPLE (s):    0.2164584794023540E-01
  ************************************************************************
  FAULT TOLERANCE: ABORTING TO CLEAN UP HUNG RANKS

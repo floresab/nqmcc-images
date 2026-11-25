@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:00
+  DATE: 25-Nov-26
+  TIME: 07:11:14
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -220,15 +220,15 @@
  ROOT IJ PARTITION:                24  100.0000%
  ROOT PHI PARTITION:                6   85.7143%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.1765
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.1806
  ************************************************************************
  ALLOCATION TIME (s):         0.0000
  ************************************************************************
  ACCEPTANCE PROBABILITY:    64.10%
  ************************************************************************
- BURN IN TIME (s):         0.0015
+ BURN IN TIME (s):         0.0014
  ************************************************************************
- DERIVATIVE TIME (s):         0.0001
+ DERIVATIVE TIME (s):         0.0000
  ************************************************************************
  KE TIME (s):         0.0000
  VIJ TIME (s):         0.0000
@@ -271,6 +271,7 @@
   CE        =  0.1191E-07 (0.0000E+00)  2PI-SWAVE = -0.2415E-02 (0.0000E+00)
   3PI-SS    =  0.0000E+00 (0.0000E+00)  3PI-AA    =  0.0000E+00 (0.0000E+00)
   T 3/2 ATR =  0.0000E+00 (0.0000E+00)  T 3/2 RPL =  0.0000E+00 (0.0000E+00)
+  D2        =  0.0000E+00 (0.0000E+00)  F2        =  0.0000E+00 (0.0000E+00)
   ----
   COULOMB   =  0.0000E+00 (0.0000E+00)  DF        =  0.0000E+00 (0.0000E+00)
   C2   (pp) =  0.0000E+00 (0.0000E+00)  VP        =  0.0000E+00 (0.0000E+00)
@@ -290,5 +291,5 @@
  Vem:       0.25522405745154332080E-01
  H:        -0.86603305040122329217E+01
  ************************************************************************
- TOTAL CALCULATION TIME (s):   0.17830483300008382     
+ TOTAL CALCULATION TIME (s):   0.18225290399277583     
  ************************************************************************

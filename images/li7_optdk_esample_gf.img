@@ -1,8 +1,8 @@
  ************************************************************************
-  DATE: 24-Nov-26
-  TIME: 08:10:01
+  DATE: 25-Nov-26
+  TIME: 07:11:15
  ************************************************************************
-  nuclear Quantum Monte Carlo with Continuum : 1.12.1
+  nuclear Quantum Monte Carlo with Continuum : 1.13.0
  ************************************************************************
   COMPILER: GCC version 16.1.0
   OPTIONS: -cpp -I /home/floresab/dev/qmc/nQMCC/build/external/coulcc/mod -I /home/floresab/dev/qmc/nQMCC/external/nlopt/build/install/include -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-slatec/build/mod -I /home/floresab/dev/qmc/nQMCC/external/nqmcc-fft/build/mod -I /opt/mpich-5.0.1/include -I /opt/mpich-5.0.1/include -imultiarch x86_64-linux-gnu -D phi_r4=0 -D phi_offload=0 -D opk_offload=0 -D vijk_offload=0 -mtune=generic -march=x86-64 -O3 -Wall -std=f2023 -ffree-line-length-512 -fall-intrinsics -J mod -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h
@@ -322,19 +322,19 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  ROOT IJ PARTITION:              1792  100.0000%
  ROOT PHI PARTITION:            15030   25.2012%
  ************************************************************************
- WAVE FUNCTION INITIALIZATION TIME (s):         0.0359
+ WAVE FUNCTION INITIALIZATION TIME (s):         0.0370
  ************************************************************************
- ALLOCATION TIME (s):         0.0024
+ ALLOCATION TIME (s):         0.0020
  ************************************************************************
  ACCEPTANCE PROBABILITY:    46.00%
  ************************************************************************
- BURN IN TIME (s):         0.0251
+ BURN IN TIME (s):         0.0257
  ************************************************************************
- DERIVATIVE TIME (s):         0.0280
+ DERIVATIVE TIME (s):         0.0293
  ************************************************************************
- KE TIME (s):         0.0001
- VIJ TIME (s):         0.0032
- VEM TIME (s):         0.0010
+ KE TIME (s):         0.0002
+ VIJ TIME (s):         0.0034
+ VEM TIME (s):         0.0011
  VIJK TIME (s):         0.0000
  ************************************************************************
  PARTICLE LOCATIONS (N,X,Y,Z)
@@ -377,6 +377,7 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
   CE        =  0.0000E+00 (0.0000E+00)  2PI-SWAVE =  0.0000E+00 (0.0000E+00)
   3PI-SS    =  0.0000E+00 (0.0000E+00)  3PI-AA    =  0.0000E+00 (0.0000E+00)
   T 3/2 ATR =  0.0000E+00 (0.0000E+00)  T 3/2 RPL =  0.0000E+00 (0.0000E+00)
+  D2        =  0.0000E+00 (0.0000E+00)  F2        =  0.0000E+00 (0.0000E+00)
   ----
   COULOMB   =  0.1700E+01 (0.0000E+00)  DF        = -0.1563E-02 (0.0000E+00)
   C2   (pp) = -0.1140E-02 (0.0000E+00)  VP        =  0.9715E-02 (0.0000E+00)
@@ -396,5 +397,5 @@ MULTI_YLM1: NEEDS     3 CY1 PRODS INSTEAD OF      6
  Vem:       0.18965677059493362133E+01
  H:         0.20654505604149765219E+02
  ************************************************************************
- TOTAL CALCULATION TIME (s):    9.5951352999918527E-002
+ TOTAL CALCULATION TIME (s):    9.8766348994104192E-002
  ************************************************************************
